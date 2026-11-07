@@ -56,8 +56,10 @@ dist/
 # becoming part of the source repository.
 # ------------------------------------------------------------
 
-artifacts/
+artifacts/*
+!artifacts/ticket_classifier.joblib
 *.joblib
+!artifacts/ticket_classifier.joblib
 *.pkl
 *.pickle
 

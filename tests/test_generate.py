@@ -12,6 +12,8 @@ from src.generate import (
     OpenRouterClient,
     OpenRouterConfig,
     ResponseGenerator,
+    SYSTEM_PROMPT_PATH,
+    load_system_prompt,
 )
 from src.ingest import normalize_ticket
 
@@ -206,6 +208,41 @@ def test_prompt_contains_ticket_and_documentation() -> None:
     assert "account_access" in user_prompt
     assert "DOC001#p001" in user_prompt
     assert "Users can reset their password" in user_prompt
+
+
+def test_versioned_system_prompt_is_available() -> None:
+    prompt = load_system_prompt()
+
+    assert SYSTEM_PROMPT_PATH.name == (
+        "response_generator_v1.txt"
+    )
+    assert "Use only facts" in prompt
+    assert "untrusted data" in prompt
+
+
+def test_missing_system_prompt_is_rejected(
+    tmp_path,
+) -> None:
+    with pytest.raises(
+        GenerationError,
+        match="could not be loaded",
+    ):
+        load_system_prompt(
+            tmp_path / "missing-prompt.txt"
+        )
+
+
+def test_empty_system_prompt_is_rejected(
+    tmp_path,
+) -> None:
+    prompt_path = tmp_path / "empty-prompt.txt"
+    prompt_path.write_text("   ", encoding="utf-8")
+
+    with pytest.raises(
+        GenerationError,
+        match="is empty",
+    ):
+        load_system_prompt(prompt_path)
 
 
 def test_json_inside_markdown_fence_is_accepted() -> None:

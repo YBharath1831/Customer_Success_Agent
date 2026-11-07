@@ -59,8 +59,8 @@ def test_project_root_is_derived_from_source_file() -> None:
     settings = get_settings()
 
     assert settings.project_root == PROJECT_ROOT
-    assert settings.project_root.name == (
-        "Customer_Success_Agent"
+    assert settings.project_root == (
+        Path(__file__).resolve().parent.parent
     )
 
 

@@ -45,19 +45,23 @@ Customer_Success_Agent/
 |-- artifacts/
 |   `-- ticket_classifier.joblib
 |-- data/
-|   |-- development_tickets.json
 |   |-- documentation.json
-|   `-- validation_tickets.json
+|   `-- smoke_ticket.json
 |-- docs/
+|   |-- architecture.md
 |   `-- implementation_plan.md
 |-- evaluation/
 |   |-- harness.py
 |   `-- results/
+|-- prompts/
+|   |-- README.md
+|   `-- response_generator_v1.txt
 |-- scripts/
 |   `-- validate.ps1
 |-- src/
 |   |-- api.py
 |   |-- app.py
+|   |-- build.py
 |   |-- classify.py
 |   |-- config.py
 |   |-- evaluate.py
@@ -168,8 +172,12 @@ Important settings:
 | `OPENROUTER_API_KEY`      | OpenRouter credential         | Required for generation              |
 | `MODEL_NAME`              | OpenRouter model              | `meta-llama/llama-3.1-8b-instruct` |
 | `EMBEDDING_MODEL`         | Local embedding model         | `all-MiniLM-L6-v2`                 |
-| `CONFIDENCE_THRESHOLD`    | Minimum classifier confidence | `0.80`                             |
-| `RETRIEVAL_THRESHOLD`     | Minimum retrieval relevance   | `0.40`                             |
+| `CONFIDENCE_THRESHOLD`    | Minimum classifier confidence | `0.83`                             |
+| `RETRIEVAL_THRESHOLD`     | Minimum retrieval relevance   | `0.45`                             |
+| `RETRIEVAL_TOP_K`         | Passages retained as context  | `5`                                |
+| `RETRIEVAL_CANDIDATE_MULTIPLIER` | Candidate-pool multiplier before document deduplication | `3` |
+| `CHUNK_MAX_CHARACTERS`    | Maximum documentation chunk size | `500`                           |
+| `CHUNK_OVERLAP_CHARACTERS` | Overlap for split sections    | `120`                              |
 | `KILL_SWITCH`             | Disable automatic responses   | `false`                            |
 | `REQUEST_TIMEOUT_SECONDS` | Provider timeout              | `30`                               |
 | `MAX_RETRIES`             | Provider retries              | `3`                                |
@@ -178,31 +186,45 @@ Important settings:
 
 Never commit `.env`.
 
-## Train the classifier
+## Prepare reusable artifacts
 
-Windows:
-
-```powershell
-python -m src.classify `
-  --input .\data\development_tickets.json `
-  --output .\artifacts\ticket_classifier.joblib
-```
-
-macOS:
+The repository includes the trusted classifier artifact needed by a clean
+checkout. Build the local Chroma index and initialize runtime storage once:
 
 ```bash
-python -m src.classify \
-  --input ./data/development_tickets.json \
-  --output ./artifacts/ticket_classifier.joblib
+python -m src.build
 ```
 
-Confirm the artifact loads:
+The first build may download the configured embedding model. Subsequent
+application runs reuse the persisted index and classifier.
+
+Confirm the classifier loads:
 
 ```bash
 python -c "from src.classify import TicketClassifier; TicketClassifier.load('artifacts/ticket_classifier.joblib'); print('classifier loaded')"
 ```
 
-Retrain the artifact after changing the scikit-learn version.
+### Optional classifier retraining
+
+Retraining is required only after changing classifier code, training data, or
+the pinned scikit-learn version. The supplied development dataset is not part
+of the source repository; pass its path explicitly when it is available.
+
+Windows:
+
+```powershell
+python -m src.build `
+  --training-data "C:\path\to\development_tickets.json" `
+  --rebuild-classifier
+```
+
+macOS:
+
+```bash
+python -m src.build \
+  --training-data "/path/to/development_tickets.json" \
+  --rebuild-classifier
+```
 
 ## Test retrieval
 
@@ -299,8 +321,6 @@ python -m src.run \
   --output ./evaluation/results/validation_run.json \
   --pretty
 ```
-
-Add `--skip-index` to reuse an existing Chroma collection.
 
 CLI exit codes:
 
@@ -459,6 +479,15 @@ SQLite audit data is stored at `storage/decisions.db`. It records stage decision
 - Hidden evaluator data: accepted through the generic `--input` interface.
 
 Ground-truth labels are used only for training and evaluation. Routing does not inspect them.
+
+## Attribution and AI assistance
+
+AI assistance was used to explain errors, draft and review implementation
+changes, and identify test gaps. Every retained change was reviewed through
+local tests and measured evaluation runs. The final architecture choices,
+threshold decisions, safety trade-offs, and interpretation of results remain
+the project author's responsibility. Third-party libraries are listed and
+pinned in `requirements.txt`.
 
 ## Troubleshooting
 
