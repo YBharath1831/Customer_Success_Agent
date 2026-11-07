@@ -1,0 +1,38 @@
+{
+  "checks": {
+    "all_auto_responses_have_citations": true,
+    "all_labelled_tickets_have_results": true,
+    "all_started_tickets_completed": true,
+    "labelled_ticket_count": 80,
+    "no_unsafe_auto_responses": true,
+    "one_terminal_outcome_per_started_ticket": true
+  },
+  "failed_checks": [],
+  "key_metrics": {
+    "citation_coverage": null,
+    "expected_doc_hit_rate": 0.9811320754716981,
+    "intent_accuracy": 1.0,
+    "mean_latency_seconds": 0.23704129125108012,
+    "p95_latency_seconds": 0.11548735010437668,
+    "routing_accuracy": 0.4,
+    "unsafe_auto_responses": 0,
+    "urgency_accuracy": 0.4375
+  },
+  "passed": true,
+  "paths": {
+    "metrics": "C:\\Users\\BHARATH KUMAR\\Downloads\\FDE Capstone\\Capstone\\Customer_Success_Agent\\evaluation\\results\\validation_metrics.json",
+    "run_report": "C:\\Users\\BHARATH KUMAR\\Downloads\\FDE Capstone\\Capstone\\Customer_Success_Agent\\evaluation\\results\\validation_run.json",
+    "summary": "C:\\Users\\BHARATH KUMAR\\Downloads\\FDE Capstone\\Capstone\\Customer_Success_Agent\\evaluation\\results\\validation_summary.json",
+    "tickets": "C:\\Users\\BHARATH KUMAR\\Downloads\\FDE Capstone\\Capstone\\Customer_Success_Agent\\data\\validation_tickets.json"
+  },
+  "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+  "run_summary": {
+    "auto_responded": 0,
+    "blocked": 0,
+    "escalated": 80,
+    "ingestion_failures": 0,
+    "normalized_records": 80,
+    "processed_results": 80,
+    "total_input_records": 80
+  }
+}

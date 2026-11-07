@@ -1,0 +1,32 @@
+# Customer Success Agent
+# Supported runtime: CPython 3.11, Windows x64
+
+# Configuration and validation
+pydantic==2.14.2
+python-dotenv==1.2.4
+
+# HTTP / OpenRouter
+requests==2.34.1
+
+# Numerical and classifier stack
+numpy==2.4.3
+scipy==1.17.1
+scikit-learn==1.9.1
+joblib==1.6.0
+
+# Embeddings and vector storage
+torch==2.10.0
+sentence-transformers==6.2.0
+chromadb==1.5.9
+
+# Tests
+pytest==9.2.0
+pytest-cov==7.1.0
+
+# HTTP service
+fastapi==0.162.0
+uvicorn==0.54.0
+httpx==0.28.1
+
+# Operational metrics
+prometheus-client==0.26.0

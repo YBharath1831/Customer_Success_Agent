@@ -1,0 +1,4776 @@
+{
+  "generated_at": "2026-10-31T14:59:54.649785+00:00",
+  "input_path": "C:\\Users\\BHARATH KUMAR\\Downloads\\FDE Capstone\\Capstone\\Customer_Success_Agent\\data\\validation_tickets.json",
+  "reconciliation": {
+    "auto_responded": 0,
+    "blocked": 0,
+    "decision_events": 320,
+    "escalated": 80,
+    "reconciled": true,
+    "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+    "terminal_outcomes": 80,
+    "tickets_completed": 80,
+    "tickets_incomplete": 0,
+    "tickets_started": 80,
+    "tickets_with_decisions": 80,
+    "tickets_without_decisions": 0
+  },
+  "results": [
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.5008799943838032,
+        "fallback_used": false,
+        "intent": "api_key_issue",
+        "intent_confidence": 0.8653417383187314,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.5008799943838032
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 11.379072000039741,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.501 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "authentication",
+          "passage_id": "DOC-AUTH-004#p002",
+          "relevance_score": 0.6813130378723145,
+          "title": "API key rotation and scope management"
+        },
+        {
+          "category": "authentication",
+          "passage_id": "DOC-AUTH-004#p004",
+          "relevance_score": 0.6412282586097717,
+          "title": "API key rotation and scope management"
+        },
+        {
+          "category": "authentication",
+          "passage_id": "DOC-AUTH-004#p003",
+          "relevance_score": 0.5320067405700684,
+          "title": "API key rotation and scope management"
+        },
+        {
+          "category": "authentication",
+          "passage_id": "DOC-AUTH-004#p001",
+          "relevance_score": 0.483304500579834,
+          "title": "API key rotation and scope management"
+        },
+        {
+          "category": "integration",
+          "passage_id": "DOC-INT-001#p005",
+          "relevance_score": 0.45275694131851196,
+          "title": "Connecting continuous integration pipelines"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.501 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0001"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.5296119170366698,
+        "fallback_used": false,
+        "intent": "unclear_request",
+        "intent_confidence": 0.8409438157297225,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.5296119170366698
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.07947400002740324,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Intent 'unclear_request' is governed by a mandatory human-review policy.",
+      "retrieval_matches": [
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-002#p002",
+          "relevance_score": 0.36166584491729736,
+          "title": "Rolling back a failed release"
+        },
+        {
+          "category": "integration",
+          "passage_id": "DOC-INT-002#p005",
+          "relevance_score": 0.33464789390563965,
+          "title": "Third party monitoring and log forwarding"
+        },
+        {
+          "category": "integration",
+          "passage_id": "DOC-INT-002#p004",
+          "relevance_score": 0.29154258966445923,
+          "title": "Third party monitoring and log forwarding"
+        },
+        {
+          "category": "data",
+          "passage_id": "DOC-DATA-002#p002",
+          "relevance_score": 0.28275448083877563,
+          "title": "Backups, retention and point-in-time restore"
+        },
+        {
+          "category": "api",
+          "passage_id": "DOC-API-003#p005",
+          "relevance_score": 0.27251654863357544,
+          "title": "Webhook delivery, retries and signature verification"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Intent 'unclear_request' is governed by a mandatory human-review policy.",
+        "reason_code": "mandatory_escalation_intent"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0002"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.440326239409869,
+        "fallback_used": false,
+        "intent": "unclear_request",
+        "intent_confidence": 0.7930218812838983,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.440326239409869
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.08674239995889366,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Intent 'unclear_request' is governed by a mandatory human-review policy.",
+      "retrieval_matches": [
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-002#p002",
+          "relevance_score": 0.3881567716598511,
+          "title": "Rolling back a failed release"
+        },
+        {
+          "category": "onboarding",
+          "passage_id": "DOC-ONB-002#p002",
+          "relevance_score": 0.34421443939208984,
+          "title": "Migrating an existing application to CloudServe"
+        },
+        {
+          "category": "data",
+          "passage_id": "DOC-DATA-001#p002",
+          "relevance_score": 0.3280261754989624,
+          "title": "Exporting account data and scheduled extracts"
+        },
+        {
+          "category": "data",
+          "passage_id": "DOC-DATA-002#p002",
+          "relevance_score": 0.3252466917037964,
+          "title": "Backups, retention and point-in-time restore"
+        },
+        {
+          "category": "onboarding",
+          "passage_id": "DOC-ONB-001#p003",
+          "relevance_score": 0.3130049705505371,
+          "title": "First deployment: a walkthrough"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Intent 'unclear_request' is governed by a mandatory human-review policy.",
+        "reason_code": "mandatory_escalation_intent"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0003"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.43250322708100625,
+        "fallback_used": false,
+        "intent": "authentication_failure",
+        "intent_confidence": 0.8107472540007549,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.43250322708100625
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.08557039988227189,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.433 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "authentication",
+          "passage_id": "DOC-AUTH-002#p002",
+          "relevance_score": 0.6068854331970215,
+          "title": "Multi-factor authentication setup and recovery"
+        },
+        {
+          "category": "authentication",
+          "passage_id": "DOC-AUTH-002#p003",
+          "relevance_score": 0.47553908824920654,
+          "title": "Multi-factor authentication setup and recovery"
+        },
+        {
+          "category": "authentication",
+          "passage_id": "DOC-AUTH-002#p004",
+          "relevance_score": 0.4220361113548279,
+          "title": "Multi-factor authentication setup and recovery"
+        },
+        {
+          "category": "authentication",
+          "passage_id": "DOC-AUTH-002#p001",
+          "relevance_score": 0.38620519638061523,
+          "title": "Multi-factor authentication setup and recovery"
+        },
+        {
+          "category": "authentication",
+          "passage_id": "DOC-AUTH-004#p002",
+          "relevance_score": 0.32629168033599854,
+          "title": "API key rotation and scope management"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.433 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0004"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.5163889395945498,
+        "fallback_used": false,
+        "intent": "api_usage_question",
+        "intent_confidence": 0.8628632376060034,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.5163889395945498
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.07830319995991886,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.516 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "api",
+          "passage_id": "DOC-API-002#p005",
+          "relevance_score": 0.7530776262283325,
+          "title": "Pagination and handling large result sets"
+        },
+        {
+          "category": "authentication",
+          "passage_id": "DOC-AUTH-001#p005",
+          "relevance_score": 0.3788495659828186,
+          "title": "Resolving invalid credential errors on login"
+        },
+        {
+          "category": "integration",
+          "passage_id": "DOC-INT-002#p005",
+          "relevance_score": 0.371570348739624,
+          "title": "Third party monitoring and log forwarding"
+        },
+        {
+          "category": "integration",
+          "passage_id": "DOC-INT-001#p005",
+          "relevance_score": 0.328951895236969,
+          "title": "Connecting continuous integration pipelines"
+        },
+        {
+          "category": "api",
+          "passage_id": "DOC-API-003#p005",
+          "relevance_score": 0.32831883430480957,
+          "title": "Webhook delivery, retries and signature verification"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.516 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0005"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.4649592589301503,
+        "fallback_used": false,
+        "intent": "authentication_failure",
+        "intent_confidence": 0.847394645162975,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.4649592589301503
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.10342469997704029,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.465 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "authentication",
+          "passage_id": "DOC-AUTH-002#p002",
+          "relevance_score": 0.5629659295082092,
+          "title": "Multi-factor authentication setup and recovery"
+        },
+        {
+          "category": "authentication",
+          "passage_id": "DOC-AUTH-002#p003",
+          "relevance_score": 0.4571910500526428,
+          "title": "Multi-factor authentication setup and recovery"
+        },
+        {
+          "category": "authentication",
+          "passage_id": "DOC-AUTH-001#p005",
+          "relevance_score": 0.43334513902664185,
+          "title": "Resolving invalid credential errors on login"
+        },
+        {
+          "category": "authentication",
+          "passage_id": "DOC-AUTH-001#p003",
+          "relevance_score": 0.42397433519363403,
+          "title": "Resolving invalid credential errors on login"
+        },
+        {
+          "category": "authentication",
+          "passage_id": "DOC-AUTH-001#p001",
+          "relevance_score": 0.40834641456604004,
+          "title": "Resolving invalid credential errors on login"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.465 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0006"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.5222648135699269,
+        "fallback_used": false,
+        "intent": "unclear_request",
+        "intent_confidence": 0.8555459469726779,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.5222648135699269
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.08937350008636713,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Intent 'unclear_request' is governed by a mandatory human-review policy.",
+      "retrieval_matches": [
+        {
+          "category": "integration",
+          "passage_id": "DOC-INT-002#p005",
+          "relevance_score": 0.32709169387817383,
+          "title": "Third party monitoring and log forwarding"
+        },
+        {
+          "category": "account",
+          "passage_id": "DOC-ACCT-001#p002",
+          "relevance_score": 0.3243655562400818,
+          "title": "Managing team members, roles and permissions"
+        },
+        {
+          "category": "security",
+          "passage_id": "DOC-SEC-002#p005",
+          "relevance_score": 0.3076319694519043,
+          "title": "Handling exposed secrets and credential rotation"
+        },
+        {
+          "category": "api",
+          "passage_id": "DOC-API-003#p005",
+          "relevance_score": 0.2838156223297119,
+          "title": "Webhook delivery, retries and signature verification"
+        },
+        {
+          "category": "data",
+          "passage_id": "DOC-DATA-002#p002",
+          "relevance_score": 0.28227698802948,
+          "title": "Backups, retention and point-in-time restore"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Intent 'unclear_request' is governed by a mandatory human-review policy.",
+        "reason_code": "mandatory_escalation_intent"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0007"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.568370571136655,
+        "fallback_used": false,
+        "intent": "account_access",
+        "intent_confidence": 0.7051322704949133,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.568370571136655
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.09528899984434247,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.568 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "account",
+          "passage_id": "DOC-ACCT-001#p003",
+          "relevance_score": 0.4943501949310303,
+          "title": "Managing team members, roles and permissions"
+        },
+        {
+          "category": "account",
+          "passage_id": "DOC-ACCT-001#p004",
+          "relevance_score": 0.43181103467941284,
+          "title": "Managing team members, roles and permissions"
+        },
+        {
+          "category": "account",
+          "passage_id": "DOC-ACCT-001#p001",
+          "relevance_score": 0.42137038707733154,
+          "title": "Managing team members, roles and permissions"
+        },
+        {
+          "category": "account",
+          "passage_id": "DOC-ACCT-001#p002",
+          "relevance_score": 0.40442967414855957,
+          "title": "Managing team members, roles and permissions"
+        },
+        {
+          "category": "security",
+          "passage_id": "DOC-SEC-002#p005",
+          "relevance_score": 0.2637413740158081,
+          "title": "Handling exposed secrets and credential rotation"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.568 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0008"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.4996365879706102,
+        "fallback_used": false,
+        "intent": "compliance_request",
+        "intent_confidence": 0.8490080286412458,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.4996365879706102
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.09277310012839735,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Intent 'compliance_request' is governed by a mandatory human-review policy.",
+      "retrieval_matches": [
+        {
+          "category": "security",
+          "passage_id": "DOC-SEC-003#p002",
+          "relevance_score": 0.7115280628204346,
+          "title": "Audit logging and compliance evidence"
+        },
+        {
+          "category": "security",
+          "passage_id": "DOC-SEC-003#p003",
+          "relevance_score": 0.6691473126411438,
+          "title": "Audit logging and compliance evidence"
+        },
+        {
+          "category": "security",
+          "passage_id": "DOC-SEC-003#p004",
+          "relevance_score": 0.6054539680480957,
+          "title": "Audit logging and compliance evidence"
+        },
+        {
+          "category": "security",
+          "passage_id": "DOC-SEC-001#p005",
+          "relevance_score": 0.5594367384910583,
+          "title": "Responding to a suspected account compromise"
+        },
+        {
+          "category": "security",
+          "passage_id": "DOC-SEC-003#p001",
+          "relevance_score": 0.4768714904785156,
+          "title": "Audit logging and compliance evidence"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Intent 'compliance_request' is governed by a mandatory human-review policy.",
+        "reason_code": "mandatory_escalation_intent"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0009"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.45419372666467045,
+        "fallback_used": false,
+        "intent": "billing_query",
+        "intent_confidence": 0.875025559487328,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.45419372666467045
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.09893829980865121,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.454 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-001#p002",
+          "relevance_score": 0.657543420791626,
+          "title": "Understanding your invoice and usage breakdown"
+        },
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-001#p001",
+          "relevance_score": 0.4555397033691406,
+          "title": "Understanding your invoice and usage breakdown"
+        },
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-002#p003",
+          "relevance_score": 0.4552873373031616,
+          "title": "Changing plans, and how proration is calculated"
+        },
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-001#p005",
+          "relevance_score": 0.4521968364715576,
+          "title": "Understanding your invoice and usage breakdown"
+        },
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-002#p004",
+          "relevance_score": 0.41748231649398804,
+          "title": "Changing plans, and how proration is calculated"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.454 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0010"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.5518469436397625,
+        "fallback_used": false,
+        "intent": "rollback_request",
+        "intent_confidence": 0.8780756597947003,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "high",
+        "urgency_confidence": 0.5518469436397625
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.09255749988369644,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.552 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-002#p004",
+          "relevance_score": 0.5563286542892456,
+          "title": "Rolling back a failed release"
+        },
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-002#p002",
+          "relevance_score": 0.5073671340942383,
+          "title": "Rolling back a failed release"
+        },
+        {
+          "category": "api",
+          "passage_id": "DOC-API-003#p005",
+          "relevance_score": 0.4199024438858032,
+          "title": "Webhook delivery, retries and signature verification"
+        },
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-003#p005",
+          "relevance_score": 0.38357383012771606,
+          "title": "Build failures caused by dependency resolution"
+        },
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-002#p001",
+          "relevance_score": 0.34544098377227783,
+          "title": "Rolling back a failed release"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.552 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0011"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.5337014061680293,
+        "fallback_used": false,
+        "intent": "rollback_request",
+        "intent_confidence": 0.8793986714908927,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "high",
+        "urgency_confidence": 0.5337014061680293
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.10572879994288087,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.534 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-002#p002",
+          "relevance_score": 0.6553282737731934,
+          "title": "Rolling back a failed release"
+        },
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-002#p001",
+          "relevance_score": 0.49403393268585205,
+          "title": "Rolling back a failed release"
+        },
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-002#p004",
+          "relevance_score": 0.45653587579727173,
+          "title": "Rolling back a failed release"
+        },
+        {
+          "category": "data",
+          "passage_id": "DOC-DATA-001#p002",
+          "relevance_score": 0.4107370376586914,
+          "title": "Exporting account data and scheduled extracts"
+        },
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-003#p005",
+          "relevance_score": 0.37726449966430664,
+          "title": "Build failures caused by dependency resolution"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.534 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0012"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.4735614003980664,
+        "fallback_used": false,
+        "intent": "billing_query",
+        "intent_confidence": 0.8731087181495342,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.4735614003980664
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.10964389983564615,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.474 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-001#p002",
+          "relevance_score": 0.7166703343391418,
+          "title": "Understanding your invoice and usage breakdown"
+        },
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-001#p004",
+          "relevance_score": 0.5226235389709473,
+          "title": "Understanding your invoice and usage breakdown"
+        },
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-001#p003",
+          "relevance_score": 0.5045198202133179,
+          "title": "Understanding your invoice and usage breakdown"
+        },
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-001#p001",
+          "relevance_score": 0.4595680236816406,
+          "title": "Understanding your invoice and usage breakdown"
+        },
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-002#p002",
+          "relevance_score": 0.39801573753356934,
+          "title": "Changing plans, and how proration is calculated"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.474 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0013"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.5150070782622581,
+        "fallback_used": false,
+        "intent": "rollback_request",
+        "intent_confidence": 0.8248654832054415,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "high",
+        "urgency_confidence": 0.5150070782622581
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.11068679997697473,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.515 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-002#p002",
+          "relevance_score": 0.558204174041748,
+          "title": "Rolling back a failed release"
+        },
+        {
+          "category": "api",
+          "passage_id": "DOC-API-003#p005",
+          "relevance_score": 0.4569615125656128,
+          "title": "Webhook delivery, retries and signature verification"
+        },
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-002#p004",
+          "relevance_score": 0.4342968463897705,
+          "title": "Rolling back a failed release"
+        },
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-002#p001",
+          "relevance_score": 0.4136296510696411,
+          "title": "Rolling back a failed release"
+        },
+        {
+          "category": "api",
+          "passage_id": "DOC-API-003#p003",
+          "relevance_score": 0.3908809423446655,
+          "title": "Webhook delivery, retries and signature verification"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.515 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0014"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.5291713611089538,
+        "fallback_used": false,
+        "intent": "unclear_request",
+        "intent_confidence": 0.8714552903027983,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.5291713611089538
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.08165320008993149,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Intent 'unclear_request' is governed by a mandatory human-review policy.",
+      "retrieval_matches": [
+        {
+          "category": "account",
+          "passage_id": "DOC-ACCT-001#p002",
+          "relevance_score": 0.30664145946502686,
+          "title": "Managing team members, roles and permissions"
+        },
+        {
+          "category": "integration",
+          "passage_id": "DOC-INT-002#p005",
+          "relevance_score": 0.290956974029541,
+          "title": "Third party monitoring and log forwarding"
+        },
+        {
+          "category": "security",
+          "passage_id": "DOC-SEC-001#p001",
+          "relevance_score": 0.27014482021331787,
+          "title": "Responding to a suspected account compromise"
+        },
+        {
+          "category": "account",
+          "passage_id": "DOC-ACCT-002#p002",
+          "relevance_score": 0.2687251567840576,
+          "title": "Organisation setup and project structure"
+        },
+        {
+          "category": "security",
+          "passage_id": "DOC-SEC-002#p005",
+          "relevance_score": 0.2624382972717285,
+          "title": "Handling exposed secrets and credential rotation"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Intent 'unclear_request' is governed by a mandatory human-review policy.",
+        "reason_code": "mandatory_escalation_intent"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0015"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.39349646608767674,
+        "fallback_used": false,
+        "intent": "performance_degradation",
+        "intent_confidence": 0.8007278483899855,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.39349646608767674
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.0849455997813493,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.393 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "performance",
+          "passage_id": "DOC-PERF-001#p004",
+          "relevance_score": 0.5724854469299316,
+          "title": "Diagnosing elevated response latency"
+        },
+        {
+          "category": "performance",
+          "passage_id": "DOC-PERF-002#p002",
+          "relevance_score": 0.5716559886932373,
+          "title": "Autoscaling behaviour and instance limits"
+        },
+        {
+          "category": "performance",
+          "passage_id": "DOC-PERF-001#p003",
+          "relevance_score": 0.534424901008606,
+          "title": "Diagnosing elevated response latency"
+        },
+        {
+          "category": "performance",
+          "passage_id": "DOC-PERF-001#p001",
+          "relevance_score": 0.5044626593589783,
+          "title": "Diagnosing elevated response latency"
+        },
+        {
+          "category": "onboarding",
+          "passage_id": "DOC-ONB-002#p002",
+          "relevance_score": 0.49558913707733154,
+          "title": "Migrating an existing application to CloudServe"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.393 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0016"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.6032706575657641,
+        "fallback_used": false,
+        "intent": "unclear_request",
+        "intent_confidence": 0.8005422449252508,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.6032706575657641
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.08276299992576241,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Intent 'unclear_request' is governed by a mandatory human-review policy.",
+      "retrieval_matches": [
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-002#p002",
+          "relevance_score": 0.3330817222595215,
+          "title": "Rolling back a failed release"
+        },
+        {
+          "category": "authentication",
+          "passage_id": "DOC-AUTH-002#p002",
+          "relevance_score": 0.3199124336242676,
+          "title": "Multi-factor authentication setup and recovery"
+        },
+        {
+          "category": "data",
+          "passage_id": "DOC-DATA-002#p002",
+          "relevance_score": 0.28032827377319336,
+          "title": "Backups, retention and point-in-time restore"
+        },
+        {
+          "category": "integration",
+          "passage_id": "DOC-INT-002#p005",
+          "relevance_score": 0.26854056119918823,
+          "title": "Third party monitoring and log forwarding"
+        },
+        {
+          "category": "account",
+          "passage_id": "DOC-ACCT-001#p002",
+          "relevance_score": 0.2643078565597534,
+          "title": "Managing team members, roles and permissions"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Intent 'unclear_request' is governed by a mandatory human-review policy.",
+        "reason_code": "mandatory_escalation_intent"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0017"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.49735072803939134,
+        "fallback_used": false,
+        "intent": "api_usage_question",
+        "intent_confidence": 0.878946766319635,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.49735072803939134
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.09959839982911944,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.497 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "api",
+          "passage_id": "DOC-API-002#p002",
+          "relevance_score": 0.6149332523345947,
+          "title": "Pagination and handling large result sets"
+        },
+        {
+          "category": "api",
+          "passage_id": "DOC-API-002#p005",
+          "relevance_score": 0.5684824585914612,
+          "title": "Pagination and handling large result sets"
+        },
+        {
+          "category": "api",
+          "passage_id": "DOC-API-002#p001",
+          "relevance_score": 0.5034753084182739,
+          "title": "Pagination and handling large result sets"
+        },
+        {
+          "category": "api",
+          "passage_id": "DOC-API-002#p004",
+          "relevance_score": 0.4883996844291687,
+          "title": "Pagination and handling large result sets"
+        },
+        {
+          "category": "api",
+          "passage_id": "DOC-API-002#p003",
+          "relevance_score": 0.48743629455566406,
+          "title": "Pagination and handling large result sets"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.497 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0018"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.5744597087709601,
+        "fallback_used": false,
+        "intent": "account_access",
+        "intent_confidence": 0.8077033635485246,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.5744597087709601
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.08907210011966527,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.574 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "account",
+          "passage_id": "DOC-ACCT-001#p002",
+          "relevance_score": 0.6512739062309265,
+          "title": "Managing team members, roles and permissions"
+        },
+        {
+          "category": "account",
+          "passage_id": "DOC-ACCT-001#p005",
+          "relevance_score": 0.4772768020629883,
+          "title": "Managing team members, roles and permissions"
+        },
+        {
+          "category": "account",
+          "passage_id": "DOC-ACCT-001#p003",
+          "relevance_score": 0.47532862424850464,
+          "title": "Managing team members, roles and permissions"
+        },
+        {
+          "category": "security",
+          "passage_id": "DOC-SEC-001#p004",
+          "relevance_score": 0.46940934658050537,
+          "title": "Responding to a suspected account compromise"
+        },
+        {
+          "category": "account",
+          "passage_id": "DOC-ACCT-001#p004",
+          "relevance_score": 0.44637107849121094,
+          "title": "Managing team members, roles and permissions"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.574 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0019"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.4600104397264508,
+        "fallback_used": false,
+        "intent": "feature_request",
+        "intent_confidence": 0.8455061658215132,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "low",
+        "urgency_confidence": 0.4600104397264508
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.08926400006748736,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Intent 'feature_request' is governed by a mandatory human-review policy.",
+      "retrieval_matches": [
+        {
+          "category": "data",
+          "passage_id": "DOC-DATA-002#p005",
+          "relevance_score": 0.34410011768341064,
+          "title": "Backups, retention and point-in-time restore"
+        },
+        {
+          "category": "api",
+          "passage_id": "DOC-API-003#p001",
+          "relevance_score": 0.325006365776062,
+          "title": "Webhook delivery, retries and signature verification"
+        },
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-002#p004",
+          "relevance_score": 0.3180023431777954,
+          "title": "Rolling back a failed release"
+        },
+        {
+          "category": "security",
+          "passage_id": "DOC-SEC-003#p004",
+          "relevance_score": 0.3163503408432007,
+          "title": "Audit logging and compliance evidence"
+        },
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-003#p001",
+          "relevance_score": 0.31425565481185913,
+          "title": "Usage limits, overage and spend controls"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Intent 'feature_request' is governed by a mandatory human-review policy.",
+        "reason_code": "mandatory_escalation_intent"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0020"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.5678594152265414,
+        "fallback_used": false,
+        "intent": "rollback_request",
+        "intent_confidence": 0.8661934564115912,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "high",
+        "urgency_confidence": 0.5678594152265414
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.0969887999817729,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.568 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-002#p004",
+          "relevance_score": 0.4966108798980713,
+          "title": "Rolling back a failed release"
+        },
+        {
+          "category": "api",
+          "passage_id": "DOC-API-003#p005",
+          "relevance_score": 0.44334501028060913,
+          "title": "Webhook delivery, retries and signature verification"
+        },
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-002#p002",
+          "relevance_score": 0.38661807775497437,
+          "title": "Rolling back a failed release"
+        },
+        {
+          "category": "integration",
+          "passage_id": "DOC-INT-002#p004",
+          "relevance_score": 0.33602070808410645,
+          "title": "Third party monitoring and log forwarding"
+        },
+        {
+          "category": "data",
+          "passage_id": "DOC-DATA-002#p004",
+          "relevance_score": 0.33476924896240234,
+          "title": "Backups, retention and point-in-time restore"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.568 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0021"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.379370405649113,
+        "fallback_used": false,
+        "intent": "performance_degradation",
+        "intent_confidence": 0.8190102251855672,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.379370405649113
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.09394000004976988,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.379 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "performance",
+          "passage_id": "DOC-PERF-001#p004",
+          "relevance_score": 0.5120864510536194,
+          "title": "Diagnosing elevated response latency"
+        },
+        {
+          "category": "performance",
+          "passage_id": "DOC-PERF-002#p002",
+          "relevance_score": 0.49034225940704346,
+          "title": "Autoscaling behaviour and instance limits"
+        },
+        {
+          "category": "performance",
+          "passage_id": "DOC-PERF-001#p001",
+          "relevance_score": 0.48398149013519287,
+          "title": "Diagnosing elevated response latency"
+        },
+        {
+          "category": "performance",
+          "passage_id": "DOC-PERF-001#p003",
+          "relevance_score": 0.4635072946548462,
+          "title": "Diagnosing elevated response latency"
+        },
+        {
+          "category": "performance",
+          "passage_id": "DOC-PERF-002#p005",
+          "relevance_score": 0.4456305503845215,
+          "title": "Autoscaling behaviour and instance limits"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.379 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0022"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.4947853555841725,
+        "fallback_used": false,
+        "intent": "onboarding",
+        "intent_confidence": 0.8603092208729529,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.4947853555841725
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.09399350010789931,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.495 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "onboarding",
+          "passage_id": "DOC-ONB-002#p004",
+          "relevance_score": 0.5165205001831055,
+          "title": "Migrating an existing application to CloudServe"
+        },
+        {
+          "category": "onboarding",
+          "passage_id": "DOC-ONB-001#p004",
+          "relevance_score": 0.47143805027008057,
+          "title": "First deployment: a walkthrough"
+        },
+        {
+          "category": "onboarding",
+          "passage_id": "DOC-ONB-002#p001",
+          "relevance_score": 0.4020535945892334,
+          "title": "Migrating an existing application to CloudServe"
+        },
+        {
+          "category": "onboarding",
+          "passage_id": "DOC-ONB-002#p002",
+          "relevance_score": 0.37218189239501953,
+          "title": "Migrating an existing application to CloudServe"
+        },
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-001#p004",
+          "relevance_score": 0.36446040868759155,
+          "title": "Container deployments failing during the health check phase"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.495 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0023"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.5263771004403849,
+        "fallback_used": false,
+        "intent": "api_key_issue",
+        "intent_confidence": 0.8497028423018254,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.5263771004403849
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.09843029989860952,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.526 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "authentication",
+          "passage_id": "DOC-AUTH-004#p002",
+          "relevance_score": 0.4365636706352234,
+          "title": "API key rotation and scope management"
+        },
+        {
+          "category": "authentication",
+          "passage_id": "DOC-AUTH-004#p003",
+          "relevance_score": 0.4028971791267395,
+          "title": "API key rotation and scope management"
+        },
+        {
+          "category": "account",
+          "passage_id": "DOC-ACCT-001#p005",
+          "relevance_score": 0.4019392728805542,
+          "title": "Managing team members, roles and permissions"
+        },
+        {
+          "category": "account",
+          "passage_id": "DOC-ACCT-001#p002",
+          "relevance_score": 0.391160786151886,
+          "title": "Managing team members, roles and permissions"
+        },
+        {
+          "category": "authentication",
+          "passage_id": "DOC-AUTH-004#p005",
+          "relevance_score": 0.38949960470199585,
+          "title": "API key rotation and scope management"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.526 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0024"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.40253886063732747,
+        "fallback_used": false,
+        "intent": "deployment_failure",
+        "intent_confidence": 0.8543730525785939,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "high",
+        "urgency_confidence": 0.40253886063732747
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.09679630002938211,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.403 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-001#p002",
+          "relevance_score": 0.7484491467475891,
+          "title": "Container deployments failing during the health check phase"
+        },
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-001#p003",
+          "relevance_score": 0.60111403465271,
+          "title": "Container deployments failing during the health check phase"
+        },
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-001#p001",
+          "relevance_score": 0.600677490234375,
+          "title": "Container deployments failing during the health check phase"
+        },
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-001#p004",
+          "relevance_score": 0.5610570907592773,
+          "title": "Container deployments failing during the health check phase"
+        },
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-001#p005",
+          "relevance_score": 0.4928399920463562,
+          "title": "Container deployments failing during the health check phase"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.403 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0025"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.5236833989527713,
+        "fallback_used": false,
+        "intent": "data_residency",
+        "intent_confidence": 0.8643464988485872,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.5236833989527713
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.09667690005153418,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.524 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "data",
+          "passage_id": "DOC-DATA-003#p002",
+          "relevance_score": 0.5176594853401184,
+          "title": "Data residency and regional storage"
+        },
+        {
+          "category": "data",
+          "passage_id": "DOC-DATA-003#p001",
+          "relevance_score": 0.46781545877456665,
+          "title": "Data residency and regional storage"
+        },
+        {
+          "category": "data",
+          "passage_id": "DOC-DATA-003#p005",
+          "relevance_score": 0.4619424343109131,
+          "title": "Data residency and regional storage"
+        },
+        {
+          "category": "data",
+          "passage_id": "DOC-DATA-003#p004",
+          "relevance_score": 0.4401721954345703,
+          "title": "Data residency and regional storage"
+        },
+        {
+          "category": "data",
+          "passage_id": "DOC-DATA-003#p003",
+          "relevance_score": 0.36987781524658203,
+          "title": "Data residency and regional storage"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.524 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0026"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.40573827283544833,
+        "fallback_used": false,
+        "intent": "quota_or_overage",
+        "intent_confidence": 0.8443624105304925,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "high",
+        "urgency_confidence": 0.40573827283544833
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.0927697999868542,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.406 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-003#p003",
+          "relevance_score": 0.5978024005889893,
+          "title": "Usage limits, overage and spend controls"
+        },
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-001#p002",
+          "relevance_score": 0.5529770255088806,
+          "title": "Understanding your invoice and usage breakdown"
+        },
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-001#p003",
+          "relevance_score": 0.5262665748596191,
+          "title": "Understanding your invoice and usage breakdown"
+        },
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-001#p004",
+          "relevance_score": 0.521454393863678,
+          "title": "Understanding your invoice and usage breakdown"
+        },
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-003#p002",
+          "relevance_score": 0.5171793103218079,
+          "title": "Usage limits, overage and spend controls"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.406 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0027"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.48647230239003125,
+        "fallback_used": false,
+        "intent": "deployment_failure",
+        "intent_confidence": 0.8495412238444725,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "high",
+        "urgency_confidence": 0.48647230239003125
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.0924394999165088,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.486 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-003#p001",
+          "relevance_score": 0.7521296143531799,
+          "title": "Build failures caused by dependency resolution"
+        },
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-003#p002",
+          "relevance_score": 0.66026771068573,
+          "title": "Build failures caused by dependency resolution"
+        },
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-003#p004",
+          "relevance_score": 0.5573841333389282,
+          "title": "Build failures caused by dependency resolution"
+        },
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-003#p003",
+          "relevance_score": 0.5379597544670105,
+          "title": "Build failures caused by dependency resolution"
+        },
+        {
+          "category": "onboarding",
+          "passage_id": "DOC-ONB-001#p003",
+          "relevance_score": 0.5288543701171875,
+          "title": "First deployment: a walkthrough"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.486 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0028"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.43579089572563207,
+        "fallback_used": false,
+        "intent": "onboarding",
+        "intent_confidence": 0.8503750295339206,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.43579089572563207
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.08843639981932938,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.436 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "authentication",
+          "passage_id": "DOC-AUTH-001#p001",
+          "relevance_score": 0.41637134552001953,
+          "title": "Resolving invalid credential errors on login"
+        },
+        {
+          "category": "authentication",
+          "passage_id": "DOC-AUTH-001#p002",
+          "relevance_score": 0.40161240100860596,
+          "title": "Resolving invalid credential errors on login"
+        },
+        {
+          "category": "account",
+          "passage_id": "DOC-ACCT-001#p005",
+          "relevance_score": 0.35937148332595825,
+          "title": "Managing team members, roles and permissions"
+        },
+        {
+          "category": "authentication",
+          "passage_id": "DOC-AUTH-001#p004",
+          "relevance_score": 0.3484249711036682,
+          "title": "Resolving invalid credential errors on login"
+        },
+        {
+          "category": "onboarding",
+          "passage_id": "DOC-ONB-001#p002",
+          "relevance_score": 0.32877111434936523,
+          "title": "First deployment: a walkthrough"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.436 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0029"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.45328934221420264,
+        "fallback_used": false,
+        "intent": "feature_request",
+        "intent_confidence": 0.8266311598004519,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "low",
+        "urgency_confidence": 0.45328934221420264
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.08868420007638633,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Intent 'feature_request' is governed by a mandatory human-review policy.",
+      "retrieval_matches": [
+        {
+          "category": "onboarding",
+          "passage_id": "DOC-ONB-001#p001",
+          "relevance_score": 0.33524370193481445,
+          "title": "First deployment: a walkthrough"
+        },
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-002#p004",
+          "relevance_score": 0.3095731735229492,
+          "title": "Rolling back a failed release"
+        },
+        {
+          "category": "integration",
+          "passage_id": "DOC-INT-001#p001",
+          "relevance_score": 0.30204445123672485,
+          "title": "Connecting continuous integration pipelines"
+        },
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-002#p001",
+          "relevance_score": 0.29554104804992676,
+          "title": "Changing plans, and how proration is calculated"
+        },
+        {
+          "category": "performance",
+          "passage_id": "DOC-PERF-002#p005",
+          "relevance_score": 0.288457989692688,
+          "title": "Autoscaling behaviour and instance limits"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Intent 'feature_request' is governed by a mandatory human-review policy.",
+        "reason_code": "mandatory_escalation_intent"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0030"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.5531876897942384,
+        "fallback_used": false,
+        "intent": "rollback_request",
+        "intent_confidence": 0.8670108422000168,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "high",
+        "urgency_confidence": 0.5531876897942384
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.09473840007558465,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.553 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-002#p004",
+          "relevance_score": 0.5106343030929565,
+          "title": "Rolling back a failed release"
+        },
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-002#p002",
+          "relevance_score": 0.44943517446517944,
+          "title": "Rolling back a failed release"
+        },
+        {
+          "category": "api",
+          "passage_id": "DOC-API-003#p005",
+          "relevance_score": 0.39427512884140015,
+          "title": "Webhook delivery, retries and signature verification"
+        },
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-002#p001",
+          "relevance_score": 0.3537861108779907,
+          "title": "Rolling back a failed release"
+        },
+        {
+          "category": "data",
+          "passage_id": "DOC-DATA-001#p002",
+          "relevance_score": 0.3164949417114258,
+          "title": "Exporting account data and scheduled extracts"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.553 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0031"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.613177691981063,
+        "fallback_used": false,
+        "intent": "feature_request",
+        "intent_confidence": 0.8639232662016264,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.613177691981063
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.08884590002708137,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Intent 'feature_request' is governed by a mandatory human-review policy.",
+      "retrieval_matches": [
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-003#p005",
+          "relevance_score": 0.6842180490493774,
+          "title": "Usage limits, overage and spend controls"
+        },
+        {
+          "category": "account",
+          "passage_id": "DOC-ACCT-002#p004",
+          "relevance_score": 0.4834153652191162,
+          "title": "Organisation setup and project structure"
+        },
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-003#p001",
+          "relevance_score": 0.424352765083313,
+          "title": "Usage limits, overage and spend controls"
+        },
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-003#p004",
+          "relevance_score": 0.4157963991165161,
+          "title": "Usage limits, overage and spend controls"
+        },
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-003#p003",
+          "relevance_score": 0.4133787155151367,
+          "title": "Usage limits, overage and spend controls"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Intent 'feature_request' is governed by a mandatory human-review policy.",
+        "reason_code": "mandatory_escalation_intent"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0032"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.4350438503925332,
+        "fallback_used": false,
+        "intent": "webhook_issue",
+        "intent_confidence": 0.8668870471263084,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.4350438503925332
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.08008889993652701,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.435 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "api",
+          "passage_id": "DOC-API-003#p002",
+          "relevance_score": 0.783913254737854,
+          "title": "Webhook delivery, retries and signature verification"
+        },
+        {
+          "category": "api",
+          "passage_id": "DOC-API-003#p004",
+          "relevance_score": 0.7466945648193359,
+          "title": "Webhook delivery, retries and signature verification"
+        },
+        {
+          "category": "api",
+          "passage_id": "DOC-API-003#p001",
+          "relevance_score": 0.71629399061203,
+          "title": "Webhook delivery, retries and signature verification"
+        },
+        {
+          "category": "api",
+          "passage_id": "DOC-API-003#p003",
+          "relevance_score": 0.5983752608299255,
+          "title": "Webhook delivery, retries and signature verification"
+        },
+        {
+          "category": "authentication",
+          "passage_id": "DOC-AUTH-003#p003",
+          "relevance_score": 0.36380141973495483,
+          "title": "Single sign-on configuration with SAML providers"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.435 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0033"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.5337014061680293,
+        "fallback_used": false,
+        "intent": "rollback_request",
+        "intent_confidence": 0.8793986714908927,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "high",
+        "urgency_confidence": 0.5337014061680293
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.09588719997555017,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.534 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-002#p002",
+          "relevance_score": 0.6553282737731934,
+          "title": "Rolling back a failed release"
+        },
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-002#p001",
+          "relevance_score": 0.49403393268585205,
+          "title": "Rolling back a failed release"
+        },
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-002#p004",
+          "relevance_score": 0.45653587579727173,
+          "title": "Rolling back a failed release"
+        },
+        {
+          "category": "data",
+          "passage_id": "DOC-DATA-001#p002",
+          "relevance_score": 0.4107370376586914,
+          "title": "Exporting account data and scheduled extracts"
+        },
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-003#p005",
+          "relevance_score": 0.37726449966430664,
+          "title": "Build failures caused by dependency resolution"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.534 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0034"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.5956608295386451,
+        "fallback_used": false,
+        "intent": "unclear_request",
+        "intent_confidence": 0.8262492126844397,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.5956608295386451
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.0852217001374811,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Intent 'unclear_request' is governed by a mandatory human-review policy.",
+      "retrieval_matches": [
+        {
+          "category": "authentication",
+          "passage_id": "DOC-AUTH-002#p002",
+          "relevance_score": 0.388927698135376,
+          "title": "Multi-factor authentication setup and recovery"
+        },
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-002#p002",
+          "relevance_score": 0.35785579681396484,
+          "title": "Rolling back a failed release"
+        },
+        {
+          "category": "data",
+          "passage_id": "DOC-DATA-001#p002",
+          "relevance_score": 0.3037228584289551,
+          "title": "Exporting account data and scheduled extracts"
+        },
+        {
+          "category": "onboarding",
+          "passage_id": "DOC-ONB-002#p002",
+          "relevance_score": 0.28965818881988525,
+          "title": "Migrating an existing application to CloudServe"
+        },
+        {
+          "category": "data",
+          "passage_id": "DOC-DATA-002#p002",
+          "relevance_score": 0.2737998962402344,
+          "title": "Backups, retention and point-in-time restore"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Intent 'unclear_request' is governed by a mandatory human-review policy.",
+        "reason_code": "mandatory_escalation_intent"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0035"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.4210138700164833,
+        "fallback_used": false,
+        "intent": "onboarding",
+        "intent_confidence": 0.8623509059344396,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.4210138700164833
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.1047067001927644,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.421 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "onboarding",
+          "passage_id": "DOC-ONB-001#p002",
+          "relevance_score": 0.6679199934005737,
+          "title": "First deployment: a walkthrough"
+        },
+        {
+          "category": "onboarding",
+          "passage_id": "DOC-ONB-001#p001",
+          "relevance_score": 0.4559635519981384,
+          "title": "First deployment: a walkthrough"
+        },
+        {
+          "category": "onboarding",
+          "passage_id": "DOC-ONB-001#p004",
+          "relevance_score": 0.4494561553001404,
+          "title": "First deployment: a walkthrough"
+        },
+        {
+          "category": "security",
+          "passage_id": "DOC-SEC-002#p003",
+          "relevance_score": 0.4149084687232971,
+          "title": "Handling exposed secrets and credential rotation"
+        },
+        {
+          "category": "authentication",
+          "passage_id": "DOC-AUTH-001#p001",
+          "relevance_score": 0.38856279850006104,
+          "title": "Resolving invalid credential errors on login"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.421 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0036"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.5492133483808509,
+        "fallback_used": false,
+        "intent": "data_residency",
+        "intent_confidence": 0.842304515014507,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.5492133483808509
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.08989800000563264,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.549 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "data",
+          "passage_id": "DOC-DATA-003#p004",
+          "relevance_score": 0.6694939136505127,
+          "title": "Data residency and regional storage"
+        },
+        {
+          "category": "data",
+          "passage_id": "DOC-DATA-003#p003",
+          "relevance_score": 0.5368252396583557,
+          "title": "Data residency and regional storage"
+        },
+        {
+          "category": "data",
+          "passage_id": "DOC-DATA-003#p002",
+          "relevance_score": 0.5340589880943298,
+          "title": "Data residency and regional storage"
+        },
+        {
+          "category": "data",
+          "passage_id": "DOC-DATA-003#p001",
+          "relevance_score": 0.4304439425468445,
+          "title": "Data residency and regional storage"
+        },
+        {
+          "category": "data",
+          "passage_id": "DOC-DATA-003#p005",
+          "relevance_score": 0.43037331104278564,
+          "title": "Data residency and regional storage"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.549 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0037"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.4014584589686476,
+        "fallback_used": false,
+        "intent": "performance_degradation",
+        "intent_confidence": 0.85770217472569,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.4014584589686476
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.0928315999917686,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.401 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "performance",
+          "passage_id": "DOC-PERF-001#p002",
+          "relevance_score": 0.625516414642334,
+          "title": "Diagnosing elevated response latency"
+        },
+        {
+          "category": "performance",
+          "passage_id": "DOC-PERF-001#p004",
+          "relevance_score": 0.544935941696167,
+          "title": "Diagnosing elevated response latency"
+        },
+        {
+          "category": "performance",
+          "passage_id": "DOC-PERF-001#p001",
+          "relevance_score": 0.5069589614868164,
+          "title": "Diagnosing elevated response latency"
+        },
+        {
+          "category": "api",
+          "passage_id": "DOC-API-001#p002",
+          "relevance_score": 0.4626373052597046,
+          "title": "Understanding API rate limits and quota tiers"
+        },
+        {
+          "category": "data",
+          "passage_id": "DOC-DATA-003#p002",
+          "relevance_score": 0.4463896155357361,
+          "title": "Data residency and regional storage"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.401 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0038"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.5433079075851993,
+        "fallback_used": false,
+        "intent": "api_key_issue",
+        "intent_confidence": 0.8679521188192062,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.5433079075851993
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.08798369998112321,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.543 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "authentication",
+          "passage_id": "DOC-AUTH-004#p004",
+          "relevance_score": 0.6171389222145081,
+          "title": "API key rotation and scope management"
+        },
+        {
+          "category": "security",
+          "passage_id": "DOC-SEC-001#p003",
+          "relevance_score": 0.5702829360961914,
+          "title": "Responding to a suspected account compromise"
+        },
+        {
+          "category": "authentication",
+          "passage_id": "DOC-AUTH-004#p002",
+          "relevance_score": 0.5593025088310242,
+          "title": "API key rotation and scope management"
+        },
+        {
+          "category": "security",
+          "passage_id": "DOC-SEC-002#p002",
+          "relevance_score": 0.4814872741699219,
+          "title": "Handling exposed secrets and credential rotation"
+        },
+        {
+          "category": "authentication",
+          "passage_id": "DOC-AUTH-004#p001",
+          "relevance_score": 0.46831852197647095,
+          "title": "API key rotation and scope management"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.543 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0039"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.4735614003980664,
+        "fallback_used": false,
+        "intent": "billing_query",
+        "intent_confidence": 0.8731087181495342,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.4735614003980664
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.08455499983392656,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.474 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-001#p002",
+          "relevance_score": 0.7166703343391418,
+          "title": "Understanding your invoice and usage breakdown"
+        },
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-001#p004",
+          "relevance_score": 0.5226235389709473,
+          "title": "Understanding your invoice and usage breakdown"
+        },
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-001#p003",
+          "relevance_score": 0.5045198202133179,
+          "title": "Understanding your invoice and usage breakdown"
+        },
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-001#p001",
+          "relevance_score": 0.4595680236816406,
+          "title": "Understanding your invoice and usage breakdown"
+        },
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-002#p002",
+          "relevance_score": 0.39801573753356934,
+          "title": "Changing plans, and how proration is calculated"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.474 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0040"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.4735614003980664,
+        "fallback_used": false,
+        "intent": "billing_query",
+        "intent_confidence": 0.8731087181495342,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.4735614003980664
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.09102510008960962,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.474 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-001#p002",
+          "relevance_score": 0.7166703343391418,
+          "title": "Understanding your invoice and usage breakdown"
+        },
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-001#p004",
+          "relevance_score": 0.5226235389709473,
+          "title": "Understanding your invoice and usage breakdown"
+        },
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-001#p003",
+          "relevance_score": 0.5045198202133179,
+          "title": "Understanding your invoice and usage breakdown"
+        },
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-001#p001",
+          "relevance_score": 0.4595680236816406,
+          "title": "Understanding your invoice and usage breakdown"
+        },
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-002#p002",
+          "relevance_score": 0.39801573753356934,
+          "title": "Changing plans, and how proration is calculated"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.474 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0041"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.5916738484892939,
+        "fallback_used": false,
+        "intent": "configuration_help",
+        "intent_confidence": 0.8587677170141711,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.5916738484892939
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.09025090001523495,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.592 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-004#p003",
+          "relevance_score": 0.5368350148200989,
+          "title": "Configuring environment variables and secrets"
+        },
+        {
+          "category": "security",
+          "passage_id": "DOC-SEC-002#p003",
+          "relevance_score": 0.4701617956161499,
+          "title": "Handling exposed secrets and credential rotation"
+        },
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-004#p002",
+          "relevance_score": 0.4462302327156067,
+          "title": "Configuring environment variables and secrets"
+        },
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-002#p003",
+          "relevance_score": 0.4254534840583801,
+          "title": "Rolling back a failed release"
+        },
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-004#p004",
+          "relevance_score": 0.4233170747756958,
+          "title": "Configuring environment variables and secrets"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.592 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0042"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.6098788891749408,
+        "fallback_used": false,
+        "intent": "security_incident",
+        "intent_confidence": 0.8734620752990985,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "high",
+        "urgency_confidence": 0.6098788891749408
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.09444550005719066,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Intent 'security_incident' is governed by a mandatory human-review policy.",
+      "retrieval_matches": [
+        {
+          "category": "security",
+          "passage_id": "DOC-SEC-001#p002",
+          "relevance_score": 0.5814345479011536,
+          "title": "Responding to a suspected account compromise"
+        },
+        {
+          "category": "security",
+          "passage_id": "DOC-SEC-001#p004",
+          "relevance_score": 0.5585985779762268,
+          "title": "Responding to a suspected account compromise"
+        },
+        {
+          "category": "security",
+          "passage_id": "DOC-SEC-002#p002",
+          "relevance_score": 0.5048335194587708,
+          "title": "Handling exposed secrets and credential rotation"
+        },
+        {
+          "category": "security",
+          "passage_id": "DOC-SEC-002#p004",
+          "relevance_score": 0.5001920461654663,
+          "title": "Handling exposed secrets and credential rotation"
+        },
+        {
+          "category": "security",
+          "passage_id": "DOC-SEC-001#p003",
+          "relevance_score": 0.46684396266937256,
+          "title": "Responding to a suspected account compromise"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Intent 'security_incident' is governed by a mandatory human-review policy.",
+        "reason_code": "mandatory_escalation_intent"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0043"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.4780517430077107,
+        "fallback_used": false,
+        "intent": "billing_query",
+        "intent_confidence": 0.8689077709114974,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.4780517430077107
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.08686040015891194,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.478 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-001#p002",
+          "relevance_score": 0.7078134417533875,
+          "title": "Understanding your invoice and usage breakdown"
+        },
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-001#p004",
+          "relevance_score": 0.5529787540435791,
+          "title": "Understanding your invoice and usage breakdown"
+        },
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-001#p001",
+          "relevance_score": 0.505676805973053,
+          "title": "Understanding your invoice and usage breakdown"
+        },
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-001#p003",
+          "relevance_score": 0.4886436462402344,
+          "title": "Understanding your invoice and usage breakdown"
+        },
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-003#p002",
+          "relevance_score": 0.3915971517562866,
+          "title": "Usage limits, overage and spend controls"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.478 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0044"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.4265001772767683,
+        "fallback_used": false,
+        "intent": "data_export",
+        "intent_confidence": 0.8652974748365331,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.4265001772767683
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.08788809995166957,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.427 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "data",
+          "passage_id": "DOC-DATA-001#p002",
+          "relevance_score": 0.709845781326294,
+          "title": "Exporting account data and scheduled extracts"
+        },
+        {
+          "category": "data",
+          "passage_id": "DOC-DATA-001#p004",
+          "relevance_score": 0.6361883282661438,
+          "title": "Exporting account data and scheduled extracts"
+        },
+        {
+          "category": "data",
+          "passage_id": "DOC-DATA-001#p003",
+          "relevance_score": 0.6339908838272095,
+          "title": "Exporting account data and scheduled extracts"
+        },
+        {
+          "category": "security",
+          "passage_id": "DOC-SEC-001#p005",
+          "relevance_score": 0.4355146288871765,
+          "title": "Responding to a suspected account compromise"
+        },
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-002#p004",
+          "relevance_score": 0.4251035451889038,
+          "title": "Rolling back a failed release"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.427 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0045"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.48722560486480626,
+        "fallback_used": false,
+        "intent": "api_usage_question",
+        "intent_confidence": 0.7094822768659763,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.48722560486480626
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.09858170012012124,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.487 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "api",
+          "passage_id": "DOC-API-002#p002",
+          "relevance_score": 0.6812633275985718,
+          "title": "Pagination and handling large result sets"
+        },
+        {
+          "category": "api",
+          "passage_id": "DOC-API-002#p001",
+          "relevance_score": 0.5999332666397095,
+          "title": "Pagination and handling large result sets"
+        },
+        {
+          "category": "api",
+          "passage_id": "DOC-API-002#p003",
+          "relevance_score": 0.5273605585098267,
+          "title": "Pagination and handling large result sets"
+        },
+        {
+          "category": "api",
+          "passage_id": "DOC-API-002#p004",
+          "relevance_score": 0.48491930961608887,
+          "title": "Pagination and handling large result sets"
+        },
+        {
+          "category": "api",
+          "passage_id": "DOC-API-001#p002",
+          "relevance_score": 0.338225781917572,
+          "title": "Understanding API rate limits and quota tiers"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.487 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0046"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.4764636935459599,
+        "fallback_used": false,
+        "intent": "rate_limit",
+        "intent_confidence": 0.7086021084118519,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.4764636935459599
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.17317630001343787,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.476 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "api",
+          "passage_id": "DOC-API-001#p002",
+          "relevance_score": 0.5458154678344727,
+          "title": "Understanding API rate limits and quota tiers"
+        },
+        {
+          "category": "api",
+          "passage_id": "DOC-API-001#p004",
+          "relevance_score": 0.4326719641685486,
+          "title": "Understanding API rate limits and quota tiers"
+        },
+        {
+          "category": "performance",
+          "passage_id": "DOC-PERF-003#p002",
+          "relevance_score": 0.4252774119377136,
+          "title": "Database connection pool exhaustion"
+        },
+        {
+          "category": "api",
+          "passage_id": "DOC-API-002#p002",
+          "relevance_score": 0.4208303689956665,
+          "title": "Pagination and handling large result sets"
+        },
+        {
+          "category": "data",
+          "passage_id": "DOC-DATA-003#p003",
+          "relevance_score": 0.41615384817123413,
+          "title": "Data residency and regional storage"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.476 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0047"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.572540515328011,
+        "fallback_used": false,
+        "intent": "security_incident",
+        "intent_confidence": 0.8557308533375164,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "high",
+        "urgency_confidence": 0.572540515328011
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.09888499998487532,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Intent 'security_incident' is governed by a mandatory human-review policy.",
+      "retrieval_matches": [
+        {
+          "category": "security",
+          "passage_id": "DOC-SEC-001#p003",
+          "relevance_score": 0.4728052020072937,
+          "title": "Responding to a suspected account compromise"
+        },
+        {
+          "category": "security",
+          "passage_id": "DOC-SEC-002#p002",
+          "relevance_score": 0.4708758592605591,
+          "title": "Handling exposed secrets and credential rotation"
+        },
+        {
+          "category": "security",
+          "passage_id": "DOC-SEC-001#p004",
+          "relevance_score": 0.46383345127105713,
+          "title": "Responding to a suspected account compromise"
+        },
+        {
+          "category": "security",
+          "passage_id": "DOC-SEC-002#p004",
+          "relevance_score": 0.44374096393585205,
+          "title": "Handling exposed secrets and credential rotation"
+        },
+        {
+          "category": "security",
+          "passage_id": "DOC-SEC-002#p001",
+          "relevance_score": 0.3854835033416748,
+          "title": "Handling exposed secrets and credential rotation"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Intent 'security_incident' is governed by a mandatory human-review policy.",
+        "reason_code": "mandatory_escalation_intent"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0048"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.545674760892037,
+        "fallback_used": false,
+        "intent": "api_key_issue",
+        "intent_confidence": 0.8485093981699355,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.545674760892037
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.09068070002831519,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.546 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "authentication",
+          "passage_id": "DOC-AUTH-004#p004",
+          "relevance_score": 0.49171173572540283,
+          "title": "API key rotation and scope management"
+        },
+        {
+          "category": "account",
+          "passage_id": "DOC-ACCT-001#p005",
+          "relevance_score": 0.3942514657974243,
+          "title": "Managing team members, roles and permissions"
+        },
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-004#p005",
+          "relevance_score": 0.3912694454193115,
+          "title": "Configuring environment variables and secrets"
+        },
+        {
+          "category": "authentication",
+          "passage_id": "DOC-AUTH-004#p002",
+          "relevance_score": 0.38855624198913574,
+          "title": "API key rotation and scope management"
+        },
+        {
+          "category": "account",
+          "passage_id": "DOC-ACCT-001#p002",
+          "relevance_score": 0.35052669048309326,
+          "title": "Managing team members, roles and permissions"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.546 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0049"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.4614477083540591,
+        "fallback_used": false,
+        "intent": "onboarding",
+        "intent_confidence": 0.8585427424316787,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.4614477083540591
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.08694379986263812,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.461 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "onboarding",
+          "passage_id": "DOC-ONB-001#p004",
+          "relevance_score": 0.6450986266136169,
+          "title": "First deployment: a walkthrough"
+        },
+        {
+          "category": "onboarding",
+          "passage_id": "DOC-ONB-001#p002",
+          "relevance_score": 0.5019494295120239,
+          "title": "First deployment: a walkthrough"
+        },
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-001#p004",
+          "relevance_score": 0.43836820125579834,
+          "title": "Container deployments failing during the health check phase"
+        },
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-001#p001",
+          "relevance_score": 0.40789341926574707,
+          "title": "Container deployments failing during the health check phase"
+        },
+        {
+          "category": "onboarding",
+          "passage_id": "DOC-ONB-001#p001",
+          "relevance_score": 0.3956109285354614,
+          "title": "First deployment: a walkthrough"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.461 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0050"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.4690603161819742,
+        "fallback_used": false,
+        "intent": "integration_help",
+        "intent_confidence": 0.8079789867652883,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.4690603161819742
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.08924639993347228,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.469 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "integration",
+          "passage_id": "DOC-INT-002#p002",
+          "relevance_score": 0.5747607946395874,
+          "title": "Third party monitoring and log forwarding"
+        },
+        {
+          "category": "integration",
+          "passage_id": "DOC-INT-002#p004",
+          "relevance_score": 0.5202468633651733,
+          "title": "Third party monitoring and log forwarding"
+        },
+        {
+          "category": "integration",
+          "passage_id": "DOC-INT-002#p003",
+          "relevance_score": 0.5113955140113831,
+          "title": "Third party monitoring and log forwarding"
+        },
+        {
+          "category": "integration",
+          "passage_id": "DOC-INT-002#p005",
+          "relevance_score": 0.4363269805908203,
+          "title": "Third party monitoring and log forwarding"
+        },
+        {
+          "category": "integration",
+          "passage_id": "DOC-INT-002#p001",
+          "relevance_score": 0.38498586416244507,
+          "title": "Third party monitoring and log forwarding"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.469 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0051"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.4309965545447602,
+        "fallback_used": false,
+        "intent": "authentication_failure",
+        "intent_confidence": 0.8654807508237955,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.4309965545447602
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.09517429978586733,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.431 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "authentication",
+          "passage_id": "DOC-AUTH-001#p002",
+          "relevance_score": 0.46644365787506104,
+          "title": "Resolving invalid credential errors on login"
+        },
+        {
+          "category": "authentication",
+          "passage_id": "DOC-AUTH-001#p004",
+          "relevance_score": 0.43265271186828613,
+          "title": "Resolving invalid credential errors on login"
+        },
+        {
+          "category": "authentication",
+          "passage_id": "DOC-AUTH-001#p001",
+          "relevance_score": 0.4270423650741577,
+          "title": "Resolving invalid credential errors on login"
+        },
+        {
+          "category": "authentication",
+          "passage_id": "DOC-AUTH-001#p003",
+          "relevance_score": 0.423991322517395,
+          "title": "Resolving invalid credential errors on login"
+        },
+        {
+          "category": "authentication",
+          "passage_id": "DOC-AUTH-002#p004",
+          "relevance_score": 0.3802189826965332,
+          "title": "Multi-factor authentication setup and recovery"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.431 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0052"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.4780517430077107,
+        "fallback_used": false,
+        "intent": "billing_query",
+        "intent_confidence": 0.8689077709114974,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.4780517430077107
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.10845499997958541,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.478 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-001#p002",
+          "relevance_score": 0.7078134417533875,
+          "title": "Understanding your invoice and usage breakdown"
+        },
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-001#p004",
+          "relevance_score": 0.5529787540435791,
+          "title": "Understanding your invoice and usage breakdown"
+        },
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-001#p001",
+          "relevance_score": 0.505676805973053,
+          "title": "Understanding your invoice and usage breakdown"
+        },
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-001#p003",
+          "relevance_score": 0.4886436462402344,
+          "title": "Understanding your invoice and usage breakdown"
+        },
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-003#p002",
+          "relevance_score": 0.3915971517562866,
+          "title": "Usage limits, overage and spend controls"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.478 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0053"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.4917153910573157,
+        "fallback_used": false,
+        "intent": "data_residency",
+        "intent_confidence": 0.8698851443341723,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.4917153910573157
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.10604580002836883,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.492 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "data",
+          "passage_id": "DOC-DATA-003#p002",
+          "relevance_score": 0.5301336050033569,
+          "title": "Data residency and regional storage"
+        },
+        {
+          "category": "data",
+          "passage_id": "DOC-DATA-003#p005",
+          "relevance_score": 0.4543580412864685,
+          "title": "Data residency and regional storage"
+        },
+        {
+          "category": "data",
+          "passage_id": "DOC-DATA-003#p001",
+          "relevance_score": 0.4459647536277771,
+          "title": "Data residency and regional storage"
+        },
+        {
+          "category": "data",
+          "passage_id": "DOC-DATA-001#p005",
+          "relevance_score": 0.3647000789642334,
+          "title": "Exporting account data and scheduled extracts"
+        },
+        {
+          "category": "data",
+          "passage_id": "DOC-DATA-003#p004",
+          "relevance_score": 0.3539156913757324,
+          "title": "Data residency and regional storage"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.492 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0054"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.5800693534964023,
+        "fallback_used": false,
+        "intent": "integration_help",
+        "intent_confidence": 0.8570551306373323,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.5800693534964023
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.09789220010861754,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.580 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "integration",
+          "passage_id": "DOC-INT-001#p004",
+          "relevance_score": 0.5385426878929138,
+          "title": "Connecting continuous integration pipelines"
+        },
+        {
+          "category": "integration",
+          "passage_id": "DOC-INT-001#p003",
+          "relevance_score": 0.4408826231956482,
+          "title": "Connecting continuous integration pipelines"
+        },
+        {
+          "category": "integration",
+          "passage_id": "DOC-INT-001#p001",
+          "relevance_score": 0.40570318698883057,
+          "title": "Connecting continuous integration pipelines"
+        },
+        {
+          "category": "integration",
+          "passage_id": "DOC-INT-001#p002",
+          "relevance_score": 0.3563084602355957,
+          "title": "Connecting continuous integration pipelines"
+        },
+        {
+          "category": "authentication",
+          "passage_id": "DOC-AUTH-004#p004",
+          "relevance_score": 0.3233790397644043,
+          "title": "API key rotation and scope management"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.580 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0055"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.4071775399586115,
+        "fallback_used": false,
+        "intent": "deployment_failure",
+        "intent_confidence": 0.8768220922706513,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "high",
+        "urgency_confidence": 0.4071775399586115
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.0933532000053674,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.407 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-001#p002",
+          "relevance_score": 0.6686594486236572,
+          "title": "Container deployments failing during the health check phase"
+        },
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-003#p002",
+          "relevance_score": 0.659919798374176,
+          "title": "Build failures caused by dependency resolution"
+        },
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-001#p001",
+          "relevance_score": 0.6063995361328125,
+          "title": "Container deployments failing during the health check phase"
+        },
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-001#p003",
+          "relevance_score": 0.5985093116760254,
+          "title": "Container deployments failing during the health check phase"
+        },
+        {
+          "category": "integration",
+          "passage_id": "DOC-INT-001#p002",
+          "relevance_score": 0.5693780183792114,
+          "title": "Connecting continuous integration pipelines"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.407 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0056"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.4719800441881139,
+        "fallback_used": false,
+        "intent": "deployment_failure",
+        "intent_confidence": 0.8739746054494696,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.4719800441881139
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.09799340018071234,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.472 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-001#p002",
+          "relevance_score": 0.8414090275764465,
+          "title": "Container deployments failing during the health check phase"
+        },
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-001#p003",
+          "relevance_score": 0.6246840953826904,
+          "title": "Container deployments failing during the health check phase"
+        },
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-001#p004",
+          "relevance_score": 0.6195710897445679,
+          "title": "Container deployments failing during the health check phase"
+        },
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-001#p001",
+          "relevance_score": 0.5969301462173462,
+          "title": "Container deployments failing during the health check phase"
+        },
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-001#p005",
+          "relevance_score": 0.5021292567253113,
+          "title": "Container deployments failing during the health check phase"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.472 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0057"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.48497045270692546,
+        "fallback_used": false,
+        "intent": "api_key_issue",
+        "intent_confidence": 0.8635236266941764,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.48497045270692546
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.09210070013068616,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.485 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "authentication",
+          "passage_id": "DOC-AUTH-004#p002",
+          "relevance_score": 0.7081974148750305,
+          "title": "API key rotation and scope management"
+        },
+        {
+          "category": "authentication",
+          "passage_id": "DOC-AUTH-004#p004",
+          "relevance_score": 0.622857391834259,
+          "title": "API key rotation and scope management"
+        },
+        {
+          "category": "authentication",
+          "passage_id": "DOC-AUTH-004#p003",
+          "relevance_score": 0.5435752272605896,
+          "title": "API key rotation and scope management"
+        },
+        {
+          "category": "integration",
+          "passage_id": "DOC-INT-001#p005",
+          "relevance_score": 0.48390060663223267,
+          "title": "Connecting continuous integration pipelines"
+        },
+        {
+          "category": "authentication",
+          "passage_id": "DOC-AUTH-004#p001",
+          "relevance_score": 0.47054946422576904,
+          "title": "API key rotation and scope management"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.485 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0058"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.6095309271499078,
+        "fallback_used": false,
+        "intent": "configuration_help",
+        "intent_confidence": 0.8779961049322881,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.6095309271499078
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.10091150016523898,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.610 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-004#p001",
+          "relevance_score": 0.643479585647583,
+          "title": "Configuring environment variables and secrets"
+        },
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-004#p002",
+          "relevance_score": 0.6231155395507812,
+          "title": "Configuring environment variables and secrets"
+        },
+        {
+          "category": "security",
+          "passage_id": "DOC-SEC-002#p003",
+          "relevance_score": 0.5784026980400085,
+          "title": "Handling exposed secrets and credential rotation"
+        },
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-004#p004",
+          "relevance_score": 0.5495314598083496,
+          "title": "Configuring environment variables and secrets"
+        },
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-004#p005",
+          "relevance_score": 0.5199313759803772,
+          "title": "Configuring environment variables and secrets"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.610 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0059"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.3865933699761895,
+        "fallback_used": false,
+        "intent": "webhook_issue",
+        "intent_confidence": 0.8676544823338833,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.3865933699761895
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.09804770001210272,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.387 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "api",
+          "passage_id": "DOC-API-003#p002",
+          "relevance_score": 0.8550601601600647,
+          "title": "Webhook delivery, retries and signature verification"
+        },
+        {
+          "category": "api",
+          "passage_id": "DOC-API-003#p001",
+          "relevance_score": 0.744145929813385,
+          "title": "Webhook delivery, retries and signature verification"
+        },
+        {
+          "category": "api",
+          "passage_id": "DOC-API-003#p004",
+          "relevance_score": 0.7249797582626343,
+          "title": "Webhook delivery, retries and signature verification"
+        },
+        {
+          "category": "api",
+          "passage_id": "DOC-API-003#p003",
+          "relevance_score": 0.6037100553512573,
+          "title": "Webhook delivery, retries and signature verification"
+        },
+        {
+          "category": "authentication",
+          "passage_id": "DOC-AUTH-003#p003",
+          "relevance_score": 0.3855574131011963,
+          "title": "Single sign-on configuration with SAML providers"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.387 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0060"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.3865933699761895,
+        "fallback_used": false,
+        "intent": "webhook_issue",
+        "intent_confidence": 0.8676544823338833,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.3865933699761895
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.09518720000050962,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.387 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "api",
+          "passage_id": "DOC-API-003#p002",
+          "relevance_score": 0.8550601601600647,
+          "title": "Webhook delivery, retries and signature verification"
+        },
+        {
+          "category": "api",
+          "passage_id": "DOC-API-003#p001",
+          "relevance_score": 0.744145929813385,
+          "title": "Webhook delivery, retries and signature verification"
+        },
+        {
+          "category": "api",
+          "passage_id": "DOC-API-003#p004",
+          "relevance_score": 0.7249797582626343,
+          "title": "Webhook delivery, retries and signature verification"
+        },
+        {
+          "category": "api",
+          "passage_id": "DOC-API-003#p003",
+          "relevance_score": 0.6037100553512573,
+          "title": "Webhook delivery, retries and signature verification"
+        },
+        {
+          "category": "authentication",
+          "passage_id": "DOC-AUTH-003#p003",
+          "relevance_score": 0.3855574131011963,
+          "title": "Single sign-on configuration with SAML providers"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.387 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0061"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.5030109669575645,
+        "fallback_used": false,
+        "intent": "integration_help",
+        "intent_confidence": 0.8714272608571153,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.5030109669575645
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.09782710019499063,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.503 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "integration",
+          "passage_id": "DOC-INT-002#p002",
+          "relevance_score": 0.4865528345108032,
+          "title": "Third party monitoring and log forwarding"
+        },
+        {
+          "category": "integration",
+          "passage_id": "DOC-INT-002#p003",
+          "relevance_score": 0.4660460948944092,
+          "title": "Third party monitoring and log forwarding"
+        },
+        {
+          "category": "integration",
+          "passage_id": "DOC-INT-001#p001",
+          "relevance_score": 0.4501713514328003,
+          "title": "Connecting continuous integration pipelines"
+        },
+        {
+          "category": "integration",
+          "passage_id": "DOC-INT-002#p005",
+          "relevance_score": 0.4454152584075928,
+          "title": "Third party monitoring and log forwarding"
+        },
+        {
+          "category": "integration",
+          "passage_id": "DOC-INT-002#p004",
+          "relevance_score": 0.44071656465530396,
+          "title": "Third party monitoring and log forwarding"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.503 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0062"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.3851022505530047,
+        "fallback_used": false,
+        "intent": "account_access",
+        "intent_confidence": 0.867611793659079,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "high",
+        "urgency_confidence": 0.3851022505530047
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.0977630999404937,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.385 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "account",
+          "passage_id": "DOC-ACCT-001#p002",
+          "relevance_score": 0.5928237438201904,
+          "title": "Managing team members, roles and permissions"
+        },
+        {
+          "category": "account",
+          "passage_id": "DOC-ACCT-001#p003",
+          "relevance_score": 0.5207972526550293,
+          "title": "Managing team members, roles and permissions"
+        },
+        {
+          "category": "account",
+          "passage_id": "DOC-ACCT-001#p001",
+          "relevance_score": 0.4030594229698181,
+          "title": "Managing team members, roles and permissions"
+        },
+        {
+          "category": "account",
+          "passage_id": "DOC-ACCT-001#p004",
+          "relevance_score": 0.353298544883728,
+          "title": "Managing team members, roles and permissions"
+        },
+        {
+          "category": "security",
+          "passage_id": "DOC-SEC-002#p004",
+          "relevance_score": 0.3445204496383667,
+          "title": "Handling exposed secrets and credential rotation"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.385 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0063"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.5694948640985646,
+        "fallback_used": false,
+        "intent": "api_usage_question",
+        "intent_confidence": 0.8679910897383096,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.5694948640985646
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.09525960008613765,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.569 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "api",
+          "passage_id": "DOC-API-002#p004",
+          "relevance_score": 0.6609684228897095,
+          "title": "Pagination and handling large result sets"
+        },
+        {
+          "category": "api",
+          "passage_id": "DOC-API-002#p002",
+          "relevance_score": 0.4838581681251526,
+          "title": "Pagination and handling large result sets"
+        },
+        {
+          "category": "data",
+          "passage_id": "DOC-DATA-001#p003",
+          "relevance_score": 0.4439101219177246,
+          "title": "Exporting account data and scheduled extracts"
+        },
+        {
+          "category": "api",
+          "passage_id": "DOC-API-002#p003",
+          "relevance_score": 0.4339330792427063,
+          "title": "Pagination and handling large result sets"
+        },
+        {
+          "category": "api",
+          "passage_id": "DOC-API-001#p004",
+          "relevance_score": 0.42241865396499634,
+          "title": "Understanding API rate limits and quota tiers"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.569 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0064"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.4655348484918426,
+        "fallback_used": false,
+        "intent": "billing_query",
+        "intent_confidence": 0.8684968678840667,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.4655348484918426
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.09162490000016987,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.466 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-001#p002",
+          "relevance_score": 0.7732201814651489,
+          "title": "Understanding your invoice and usage breakdown"
+        },
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-001#p004",
+          "relevance_score": 0.6775509715080261,
+          "title": "Understanding your invoice and usage breakdown"
+        },
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-001#p003",
+          "relevance_score": 0.6271075010299683,
+          "title": "Understanding your invoice and usage breakdown"
+        },
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-001#p001",
+          "relevance_score": 0.5005253553390503,
+          "title": "Understanding your invoice and usage breakdown"
+        },
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-002#p003",
+          "relevance_score": 0.47840791940689087,
+          "title": "Changing plans, and how proration is calculated"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.466 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0065"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.5040558669067357,
+        "fallback_used": false,
+        "intent": "data_residency",
+        "intent_confidence": 0.8647157973164749,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.5040558669067357
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.0986121001187712,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.504 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "data",
+          "passage_id": "DOC-DATA-003#p002",
+          "relevance_score": 0.5478163957595825,
+          "title": "Data residency and regional storage"
+        },
+        {
+          "category": "data",
+          "passage_id": "DOC-DATA-003#p004",
+          "relevance_score": 0.5225454568862915,
+          "title": "Data residency and regional storage"
+        },
+        {
+          "category": "data",
+          "passage_id": "DOC-DATA-003#p001",
+          "relevance_score": 0.49632447957992554,
+          "title": "Data residency and regional storage"
+        },
+        {
+          "category": "data",
+          "passage_id": "DOC-DATA-003#p005",
+          "relevance_score": 0.49277663230895996,
+          "title": "Data residency and regional storage"
+        },
+        {
+          "category": "data",
+          "passage_id": "DOC-DATA-003#p003",
+          "relevance_score": 0.4051693081855774,
+          "title": "Data residency and regional storage"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.504 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0066"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.5512648006607931,
+        "fallback_used": false,
+        "intent": "security_incident",
+        "intent_confidence": 0.8663626701287184,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "high",
+        "urgency_confidence": 0.5512648006607931
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.1016763998195529,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Intent 'security_incident' is governed by a mandatory human-review policy.",
+      "retrieval_matches": [
+        {
+          "category": "security",
+          "passage_id": "DOC-SEC-001#p002",
+          "relevance_score": 0.6852176189422607,
+          "title": "Responding to a suspected account compromise"
+        },
+        {
+          "category": "security",
+          "passage_id": "DOC-SEC-003#p002",
+          "relevance_score": 0.4997122287750244,
+          "title": "Audit logging and compliance evidence"
+        },
+        {
+          "category": "security",
+          "passage_id": "DOC-SEC-001#p005",
+          "relevance_score": 0.4727529287338257,
+          "title": "Responding to a suspected account compromise"
+        },
+        {
+          "category": "security",
+          "passage_id": "DOC-SEC-003#p005",
+          "relevance_score": 0.4630558490753174,
+          "title": "Audit logging and compliance evidence"
+        },
+        {
+          "category": "security",
+          "passage_id": "DOC-SEC-001#p004",
+          "relevance_score": 0.4448774456977844,
+          "title": "Responding to a suspected account compromise"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Intent 'security_incident' is governed by a mandatory human-review policy.",
+        "reason_code": "mandatory_escalation_intent"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0067"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.5401554807478876,
+        "fallback_used": false,
+        "intent": "security_incident",
+        "intent_confidence": 0.8563785387292739,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "high",
+        "urgency_confidence": 0.5401554807478876
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.10303880018182099,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Intent 'security_incident' is governed by a mandatory human-review policy.",
+      "retrieval_matches": [
+        {
+          "category": "security",
+          "passage_id": "DOC-SEC-001#p002",
+          "relevance_score": 0.7219102382659912,
+          "title": "Responding to a suspected account compromise"
+        },
+        {
+          "category": "security",
+          "passage_id": "DOC-SEC-003#p002",
+          "relevance_score": 0.5124782919883728,
+          "title": "Audit logging and compliance evidence"
+        },
+        {
+          "category": "security",
+          "passage_id": "DOC-SEC-001#p005",
+          "relevance_score": 0.478557288646698,
+          "title": "Responding to a suspected account compromise"
+        },
+        {
+          "category": "security",
+          "passage_id": "DOC-SEC-003#p005",
+          "relevance_score": 0.47738373279571533,
+          "title": "Audit logging and compliance evidence"
+        },
+        {
+          "category": "security",
+          "passage_id": "DOC-SEC-003#p003",
+          "relevance_score": 0.45376259088516235,
+          "title": "Audit logging and compliance evidence"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Intent 'security_incident' is governed by a mandatory human-review policy.",
+        "reason_code": "mandatory_escalation_intent"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0068"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.5916738484892939,
+        "fallback_used": false,
+        "intent": "configuration_help",
+        "intent_confidence": 0.8587677170141711,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.5916738484892939
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.08125209994614124,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.592 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-004#p003",
+          "relevance_score": 0.5368350148200989,
+          "title": "Configuring environment variables and secrets"
+        },
+        {
+          "category": "security",
+          "passage_id": "DOC-SEC-002#p003",
+          "relevance_score": 0.4701617956161499,
+          "title": "Handling exposed secrets and credential rotation"
+        },
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-004#p002",
+          "relevance_score": 0.4462302327156067,
+          "title": "Configuring environment variables and secrets"
+        },
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-002#p003",
+          "relevance_score": 0.4254534840583801,
+          "title": "Rolling back a failed release"
+        },
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-004#p004",
+          "relevance_score": 0.4233170747756958,
+          "title": "Configuring environment variables and secrets"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.592 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0069"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.4244464506064141,
+        "fallback_used": false,
+        "intent": "sso_configuration",
+        "intent_confidence": 0.8752632168838056,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.4244464506064141
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.09075249987654388,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.424 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "authentication",
+          "passage_id": "DOC-AUTH-003#p002",
+          "relevance_score": 0.6019769906997681,
+          "title": "Single sign-on configuration with SAML providers"
+        },
+        {
+          "category": "authentication",
+          "passage_id": "DOC-AUTH-003#p001",
+          "relevance_score": 0.5519505143165588,
+          "title": "Single sign-on configuration with SAML providers"
+        },
+        {
+          "category": "authentication",
+          "passage_id": "DOC-AUTH-003#p004",
+          "relevance_score": 0.5399398803710938,
+          "title": "Single sign-on configuration with SAML providers"
+        },
+        {
+          "category": "authentication",
+          "passage_id": "DOC-AUTH-002#p001",
+          "relevance_score": 0.40135622024536133,
+          "title": "Multi-factor authentication setup and recovery"
+        },
+        {
+          "category": "authentication",
+          "passage_id": "DOC-AUTH-001#p003",
+          "relevance_score": 0.34832763671875,
+          "title": "Resolving invalid credential errors on login"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.424 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0070"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.48100895667788174,
+        "fallback_used": false,
+        "intent": "quota_or_overage",
+        "intent_confidence": 0.8619653078812921,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.48100895667788174
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.08845519996248186,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.481 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-003#p002",
+          "relevance_score": 0.7066395282745361,
+          "title": "Usage limits, overage and spend controls"
+        },
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-003#p004",
+          "relevance_score": 0.6545117497444153,
+          "title": "Usage limits, overage and spend controls"
+        },
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-003#p003",
+          "relevance_score": 0.5577425956726074,
+          "title": "Usage limits, overage and spend controls"
+        },
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-003#p001",
+          "relevance_score": 0.5214434862136841,
+          "title": "Usage limits, overage and spend controls"
+        },
+        {
+          "category": "api",
+          "passage_id": "DOC-API-001#p004",
+          "relevance_score": 0.42479515075683594,
+          "title": "Understanding API rate limits and quota tiers"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.481 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0071"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.48539907804844024,
+        "fallback_used": false,
+        "intent": "billing_query",
+        "intent_confidence": 0.8757993479398981,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.48539907804844024
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.10816709999926388,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.485 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-001#p002",
+          "relevance_score": 0.7152462601661682,
+          "title": "Understanding your invoice and usage breakdown"
+        },
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-001#p004",
+          "relevance_score": 0.49194401502609253,
+          "title": "Understanding your invoice and usage breakdown"
+        },
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-001#p001",
+          "relevance_score": 0.48519110679626465,
+          "title": "Understanding your invoice and usage breakdown"
+        },
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-001#p003",
+          "relevance_score": 0.4457241892814636,
+          "title": "Understanding your invoice and usage breakdown"
+        },
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-002#p003",
+          "relevance_score": 0.4335198402404785,
+          "title": "Changing plans, and how proration is calculated"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.485 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0072"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.47956633322111775,
+        "fallback_used": false,
+        "intent": "billing_query",
+        "intent_confidence": 0.8091043949127146,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.47956633322111775
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.09729290008544922,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.480 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-001#p002",
+          "relevance_score": 0.7372739911079407,
+          "title": "Understanding your invoice and usage breakdown"
+        },
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-001#p003",
+          "relevance_score": 0.501356303691864,
+          "title": "Understanding your invoice and usage breakdown"
+        },
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-001#p004",
+          "relevance_score": 0.49659597873687744,
+          "title": "Understanding your invoice and usage breakdown"
+        },
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-001#p001",
+          "relevance_score": 0.47179490327835083,
+          "title": "Understanding your invoice and usage breakdown"
+        },
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-002#p003",
+          "relevance_score": 0.46702295541763306,
+          "title": "Changing plans, and how proration is calculated"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.480 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0073"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.5750040658665924,
+        "fallback_used": false,
+        "intent": "account_access",
+        "intent_confidence": 0.8304266499624191,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.5750040658665924
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.09683310007676482,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.575 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "account",
+          "passage_id": "DOC-ACCT-001#p004",
+          "relevance_score": 0.4980762004852295,
+          "title": "Managing team members, roles and permissions"
+        },
+        {
+          "category": "account",
+          "passage_id": "DOC-ACCT-001#p002",
+          "relevance_score": 0.48393523693084717,
+          "title": "Managing team members, roles and permissions"
+        },
+        {
+          "category": "account",
+          "passage_id": "DOC-ACCT-001#p003",
+          "relevance_score": 0.46436774730682373,
+          "title": "Managing team members, roles and permissions"
+        },
+        {
+          "category": "account",
+          "passage_id": "DOC-ACCT-001#p001",
+          "relevance_score": 0.41841423511505127,
+          "title": "Managing team members, roles and permissions"
+        },
+        {
+          "category": "security",
+          "passage_id": "DOC-SEC-001#p004",
+          "relevance_score": 0.351992130279541,
+          "title": "Responding to a suspected account compromise"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.575 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0074"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.5366682402548872,
+        "fallback_used": false,
+        "intent": "api_key_issue",
+        "intent_confidence": 0.8597496164277484,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.5366682402548872
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.10151409986428916,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.537 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "authentication",
+          "passage_id": "DOC-AUTH-004#p002",
+          "relevance_score": 0.585319995880127,
+          "title": "API key rotation and scope management"
+        },
+        {
+          "category": "security",
+          "passage_id": "DOC-SEC-001#p003",
+          "relevance_score": 0.4571281671524048,
+          "title": "Responding to a suspected account compromise"
+        },
+        {
+          "category": "authentication",
+          "passage_id": "DOC-AUTH-004#p004",
+          "relevance_score": 0.4552151560783386,
+          "title": "API key rotation and scope management"
+        },
+        {
+          "category": "authentication",
+          "passage_id": "DOC-AUTH-004#p003",
+          "relevance_score": 0.44510388374328613,
+          "title": "API key rotation and scope management"
+        },
+        {
+          "category": "authentication",
+          "passage_id": "DOC-AUTH-004#p001",
+          "relevance_score": 0.3959195017814636,
+          "title": "API key rotation and scope management"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.537 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0075"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.507405413665435,
+        "fallback_used": false,
+        "intent": "data_residency",
+        "intent_confidence": 0.8717003316258669,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.507405413665435
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.11574100004509091,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.507 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "data",
+          "passage_id": "DOC-DATA-003#p002",
+          "relevance_score": 0.5185486078262329,
+          "title": "Data residency and regional storage"
+        },
+        {
+          "category": "data",
+          "passage_id": "DOC-DATA-003#p005",
+          "relevance_score": 0.47679251432418823,
+          "title": "Data residency and regional storage"
+        },
+        {
+          "category": "data",
+          "passage_id": "DOC-DATA-003#p001",
+          "relevance_score": 0.4652237892150879,
+          "title": "Data residency and regional storage"
+        },
+        {
+          "category": "data",
+          "passage_id": "DOC-DATA-003#p004",
+          "relevance_score": 0.44262969493865967,
+          "title": "Data residency and regional storage"
+        },
+        {
+          "category": "data",
+          "passage_id": "DOC-DATA-003#p003",
+          "relevance_score": 0.37587469816207886,
+          "title": "Data residency and regional storage"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.507 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0076"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.5078437017265522,
+        "fallback_used": false,
+        "intent": "billing_query",
+        "intent_confidence": 0.8320936656097014,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.5078437017265522
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.10635939985513687,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.508 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-001#p002",
+          "relevance_score": 0.6606022119522095,
+          "title": "Understanding your invoice and usage breakdown"
+        },
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-001#p003",
+          "relevance_score": 0.4928128719329834,
+          "title": "Understanding your invoice and usage breakdown"
+        },
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-001#p004",
+          "relevance_score": 0.48722368478775024,
+          "title": "Understanding your invoice and usage breakdown"
+        },
+        {
+          "category": "account",
+          "passage_id": "DOC-ACCT-002#p002",
+          "relevance_score": 0.44064146280288696,
+          "title": "Organisation setup and project structure"
+        },
+        {
+          "category": "billing",
+          "passage_id": "DOC-BILL-001#p005",
+          "relevance_score": 0.4189886450767517,
+          "title": "Understanding your invoice and usage breakdown"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.508 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0077"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.5686767048509956,
+        "fallback_used": false,
+        "intent": "database_issue",
+        "intent_confidence": 0.8482246780713237,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.5686767048509956
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.105400700122118,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.569 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "performance",
+          "passage_id": "DOC-PERF-003#p003",
+          "relevance_score": 0.4746318459510803,
+          "title": "Database connection pool exhaustion"
+        },
+        {
+          "category": "data",
+          "passage_id": "DOC-DATA-002#p004",
+          "relevance_score": 0.4503355026245117,
+          "title": "Backups, retention and point-in-time restore"
+        },
+        {
+          "category": "performance",
+          "passage_id": "DOC-PERF-003#p001",
+          "relevance_score": 0.43273282051086426,
+          "title": "Database connection pool exhaustion"
+        },
+        {
+          "category": "performance",
+          "passage_id": "DOC-PERF-003#p002",
+          "relevance_score": 0.42808592319488525,
+          "title": "Database connection pool exhaustion"
+        },
+        {
+          "category": "data",
+          "passage_id": "DOC-DATA-002#p002",
+          "relevance_score": 0.4127497673034668,
+          "title": "Backups, retention and point-in-time restore"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.569 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0078"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.45257161035351245,
+        "fallback_used": false,
+        "intent": "data_residency",
+        "intent_confidence": 0.8711856726355635,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "medium",
+        "urgency_confidence": 0.45257161035351245
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.11832759995013475,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.453 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "data",
+          "passage_id": "DOC-DATA-003#p002",
+          "relevance_score": 0.5425854921340942,
+          "title": "Data residency and regional storage"
+        },
+        {
+          "category": "data",
+          "passage_id": "DOC-DATA-003#p001",
+          "relevance_score": 0.4864703416824341,
+          "title": "Data residency and regional storage"
+        },
+        {
+          "category": "data",
+          "passage_id": "DOC-DATA-003#p005",
+          "relevance_score": 0.4659126400947571,
+          "title": "Data residency and regional storage"
+        },
+        {
+          "category": "data",
+          "passage_id": "DOC-DATA-003#p004",
+          "relevance_score": 0.43171370029449463,
+          "title": "Data residency and regional storage"
+        },
+        {
+          "category": "data",
+          "passage_id": "DOC-DATA-001#p005",
+          "relevance_score": 0.36588048934936523,
+          "title": "Exporting account data and scheduled extracts"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.453 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0079"
+    },
+    {
+      "answer_text": null,
+      "cited_passage_ids": [],
+      "classification": {
+        "combined_confidence": 0.44114909256704166,
+        "fallback_used": false,
+        "intent": "deployment_failure",
+        "intent_confidence": 0.8139335938838393,
+        "model_name": "tfidf-logistic-regression",
+        "model_version": "tfidf-logreg-2026-10-31T144442.554599+0000",
+        "urgency": "high",
+        "urgency_confidence": 0.44114909256704166
+      },
+      "error_type": null,
+      "guardrails": null,
+      "latency_seconds": 0.11547400010749698,
+      "may_send_response": false,
+      "outcome": "escalate",
+      "reason": "Classification confidence 0.441 is below the configured threshold 0.800.",
+      "retrieval_matches": [
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-003#p001",
+          "relevance_score": 0.7592406868934631,
+          "title": "Build failures caused by dependency resolution"
+        },
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-003#p002",
+          "relevance_score": 0.6789340972900391,
+          "title": "Build failures caused by dependency resolution"
+        },
+        {
+          "category": "onboarding",
+          "passage_id": "DOC-ONB-001#p003",
+          "relevance_score": 0.5859267711639404,
+          "title": "First deployment: a walkthrough"
+        },
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-003#p004",
+          "relevance_score": 0.5797382593154907,
+          "title": "Build failures caused by dependency resolution"
+        },
+        {
+          "category": "deployment",
+          "passage_id": "DOC-DEPLOY-003#p003",
+          "relevance_score": 0.5566600561141968,
+          "title": "Build failures caused by dependency resolution"
+        }
+      ],
+      "route": {
+        "action": "escalate",
+        "reason": "Classification confidence 0.441 is below the configured threshold 0.800.",
+        "reason_code": "low_confidence"
+      },
+      "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+      "ticket_id": "VAL-0080"
+    }
+  ],
+  "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+  "schema_version": 1,
+  "startup": {
+    "classifier_artifact": "C:\\Users\\BHARATH KUMAR\\Downloads\\FDE Capstone\\Capstone\\Customer_Success_Agent\\artifacts\\ticket_classifier.joblib",
+    "configuration": {
+      "chroma_path": "C:\\Users\\BHARATH KUMAR\\Downloads\\FDE Capstone\\Capstone\\Customer_Success_Agent\\storage\\chroma",
+      "confidence_threshold": 0.8,
+      "data_dir": "C:\\Users\\BHARATH KUMAR\\Downloads\\FDE Capstone\\Capstone\\Customer_Success_Agent\\data",
+      "database_path": "C:\\Users\\BHARATH KUMAR\\Downloads\\FDE Capstone\\Capstone\\Customer_Success_Agent\\storage\\decisions.db",
+      "database_url": "sqlite:///./storage/decisions.db",
+      "embedding_model": "all-MiniLM-L6-v2",
+      "evaluation_results_dir": "C:\\Users\\BHARATH KUMAR\\Downloads\\FDE Capstone\\Capstone\\Customer_Success_Agent\\evaluation\\results",
+      "kill_switch": false,
+      "log_level": "INFO",
+      "max_retries": 3,
+      "model_name": "meta-llama/llama-3.1-8b-instruct",
+      "openrouter_api_key_configured": true,
+      "openrouter_base_url": "https://openrouter.ai/api/v1",
+      "project_root": "C:\\Users\\BHARATH KUMAR\\Downloads\\FDE Capstone\\Capstone\\Customer_Success_Agent",
+      "request_timeout_seconds": 30.0,
+      "retrieval_threshold": 0.4,
+      "storage_dir": "C:\\Users\\BHARATH KUMAR\\Downloads\\FDE Capstone\\Capstone\\Customer_Success_Agent\\storage"
+    },
+    "documentation_passage_count": 145,
+    "documentation_path": "C:\\Users\\BHARATH KUMAR\\Downloads\\FDE Capstone\\Capstone\\Customer_Success_Agent\\data\\documentation.json",
+    "index": null
+  },
+  "summary": {
+    "auto_responded": 0,
+    "blocked": 0,
+    "escalated": 80,
+    "ingestion_failures": 0,
+    "normalized_records": 80,
+    "processed_results": 80,
+    "total_input_records": 80
+  }
+}

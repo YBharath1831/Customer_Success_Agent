@@ -1,0 +1,31 @@
+﻿[
+    {
+        "ticket_id":  "VAL-0001",
+        "channel":  "forum",
+        "subject":  "Need to rotate an exposed key",
+        "body":  "One of our production keys started returning 401 at around yesterday morning without any change on our side. Other keys against the same account are still working.",
+        "received_at":  "2026-03-02T08:32:00Z",
+        "customer_id":  "CUST-1215",
+        "customer_name":  "Dilnoza Karimova",
+        "customer_tier":  "business",
+        "customer_region":  "asia_pacific",
+        "language_fluency":  "fluent",
+        "labels":  {
+                       "intent":  "api_key_issue",
+                       "urgency":  "medium",
+                       "expected_route":  "auto_respond",
+                       "answerable_from_docs":  true,
+                       "expected_doc_ids":  [
+                                                "DOC-AUTH-004"
+                                            ],
+                       "must_not_auto_respond":  false
+                   },
+        "history":  {
+                        "first_contact_resolution":  true,
+                        "resolution_time_minutes":  52,
+                        "csat_rating":  4,
+                        "escalated":  false,
+                        "repeat_contact":  false
+                    }
+    }
+]

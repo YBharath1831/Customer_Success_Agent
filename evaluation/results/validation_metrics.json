@@ -1,0 +1,4199 @@
+{
+  "checks": {
+    "all_auto_responses_have_citations": true,
+    "all_labelled_tickets_have_results": true,
+    "all_started_tickets_completed": true,
+    "labelled_ticket_count": 80,
+    "no_unsafe_auto_responses": true,
+    "one_terminal_outcome_per_started_ticket": true
+  },
+  "dataset": {
+    "extra_result_ids": [],
+    "labelled_records": 80,
+    "matched_results": 80,
+    "missing_result_ids": [],
+    "total_records": 80,
+    "unlabelled_records": 0,
+    "unlabelled_ticket_ids": []
+  },
+  "details": [
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.5008799943838032,
+        "intent": "api_key_issue",
+        "intent_confidence": 0.8653417383187314,
+        "latency_seconds": 11.379072000039741,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-AUTH-004",
+          "DOC-INT-001"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.5008799943838032
+      },
+      "channel": "forum",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": false,
+        "urgency": true
+      },
+      "expected": {
+        "answerable_from_docs": true,
+        "expected_doc_ids": [
+          "DOC-AUTH-004"
+        ],
+        "intent": "api_key_issue",
+        "must_not_auto_respond": false,
+        "route": "auto_respond",
+        "urgency": "medium"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": true,
+        "expected_doc_count": 1,
+        "expected_doc_recall": 1.0,
+        "retrieved_expected_doc_count": 1
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0001"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.5296119170366698,
+        "intent": "unclear_request",
+        "intent_confidence": 0.8409438157297225,
+        "latency_seconds": 0.07947400002740324,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-API-003",
+          "DOC-DATA-002",
+          "DOC-DEPLOY-002",
+          "DOC-INT-002"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.5296119170366698
+      },
+      "channel": "chat",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": true,
+        "urgency": false
+      },
+      "expected": {
+        "answerable_from_docs": false,
+        "expected_doc_ids": [],
+        "intent": "unclear_request",
+        "must_not_auto_respond": true,
+        "route": "escalate",
+        "urgency": "high"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": false,
+        "expected_doc_count": 0,
+        "expected_doc_recall": null,
+        "retrieved_expected_doc_count": 0
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0002"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.440326239409869,
+        "intent": "unclear_request",
+        "intent_confidence": 0.7930218812838983,
+        "latency_seconds": 0.08674239995889366,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-DATA-001",
+          "DOC-DATA-002",
+          "DOC-DEPLOY-002",
+          "DOC-ONB-001",
+          "DOC-ONB-002"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.440326239409869
+      },
+      "channel": "docs_comment",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": true,
+        "urgency": true
+      },
+      "expected": {
+        "answerable_from_docs": false,
+        "expected_doc_ids": [],
+        "intent": "unclear_request",
+        "must_not_auto_respond": true,
+        "route": "escalate",
+        "urgency": "medium"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": false,
+        "expected_doc_count": 0,
+        "expected_doc_recall": null,
+        "retrieved_expected_doc_count": 0
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0003"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.43250322708100625,
+        "intent": "authentication_failure",
+        "intent_confidence": 0.8107472540007549,
+        "latency_seconds": 0.08557039988227189,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-AUTH-002",
+          "DOC-AUTH-004"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.43250322708100625
+      },
+      "channel": "email",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": true,
+        "urgency": true
+      },
+      "expected": {
+        "answerable_from_docs": false,
+        "expected_doc_ids": [],
+        "intent": "authentication_failure",
+        "must_not_auto_respond": false,
+        "route": "escalate",
+        "urgency": "medium"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": false,
+        "expected_doc_count": 0,
+        "expected_doc_recall": null,
+        "retrieved_expected_doc_count": 0
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0004"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.5163889395945498,
+        "intent": "api_usage_question",
+        "intent_confidence": 0.8628632376060034,
+        "latency_seconds": 0.07830319995991886,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-API-002",
+          "DOC-API-003",
+          "DOC-AUTH-001",
+          "DOC-INT-001",
+          "DOC-INT-002"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.5163889395945498
+      },
+      "channel": "chat",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": false,
+        "urgency": false
+      },
+      "expected": {
+        "answerable_from_docs": true,
+        "expected_doc_ids": [
+          "DOC-API-002"
+        ],
+        "intent": "api_usage_question",
+        "must_not_auto_respond": false,
+        "route": "auto_respond",
+        "urgency": "low"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": true,
+        "expected_doc_count": 1,
+        "expected_doc_recall": 1.0,
+        "retrieved_expected_doc_count": 1
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0005"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.4649592589301503,
+        "intent": "authentication_failure",
+        "intent_confidence": 0.847394645162975,
+        "latency_seconds": 0.10342469997704029,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-AUTH-001",
+          "DOC-AUTH-002"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.4649592589301503
+      },
+      "channel": "email",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": false,
+        "urgency": true
+      },
+      "expected": {
+        "answerable_from_docs": true,
+        "expected_doc_ids": [
+          "DOC-AUTH-001",
+          "DOC-AUTH-002"
+        ],
+        "intent": "authentication_failure",
+        "must_not_auto_respond": false,
+        "route": "auto_respond",
+        "urgency": "medium"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": true,
+        "expected_doc_count": 2,
+        "expected_doc_recall": 1.0,
+        "retrieved_expected_doc_count": 2
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0006"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.5222648135699269,
+        "intent": "unclear_request",
+        "intent_confidence": 0.8555459469726779,
+        "latency_seconds": 0.08937350008636713,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-ACCT-001",
+          "DOC-API-003",
+          "DOC-DATA-002",
+          "DOC-INT-002",
+          "DOC-SEC-002"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.5222648135699269
+      },
+      "channel": "chat",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": true,
+        "urgency": false
+      },
+      "expected": {
+        "answerable_from_docs": false,
+        "expected_doc_ids": [],
+        "intent": "unclear_request",
+        "must_not_auto_respond": true,
+        "route": "escalate",
+        "urgency": "high"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": false,
+        "expected_doc_count": 0,
+        "expected_doc_recall": null,
+        "retrieved_expected_doc_count": 0
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0007"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.568370571136655,
+        "intent": "account_access",
+        "intent_confidence": 0.7051322704949133,
+        "latency_seconds": 0.09528899984434247,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-ACCT-001",
+          "DOC-SEC-002"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.568370571136655
+      },
+      "channel": "chat",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": false,
+        "urgency": false
+      },
+      "expected": {
+        "answerable_from_docs": true,
+        "expected_doc_ids": [
+          "DOC-ACCT-001"
+        ],
+        "intent": "account_access",
+        "must_not_auto_respond": false,
+        "route": "auto_respond",
+        "urgency": "high"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": true,
+        "expected_doc_count": 1,
+        "expected_doc_recall": 1.0,
+        "retrieved_expected_doc_count": 1
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0008"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.4996365879706102,
+        "intent": "compliance_request",
+        "intent_confidence": 0.8490080286412458,
+        "latency_seconds": 0.09277310012839735,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-SEC-001",
+          "DOC-SEC-003"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.4996365879706102
+      },
+      "channel": "docs_comment",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": true,
+        "urgency": false
+      },
+      "expected": {
+        "answerable_from_docs": true,
+        "expected_doc_ids": [
+          "DOC-SEC-003"
+        ],
+        "intent": "compliance_request",
+        "must_not_auto_respond": true,
+        "route": "escalate",
+        "urgency": "low"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": true,
+        "expected_doc_count": 1,
+        "expected_doc_recall": 1.0,
+        "retrieved_expected_doc_count": 1
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0009"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.45419372666467045,
+        "intent": "billing_query",
+        "intent_confidence": 0.875025559487328,
+        "latency_seconds": 0.09893829980865121,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-BILL-001",
+          "DOC-BILL-002"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.45419372666467045
+      },
+      "channel": "docs_comment",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": false,
+        "urgency": false
+      },
+      "expected": {
+        "answerable_from_docs": true,
+        "expected_doc_ids": [
+          "DOC-BILL-001",
+          "DOC-BILL-002"
+        ],
+        "intent": "billing_query",
+        "must_not_auto_respond": false,
+        "route": "auto_respond",
+        "urgency": "high"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": true,
+        "expected_doc_count": 2,
+        "expected_doc_recall": 1.0,
+        "retrieved_expected_doc_count": 2
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0010"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.5518469436397625,
+        "intent": "rollback_request",
+        "intent_confidence": 0.8780756597947003,
+        "latency_seconds": 0.09255749988369644,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-API-003",
+          "DOC-DEPLOY-002",
+          "DOC-DEPLOY-003"
+        ],
+        "route": "escalate",
+        "urgency": "high",
+        "urgency_confidence": 0.5518469436397625
+      },
+      "channel": "forum",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": false,
+        "urgency": false
+      },
+      "expected": {
+        "answerable_from_docs": true,
+        "expected_doc_ids": [
+          "DOC-DEPLOY-002"
+        ],
+        "intent": "rollback_request",
+        "must_not_auto_respond": false,
+        "route": "auto_respond",
+        "urgency": "medium"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": true,
+        "expected_doc_count": 1,
+        "expected_doc_recall": 1.0,
+        "retrieved_expected_doc_count": 1
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0011"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.5337014061680293,
+        "intent": "rollback_request",
+        "intent_confidence": 0.8793986714908927,
+        "latency_seconds": 0.10572879994288087,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-DATA-001",
+          "DOC-DEPLOY-002",
+          "DOC-DEPLOY-003"
+        ],
+        "route": "escalate",
+        "urgency": "high",
+        "urgency_confidence": 0.5337014061680293
+      },
+      "channel": "email",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": false,
+        "urgency": true
+      },
+      "expected": {
+        "answerable_from_docs": true,
+        "expected_doc_ids": [
+          "DOC-DEPLOY-002"
+        ],
+        "intent": "rollback_request",
+        "must_not_auto_respond": false,
+        "route": "auto_respond",
+        "urgency": "high"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": true,
+        "expected_doc_count": 1,
+        "expected_doc_recall": 1.0,
+        "retrieved_expected_doc_count": 1
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0012"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.4735614003980664,
+        "intent": "billing_query",
+        "intent_confidence": 0.8731087181495342,
+        "latency_seconds": 0.10964389983564615,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-BILL-001",
+          "DOC-BILL-002"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.4735614003980664
+      },
+      "channel": "docs_comment",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": false,
+        "urgency": true
+      },
+      "expected": {
+        "answerable_from_docs": true,
+        "expected_doc_ids": [
+          "DOC-BILL-001",
+          "DOC-BILL-002"
+        ],
+        "intent": "billing_query",
+        "must_not_auto_respond": false,
+        "route": "auto_respond",
+        "urgency": "medium"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": true,
+        "expected_doc_count": 2,
+        "expected_doc_recall": 1.0,
+        "retrieved_expected_doc_count": 2
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0013"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.5150070782622581,
+        "intent": "rollback_request",
+        "intent_confidence": 0.8248654832054415,
+        "latency_seconds": 0.11068679997697473,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-API-003",
+          "DOC-DEPLOY-002"
+        ],
+        "route": "escalate",
+        "urgency": "high",
+        "urgency_confidence": 0.5150070782622581
+      },
+      "channel": "email",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": true,
+        "urgency": true
+      },
+      "expected": {
+        "answerable_from_docs": false,
+        "expected_doc_ids": [],
+        "intent": "rollback_request",
+        "must_not_auto_respond": false,
+        "route": "escalate",
+        "urgency": "high"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": false,
+        "expected_doc_count": 0,
+        "expected_doc_recall": null,
+        "retrieved_expected_doc_count": 0
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0014"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.5291713611089538,
+        "intent": "unclear_request",
+        "intent_confidence": 0.8714552903027983,
+        "latency_seconds": 0.08165320008993149,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-ACCT-001",
+          "DOC-ACCT-002",
+          "DOC-INT-002",
+          "DOC-SEC-001",
+          "DOC-SEC-002"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.5291713611089538
+      },
+      "channel": "forum",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": true,
+        "urgency": false
+      },
+      "expected": {
+        "answerable_from_docs": false,
+        "expected_doc_ids": [],
+        "intent": "unclear_request",
+        "must_not_auto_respond": true,
+        "route": "escalate",
+        "urgency": "low"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": false,
+        "expected_doc_count": 0,
+        "expected_doc_recall": null,
+        "retrieved_expected_doc_count": 0
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0015"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.39349646608767674,
+        "intent": "performance_degradation",
+        "intent_confidence": 0.8007278483899855,
+        "latency_seconds": 0.0849455997813493,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-ONB-002",
+          "DOC-PERF-001",
+          "DOC-PERF-002"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.39349646608767674
+      },
+      "channel": "chat",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": true,
+        "urgency": false
+      },
+      "expected": {
+        "answerable_from_docs": false,
+        "expected_doc_ids": [],
+        "intent": "performance_degradation",
+        "must_not_auto_respond": false,
+        "route": "escalate",
+        "urgency": "high"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": false,
+        "expected_doc_count": 0,
+        "expected_doc_recall": null,
+        "retrieved_expected_doc_count": 0
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0016"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.6032706575657641,
+        "intent": "unclear_request",
+        "intent_confidence": 0.8005422449252508,
+        "latency_seconds": 0.08276299992576241,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-ACCT-001",
+          "DOC-AUTH-002",
+          "DOC-DATA-002",
+          "DOC-DEPLOY-002",
+          "DOC-INT-002"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.6032706575657641
+      },
+      "channel": "docs_comment",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": true,
+        "urgency": false
+      },
+      "expected": {
+        "answerable_from_docs": false,
+        "expected_doc_ids": [],
+        "intent": "unclear_request",
+        "must_not_auto_respond": true,
+        "route": "escalate",
+        "urgency": "low"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": false,
+        "expected_doc_count": 0,
+        "expected_doc_recall": null,
+        "retrieved_expected_doc_count": 0
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0017"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.49735072803939134,
+        "intent": "api_usage_question",
+        "intent_confidence": 0.878946766319635,
+        "latency_seconds": 0.09959839982911944,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-API-002"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.49735072803939134
+      },
+      "channel": "email",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": false,
+        "urgency": true
+      },
+      "expected": {
+        "answerable_from_docs": true,
+        "expected_doc_ids": [
+          "DOC-API-002"
+        ],
+        "intent": "api_usage_question",
+        "must_not_auto_respond": false,
+        "route": "auto_respond",
+        "urgency": "medium"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": true,
+        "expected_doc_count": 1,
+        "expected_doc_recall": 1.0,
+        "retrieved_expected_doc_count": 1
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0018"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.5744597087709601,
+        "intent": "account_access",
+        "intent_confidence": 0.8077033635485246,
+        "latency_seconds": 0.08907210011966527,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-ACCT-001",
+          "DOC-SEC-001"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.5744597087709601
+      },
+      "channel": "email",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": false,
+        "urgency": true
+      },
+      "expected": {
+        "answerable_from_docs": true,
+        "expected_doc_ids": [
+          "DOC-ACCT-001"
+        ],
+        "intent": "account_access",
+        "must_not_auto_respond": false,
+        "route": "auto_respond",
+        "urgency": "medium"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": true,
+        "expected_doc_count": 1,
+        "expected_doc_recall": 1.0,
+        "retrieved_expected_doc_count": 1
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0019"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.4600104397264508,
+        "intent": "feature_request",
+        "intent_confidence": 0.8455061658215132,
+        "latency_seconds": 0.08926400006748736,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-API-003",
+          "DOC-BILL-003",
+          "DOC-DATA-002",
+          "DOC-DEPLOY-002",
+          "DOC-SEC-003"
+        ],
+        "route": "escalate",
+        "urgency": "low",
+        "urgency_confidence": 0.4600104397264508
+      },
+      "channel": "email",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": true,
+        "urgency": true
+      },
+      "expected": {
+        "answerable_from_docs": false,
+        "expected_doc_ids": [],
+        "intent": "feature_request",
+        "must_not_auto_respond": true,
+        "route": "escalate",
+        "urgency": "low"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": false,
+        "expected_doc_count": 0,
+        "expected_doc_recall": null,
+        "retrieved_expected_doc_count": 0
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0020"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.5678594152265414,
+        "intent": "rollback_request",
+        "intent_confidence": 0.8661934564115912,
+        "latency_seconds": 0.0969887999817729,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-API-003",
+          "DOC-DATA-002",
+          "DOC-DEPLOY-002",
+          "DOC-INT-002"
+        ],
+        "route": "escalate",
+        "urgency": "high",
+        "urgency_confidence": 0.5678594152265414
+      },
+      "channel": "chat",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": false,
+        "urgency": true
+      },
+      "expected": {
+        "answerable_from_docs": true,
+        "expected_doc_ids": [
+          "DOC-DEPLOY-002"
+        ],
+        "intent": "rollback_request",
+        "must_not_auto_respond": false,
+        "route": "auto_respond",
+        "urgency": "high"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": true,
+        "expected_doc_count": 1,
+        "expected_doc_recall": 1.0,
+        "retrieved_expected_doc_count": 1
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0021"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.379370405649113,
+        "intent": "performance_degradation",
+        "intent_confidence": 0.8190102251855672,
+        "latency_seconds": 0.09394000004976988,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-PERF-001",
+          "DOC-PERF-002"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.379370405649113
+      },
+      "channel": "docs_comment",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": true,
+        "urgency": true
+      },
+      "expected": {
+        "answerable_from_docs": false,
+        "expected_doc_ids": [],
+        "intent": "performance_degradation",
+        "must_not_auto_respond": false,
+        "route": "escalate",
+        "urgency": "medium"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": false,
+        "expected_doc_count": 0,
+        "expected_doc_recall": null,
+        "retrieved_expected_doc_count": 0
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0022"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.4947853555841725,
+        "intent": "onboarding",
+        "intent_confidence": 0.8603092208729529,
+        "latency_seconds": 0.09399350010789931,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-DEPLOY-001",
+          "DOC-ONB-001",
+          "DOC-ONB-002"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.4947853555841725
+      },
+      "channel": "email",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": false,
+        "urgency": false
+      },
+      "expected": {
+        "answerable_from_docs": true,
+        "expected_doc_ids": [
+          "DOC-ONB-001",
+          "DOC-ONB-002"
+        ],
+        "intent": "onboarding",
+        "must_not_auto_respond": false,
+        "route": "auto_respond",
+        "urgency": "low"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": true,
+        "expected_doc_count": 2,
+        "expected_doc_recall": 1.0,
+        "retrieved_expected_doc_count": 2
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0023"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.5263771004403849,
+        "intent": "api_key_issue",
+        "intent_confidence": 0.8497028423018254,
+        "latency_seconds": 0.09843029989860952,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-ACCT-001",
+          "DOC-AUTH-004"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.5263771004403849
+      },
+      "channel": "chat",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": true,
+        "urgency": false
+      },
+      "expected": {
+        "answerable_from_docs": false,
+        "expected_doc_ids": [],
+        "intent": "api_key_issue",
+        "must_not_auto_respond": false,
+        "route": "escalate",
+        "urgency": "low"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": false,
+        "expected_doc_count": 0,
+        "expected_doc_recall": null,
+        "retrieved_expected_doc_count": 0
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0024"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.40253886063732747,
+        "intent": "deployment_failure",
+        "intent_confidence": 0.8543730525785939,
+        "latency_seconds": 0.09679630002938211,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-DEPLOY-001"
+        ],
+        "route": "escalate",
+        "urgency": "high",
+        "urgency_confidence": 0.40253886063732747
+      },
+      "channel": "chat",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": true,
+        "urgency": false
+      },
+      "expected": {
+        "answerable_from_docs": false,
+        "expected_doc_ids": [],
+        "intent": "deployment_failure",
+        "must_not_auto_respond": false,
+        "route": "escalate",
+        "urgency": "low"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": false,
+        "expected_doc_count": 0,
+        "expected_doc_recall": null,
+        "retrieved_expected_doc_count": 0
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0025"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.5236833989527713,
+        "intent": "data_residency",
+        "intent_confidence": 0.8643464988485872,
+        "latency_seconds": 0.09667690005153418,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-DATA-003"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.5236833989527713
+      },
+      "channel": "email",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": true,
+        "urgency": true
+      },
+      "expected": {
+        "answerable_from_docs": false,
+        "expected_doc_ids": [],
+        "intent": "data_residency",
+        "must_not_auto_respond": false,
+        "route": "escalate",
+        "urgency": "medium"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": false,
+        "expected_doc_count": 0,
+        "expected_doc_recall": null,
+        "retrieved_expected_doc_count": 0
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0026"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.40573827283544833,
+        "intent": "quota_or_overage",
+        "intent_confidence": 0.8443624105304925,
+        "latency_seconds": 0.0927697999868542,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-BILL-001",
+          "DOC-BILL-003"
+        ],
+        "route": "escalate",
+        "urgency": "high",
+        "urgency_confidence": 0.40573827283544833
+      },
+      "channel": "email",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": false,
+        "urgency": false
+      },
+      "expected": {
+        "answerable_from_docs": true,
+        "expected_doc_ids": [
+          "DOC-API-001",
+          "DOC-BILL-003"
+        ],
+        "intent": "quota_or_overage",
+        "must_not_auto_respond": false,
+        "route": "auto_respond",
+        "urgency": "medium"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": true,
+        "expected_doc_count": 2,
+        "expected_doc_recall": 0.5,
+        "retrieved_expected_doc_count": 1
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0027"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.48647230239003125,
+        "intent": "deployment_failure",
+        "intent_confidence": 0.8495412238444725,
+        "latency_seconds": 0.0924394999165088,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-DEPLOY-003",
+          "DOC-ONB-001"
+        ],
+        "route": "escalate",
+        "urgency": "high",
+        "urgency_confidence": 0.48647230239003125
+      },
+      "channel": "email",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": false,
+        "urgency": false
+      },
+      "expected": {
+        "answerable_from_docs": true,
+        "expected_doc_ids": [
+          "DOC-DEPLOY-001",
+          "DOC-DEPLOY-003"
+        ],
+        "intent": "deployment_failure",
+        "must_not_auto_respond": false,
+        "route": "auto_respond",
+        "urgency": "medium"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": true,
+        "expected_doc_count": 2,
+        "expected_doc_recall": 0.5,
+        "retrieved_expected_doc_count": 1
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0028"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.43579089572563207,
+        "intent": "onboarding",
+        "intent_confidence": 0.8503750295339206,
+        "latency_seconds": 0.08843639981932938,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-ACCT-001",
+          "DOC-AUTH-001",
+          "DOC-ONB-001"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.43579089572563207
+      },
+      "channel": "chat",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": false,
+        "urgency": true
+      },
+      "expected": {
+        "answerable_from_docs": true,
+        "expected_doc_ids": [
+          "DOC-ONB-001"
+        ],
+        "intent": "onboarding",
+        "must_not_auto_respond": false,
+        "route": "auto_respond",
+        "urgency": "medium"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": true,
+        "expected_doc_count": 1,
+        "expected_doc_recall": 1.0,
+        "retrieved_expected_doc_count": 1
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0029"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.45328934221420264,
+        "intent": "feature_request",
+        "intent_confidence": 0.8266311598004519,
+        "latency_seconds": 0.08868420007638633,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-BILL-002",
+          "DOC-DEPLOY-002",
+          "DOC-INT-001",
+          "DOC-ONB-001",
+          "DOC-PERF-002"
+        ],
+        "route": "escalate",
+        "urgency": "low",
+        "urgency_confidence": 0.45328934221420264
+      },
+      "channel": "email",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": true,
+        "urgency": false
+      },
+      "expected": {
+        "answerable_from_docs": false,
+        "expected_doc_ids": [],
+        "intent": "feature_request",
+        "must_not_auto_respond": true,
+        "route": "escalate",
+        "urgency": "medium"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": false,
+        "expected_doc_count": 0,
+        "expected_doc_recall": null,
+        "retrieved_expected_doc_count": 0
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0030"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.5531876897942384,
+        "intent": "rollback_request",
+        "intent_confidence": 0.8670108422000168,
+        "latency_seconds": 0.09473840007558465,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-API-003",
+          "DOC-DATA-001",
+          "DOC-DEPLOY-002"
+        ],
+        "route": "escalate",
+        "urgency": "high",
+        "urgency_confidence": 0.5531876897942384
+      },
+      "channel": "email",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": false,
+        "urgency": false
+      },
+      "expected": {
+        "answerable_from_docs": true,
+        "expected_doc_ids": [
+          "DOC-DEPLOY-002"
+        ],
+        "intent": "rollback_request",
+        "must_not_auto_respond": false,
+        "route": "auto_respond",
+        "urgency": "low"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": true,
+        "expected_doc_count": 1,
+        "expected_doc_recall": 1.0,
+        "retrieved_expected_doc_count": 1
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0031"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.613177691981063,
+        "intent": "feature_request",
+        "intent_confidence": 0.8639232662016264,
+        "latency_seconds": 0.08884590002708137,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-ACCT-002",
+          "DOC-BILL-003"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.613177691981063
+      },
+      "channel": "chat",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": true,
+        "urgency": false
+      },
+      "expected": {
+        "answerable_from_docs": false,
+        "expected_doc_ids": [],
+        "intent": "feature_request",
+        "must_not_auto_respond": true,
+        "route": "escalate",
+        "urgency": "high"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": false,
+        "expected_doc_count": 0,
+        "expected_doc_recall": null,
+        "retrieved_expected_doc_count": 0
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0032"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.4350438503925332,
+        "intent": "webhook_issue",
+        "intent_confidence": 0.8668870471263084,
+        "latency_seconds": 0.08008889993652701,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-API-003",
+          "DOC-AUTH-003"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.4350438503925332
+      },
+      "channel": "forum",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": false,
+        "urgency": false
+      },
+      "expected": {
+        "answerable_from_docs": true,
+        "expected_doc_ids": [
+          "DOC-API-003"
+        ],
+        "intent": "webhook_issue",
+        "must_not_auto_respond": false,
+        "route": "auto_respond",
+        "urgency": "low"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": true,
+        "expected_doc_count": 1,
+        "expected_doc_recall": 1.0,
+        "retrieved_expected_doc_count": 1
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0033"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.5337014061680293,
+        "intent": "rollback_request",
+        "intent_confidence": 0.8793986714908927,
+        "latency_seconds": 0.09588719997555017,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-DATA-001",
+          "DOC-DEPLOY-002",
+          "DOC-DEPLOY-003"
+        ],
+        "route": "escalate",
+        "urgency": "high",
+        "urgency_confidence": 0.5337014061680293
+      },
+      "channel": "email",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": true,
+        "urgency": true
+      },
+      "expected": {
+        "answerable_from_docs": false,
+        "expected_doc_ids": [],
+        "intent": "rollback_request",
+        "must_not_auto_respond": false,
+        "route": "escalate",
+        "urgency": "high"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": false,
+        "expected_doc_count": 0,
+        "expected_doc_recall": null,
+        "retrieved_expected_doc_count": 0
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0034"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.5956608295386451,
+        "intent": "unclear_request",
+        "intent_confidence": 0.8262492126844397,
+        "latency_seconds": 0.0852217001374811,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-AUTH-002",
+          "DOC-DATA-001",
+          "DOC-DATA-002",
+          "DOC-DEPLOY-002",
+          "DOC-ONB-002"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.5956608295386451
+      },
+      "channel": "chat",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": true,
+        "urgency": false
+      },
+      "expected": {
+        "answerable_from_docs": false,
+        "expected_doc_ids": [],
+        "intent": "unclear_request",
+        "must_not_auto_respond": true,
+        "route": "escalate",
+        "urgency": "low"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": false,
+        "expected_doc_count": 0,
+        "expected_doc_recall": null,
+        "retrieved_expected_doc_count": 0
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0035"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.4210138700164833,
+        "intent": "onboarding",
+        "intent_confidence": 0.8623509059344396,
+        "latency_seconds": 0.1047067001927644,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-AUTH-001",
+          "DOC-ONB-001",
+          "DOC-SEC-002"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.4210138700164833
+      },
+      "channel": "forum",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": false,
+        "urgency": false
+      },
+      "expected": {
+        "answerable_from_docs": true,
+        "expected_doc_ids": [
+          "DOC-ONB-001",
+          "DOC-ONB-002"
+        ],
+        "intent": "onboarding",
+        "must_not_auto_respond": false,
+        "route": "auto_respond",
+        "urgency": "high"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": true,
+        "expected_doc_count": 2,
+        "expected_doc_recall": 0.5,
+        "retrieved_expected_doc_count": 1
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0036"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.5492133483808509,
+        "intent": "data_residency",
+        "intent_confidence": 0.842304515014507,
+        "latency_seconds": 0.08989800000563264,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-DATA-003"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.5492133483808509
+      },
+      "channel": "email",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": true,
+        "urgency": true
+      },
+      "expected": {
+        "answerable_from_docs": false,
+        "expected_doc_ids": [],
+        "intent": "data_residency",
+        "must_not_auto_respond": false,
+        "route": "escalate",
+        "urgency": "medium"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": false,
+        "expected_doc_count": 0,
+        "expected_doc_recall": null,
+        "retrieved_expected_doc_count": 0
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0037"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.4014584589686476,
+        "intent": "performance_degradation",
+        "intent_confidence": 0.85770217472569,
+        "latency_seconds": 0.0928315999917686,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-API-001",
+          "DOC-DATA-003",
+          "DOC-PERF-001"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.4014584589686476
+      },
+      "channel": "forum",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": true,
+        "urgency": false
+      },
+      "expected": {
+        "answerable_from_docs": true,
+        "expected_doc_ids": [
+          "DOC-PERF-001",
+          "DOC-PERF-002"
+        ],
+        "intent": "performance_degradation",
+        "must_not_auto_respond": false,
+        "route": "escalate",
+        "urgency": "high"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": true,
+        "expected_doc_count": 2,
+        "expected_doc_recall": 0.5,
+        "retrieved_expected_doc_count": 1
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0038"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.5433079075851993,
+        "intent": "api_key_issue",
+        "intent_confidence": 0.8679521188192062,
+        "latency_seconds": 0.08798369998112321,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-AUTH-004",
+          "DOC-SEC-001",
+          "DOC-SEC-002"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.5433079075851993
+      },
+      "channel": "forum",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": false,
+        "urgency": false
+      },
+      "expected": {
+        "answerable_from_docs": true,
+        "expected_doc_ids": [
+          "DOC-AUTH-004"
+        ],
+        "intent": "api_key_issue",
+        "must_not_auto_respond": false,
+        "route": "auto_respond",
+        "urgency": "high"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": true,
+        "expected_doc_count": 1,
+        "expected_doc_recall": 1.0,
+        "retrieved_expected_doc_count": 1
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0039"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.4735614003980664,
+        "intent": "billing_query",
+        "intent_confidence": 0.8731087181495342,
+        "latency_seconds": 0.08455499983392656,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-BILL-001",
+          "DOC-BILL-002"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.4735614003980664
+      },
+      "channel": "email",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": false,
+        "urgency": false
+      },
+      "expected": {
+        "answerable_from_docs": true,
+        "expected_doc_ids": [
+          "DOC-BILL-001",
+          "DOC-BILL-002"
+        ],
+        "intent": "billing_query",
+        "must_not_auto_respond": false,
+        "route": "auto_respond",
+        "urgency": "high"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": true,
+        "expected_doc_count": 2,
+        "expected_doc_recall": 1.0,
+        "retrieved_expected_doc_count": 2
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0040"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.4735614003980664,
+        "intent": "billing_query",
+        "intent_confidence": 0.8731087181495342,
+        "latency_seconds": 0.09102510008960962,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-BILL-001",
+          "DOC-BILL-002"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.4735614003980664
+      },
+      "channel": "email",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": false,
+        "urgency": false
+      },
+      "expected": {
+        "answerable_from_docs": true,
+        "expected_doc_ids": [
+          "DOC-BILL-001"
+        ],
+        "intent": "billing_query",
+        "must_not_auto_respond": false,
+        "route": "auto_respond",
+        "urgency": "high"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": true,
+        "expected_doc_count": 1,
+        "expected_doc_recall": 1.0,
+        "retrieved_expected_doc_count": 1
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0041"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.5916738484892939,
+        "intent": "configuration_help",
+        "intent_confidence": 0.8587677170141711,
+        "latency_seconds": 0.09025090001523495,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-DEPLOY-002",
+          "DOC-DEPLOY-004",
+          "DOC-SEC-002"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.5916738484892939
+      },
+      "channel": "chat",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": false,
+        "urgency": true
+      },
+      "expected": {
+        "answerable_from_docs": true,
+        "expected_doc_ids": [
+          "DOC-ACCT-002",
+          "DOC-DEPLOY-004"
+        ],
+        "intent": "configuration_help",
+        "must_not_auto_respond": false,
+        "route": "auto_respond",
+        "urgency": "medium"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": true,
+        "expected_doc_count": 2,
+        "expected_doc_recall": 0.5,
+        "retrieved_expected_doc_count": 1
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0042"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.6098788891749408,
+        "intent": "security_incident",
+        "intent_confidence": 0.8734620752990985,
+        "latency_seconds": 0.09444550005719066,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-SEC-001",
+          "DOC-SEC-002"
+        ],
+        "route": "escalate",
+        "urgency": "high",
+        "urgency_confidence": 0.6098788891749408
+      },
+      "channel": "forum",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": true,
+        "urgency": true
+      },
+      "expected": {
+        "answerable_from_docs": true,
+        "expected_doc_ids": [
+          "DOC-SEC-001",
+          "DOC-SEC-002"
+        ],
+        "intent": "security_incident",
+        "must_not_auto_respond": true,
+        "route": "escalate",
+        "urgency": "high"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": true,
+        "expected_doc_count": 2,
+        "expected_doc_recall": 1.0,
+        "retrieved_expected_doc_count": 2
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0043"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.4780517430077107,
+        "intent": "billing_query",
+        "intent_confidence": 0.8689077709114974,
+        "latency_seconds": 0.08686040015891194,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-BILL-001",
+          "DOC-BILL-003"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.4780517430077107
+      },
+      "channel": "chat",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": false,
+        "urgency": false
+      },
+      "expected": {
+        "answerable_from_docs": true,
+        "expected_doc_ids": [
+          "DOC-BILL-001"
+        ],
+        "intent": "billing_query",
+        "must_not_auto_respond": false,
+        "route": "auto_respond",
+        "urgency": "high"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": true,
+        "expected_doc_count": 1,
+        "expected_doc_recall": 1.0,
+        "retrieved_expected_doc_count": 1
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0044"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.4265001772767683,
+        "intent": "data_export",
+        "intent_confidence": 0.8652974748365331,
+        "latency_seconds": 0.08788809995166957,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-DATA-001",
+          "DOC-DEPLOY-002",
+          "DOC-SEC-001"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.4265001772767683
+      },
+      "channel": "email",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": false,
+        "urgency": false
+      },
+      "expected": {
+        "answerable_from_docs": true,
+        "expected_doc_ids": [
+          "DOC-DATA-001"
+        ],
+        "intent": "data_export",
+        "must_not_auto_respond": false,
+        "route": "auto_respond",
+        "urgency": "low"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": true,
+        "expected_doc_count": 1,
+        "expected_doc_recall": 1.0,
+        "retrieved_expected_doc_count": 1
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0045"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.48722560486480626,
+        "intent": "api_usage_question",
+        "intent_confidence": 0.7094822768659763,
+        "latency_seconds": 0.09858170012012124,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-API-001",
+          "DOC-API-002"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.48722560486480626
+      },
+      "channel": "email",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": true,
+        "urgency": false
+      },
+      "expected": {
+        "answerable_from_docs": false,
+        "expected_doc_ids": [],
+        "intent": "api_usage_question",
+        "must_not_auto_respond": false,
+        "route": "escalate",
+        "urgency": "low"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": false,
+        "expected_doc_count": 0,
+        "expected_doc_recall": null,
+        "retrieved_expected_doc_count": 0
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0046"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.4764636935459599,
+        "intent": "rate_limit",
+        "intent_confidence": 0.7086021084118519,
+        "latency_seconds": 0.17317630001343787,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-API-001",
+          "DOC-API-002",
+          "DOC-DATA-003",
+          "DOC-PERF-003"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.4764636935459599
+      },
+      "channel": "chat",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": false,
+        "urgency": false
+      },
+      "expected": {
+        "answerable_from_docs": true,
+        "expected_doc_ids": [
+          "DOC-API-001"
+        ],
+        "intent": "rate_limit",
+        "must_not_auto_respond": false,
+        "route": "auto_respond",
+        "urgency": "low"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": true,
+        "expected_doc_count": 1,
+        "expected_doc_recall": 1.0,
+        "retrieved_expected_doc_count": 1
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0047"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.572540515328011,
+        "intent": "security_incident",
+        "intent_confidence": 0.8557308533375164,
+        "latency_seconds": 0.09888499998487532,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-SEC-001",
+          "DOC-SEC-002"
+        ],
+        "route": "escalate",
+        "urgency": "high",
+        "urgency_confidence": 0.572540515328011
+      },
+      "channel": "chat",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": true,
+        "urgency": false
+      },
+      "expected": {
+        "answerable_from_docs": false,
+        "expected_doc_ids": [],
+        "intent": "security_incident",
+        "must_not_auto_respond": true,
+        "route": "escalate",
+        "urgency": "medium"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": false,
+        "expected_doc_count": 0,
+        "expected_doc_recall": null,
+        "retrieved_expected_doc_count": 0
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0048"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.545674760892037,
+        "intent": "api_key_issue",
+        "intent_confidence": 0.8485093981699355,
+        "latency_seconds": 0.09068070002831519,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-ACCT-001",
+          "DOC-AUTH-004",
+          "DOC-DEPLOY-004"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.545674760892037
+      },
+      "channel": "email",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": false,
+        "urgency": true
+      },
+      "expected": {
+        "answerable_from_docs": true,
+        "expected_doc_ids": [
+          "DOC-AUTH-004"
+        ],
+        "intent": "api_key_issue",
+        "must_not_auto_respond": false,
+        "route": "auto_respond",
+        "urgency": "medium"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": true,
+        "expected_doc_count": 1,
+        "expected_doc_recall": 1.0,
+        "retrieved_expected_doc_count": 1
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0049"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.4614477083540591,
+        "intent": "onboarding",
+        "intent_confidence": 0.8585427424316787,
+        "latency_seconds": 0.08694379986263812,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-DEPLOY-001",
+          "DOC-ONB-001"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.4614477083540591
+      },
+      "channel": "email",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": false,
+        "urgency": false
+      },
+      "expected": {
+        "answerable_from_docs": true,
+        "expected_doc_ids": [
+          "DOC-ONB-001"
+        ],
+        "intent": "onboarding",
+        "must_not_auto_respond": false,
+        "route": "auto_respond",
+        "urgency": "low"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": true,
+        "expected_doc_count": 1,
+        "expected_doc_recall": 1.0,
+        "retrieved_expected_doc_count": 1
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0050"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.4690603161819742,
+        "intent": "integration_help",
+        "intent_confidence": 0.8079789867652883,
+        "latency_seconds": 0.08924639993347228,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-INT-002"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.4690603161819742
+      },
+      "channel": "forum",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": true,
+        "urgency": true
+      },
+      "expected": {
+        "answerable_from_docs": false,
+        "expected_doc_ids": [],
+        "intent": "integration_help",
+        "must_not_auto_respond": false,
+        "route": "escalate",
+        "urgency": "medium"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": false,
+        "expected_doc_count": 0,
+        "expected_doc_recall": null,
+        "retrieved_expected_doc_count": 0
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0051"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.4309965545447602,
+        "intent": "authentication_failure",
+        "intent_confidence": 0.8654807508237955,
+        "latency_seconds": 0.09517429978586733,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-AUTH-001",
+          "DOC-AUTH-002"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.4309965545447602
+      },
+      "channel": "chat",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": false,
+        "urgency": true
+      },
+      "expected": {
+        "answerable_from_docs": true,
+        "expected_doc_ids": [
+          "DOC-AUTH-001"
+        ],
+        "intent": "authentication_failure",
+        "must_not_auto_respond": false,
+        "route": "auto_respond",
+        "urgency": "medium"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": true,
+        "expected_doc_count": 1,
+        "expected_doc_recall": 1.0,
+        "retrieved_expected_doc_count": 1
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0052"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.4780517430077107,
+        "intent": "billing_query",
+        "intent_confidence": 0.8689077709114974,
+        "latency_seconds": 0.10845499997958541,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-BILL-001",
+          "DOC-BILL-003"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.4780517430077107
+      },
+      "channel": "chat",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": false,
+        "urgency": false
+      },
+      "expected": {
+        "answerable_from_docs": true,
+        "expected_doc_ids": [
+          "DOC-BILL-001"
+        ],
+        "intent": "billing_query",
+        "must_not_auto_respond": false,
+        "route": "auto_respond",
+        "urgency": "low"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": true,
+        "expected_doc_count": 1,
+        "expected_doc_recall": 1.0,
+        "retrieved_expected_doc_count": 1
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0053"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.4917153910573157,
+        "intent": "data_residency",
+        "intent_confidence": 0.8698851443341723,
+        "latency_seconds": 0.10604580002836883,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-DATA-001",
+          "DOC-DATA-003"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.4917153910573157
+      },
+      "channel": "email",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": false,
+        "urgency": false
+      },
+      "expected": {
+        "answerable_from_docs": true,
+        "expected_doc_ids": [
+          "DOC-DATA-003"
+        ],
+        "intent": "data_residency",
+        "must_not_auto_respond": false,
+        "route": "auto_respond",
+        "urgency": "high"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": true,
+        "expected_doc_count": 1,
+        "expected_doc_recall": 1.0,
+        "retrieved_expected_doc_count": 1
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0054"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.5800693534964023,
+        "intent": "integration_help",
+        "intent_confidence": 0.8570551306373323,
+        "latency_seconds": 0.09789220010861754,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-AUTH-004",
+          "DOC-INT-001"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.5800693534964023
+      },
+      "channel": "chat",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": true,
+        "urgency": false
+      },
+      "expected": {
+        "answerable_from_docs": false,
+        "expected_doc_ids": [],
+        "intent": "integration_help",
+        "must_not_auto_respond": false,
+        "route": "escalate",
+        "urgency": "low"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": false,
+        "expected_doc_count": 0,
+        "expected_doc_recall": null,
+        "retrieved_expected_doc_count": 0
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0055"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.4071775399586115,
+        "intent": "deployment_failure",
+        "intent_confidence": 0.8768220922706513,
+        "latency_seconds": 0.0933532000053674,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-DEPLOY-001",
+          "DOC-DEPLOY-003",
+          "DOC-INT-001"
+        ],
+        "route": "escalate",
+        "urgency": "high",
+        "urgency_confidence": 0.4071775399586115
+      },
+      "channel": "email",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": false,
+        "urgency": true
+      },
+      "expected": {
+        "answerable_from_docs": true,
+        "expected_doc_ids": [
+          "DOC-DEPLOY-001"
+        ],
+        "intent": "deployment_failure",
+        "must_not_auto_respond": false,
+        "route": "auto_respond",
+        "urgency": "high"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": true,
+        "expected_doc_count": 1,
+        "expected_doc_recall": 1.0,
+        "retrieved_expected_doc_count": 1
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0056"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.4719800441881139,
+        "intent": "deployment_failure",
+        "intent_confidence": 0.8739746054494696,
+        "latency_seconds": 0.09799340018071234,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-DEPLOY-001"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.4719800441881139
+      },
+      "channel": "email",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": false,
+        "urgency": true
+      },
+      "expected": {
+        "answerable_from_docs": true,
+        "expected_doc_ids": [
+          "DOC-DEPLOY-001",
+          "DOC-DEPLOY-003"
+        ],
+        "intent": "deployment_failure",
+        "must_not_auto_respond": false,
+        "route": "auto_respond",
+        "urgency": "medium"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": true,
+        "expected_doc_count": 2,
+        "expected_doc_recall": 0.5,
+        "retrieved_expected_doc_count": 1
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0057"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.48497045270692546,
+        "intent": "api_key_issue",
+        "intent_confidence": 0.8635236266941764,
+        "latency_seconds": 0.09210070013068616,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-AUTH-004",
+          "DOC-INT-001"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.48497045270692546
+      },
+      "channel": "docs_comment",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": false,
+        "urgency": false
+      },
+      "expected": {
+        "answerable_from_docs": true,
+        "expected_doc_ids": [
+          "DOC-AUTH-004"
+        ],
+        "intent": "api_key_issue",
+        "must_not_auto_respond": false,
+        "route": "auto_respond",
+        "urgency": "high"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": true,
+        "expected_doc_count": 1,
+        "expected_doc_recall": 1.0,
+        "retrieved_expected_doc_count": 1
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0058"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.6095309271499078,
+        "intent": "configuration_help",
+        "intent_confidence": 0.8779961049322881,
+        "latency_seconds": 0.10091150016523898,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-DEPLOY-004",
+          "DOC-SEC-002"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.6095309271499078
+      },
+      "channel": "docs_comment",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": false,
+        "urgency": true
+      },
+      "expected": {
+        "answerable_from_docs": true,
+        "expected_doc_ids": [
+          "DOC-ACCT-002",
+          "DOC-DEPLOY-004"
+        ],
+        "intent": "configuration_help",
+        "must_not_auto_respond": false,
+        "route": "auto_respond",
+        "urgency": "medium"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": true,
+        "expected_doc_count": 2,
+        "expected_doc_recall": 0.5,
+        "retrieved_expected_doc_count": 1
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0059"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.3865933699761895,
+        "intent": "webhook_issue",
+        "intent_confidence": 0.8676544823338833,
+        "latency_seconds": 0.09804770001210272,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-API-003",
+          "DOC-AUTH-003"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.3865933699761895
+      },
+      "channel": "email",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": true,
+        "urgency": true
+      },
+      "expected": {
+        "answerable_from_docs": false,
+        "expected_doc_ids": [],
+        "intent": "webhook_issue",
+        "must_not_auto_respond": false,
+        "route": "escalate",
+        "urgency": "medium"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": false,
+        "expected_doc_count": 0,
+        "expected_doc_recall": null,
+        "retrieved_expected_doc_count": 0
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0060"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.3865933699761895,
+        "intent": "webhook_issue",
+        "intent_confidence": 0.8676544823338833,
+        "latency_seconds": 0.09518720000050962,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-API-003",
+          "DOC-AUTH-003"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.3865933699761895
+      },
+      "channel": "email",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": false,
+        "urgency": true
+      },
+      "expected": {
+        "answerable_from_docs": true,
+        "expected_doc_ids": [
+          "DOC-API-003"
+        ],
+        "intent": "webhook_issue",
+        "must_not_auto_respond": false,
+        "route": "auto_respond",
+        "urgency": "medium"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": true,
+        "expected_doc_count": 1,
+        "expected_doc_recall": 1.0,
+        "retrieved_expected_doc_count": 1
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0061"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.5030109669575645,
+        "intent": "integration_help",
+        "intent_confidence": 0.8714272608571153,
+        "latency_seconds": 0.09782710019499063,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-INT-001",
+          "DOC-INT-002"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.5030109669575645
+      },
+      "channel": "docs_comment",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": false,
+        "urgency": false
+      },
+      "expected": {
+        "answerable_from_docs": true,
+        "expected_doc_ids": [
+          "DOC-INT-001",
+          "DOC-INT-002"
+        ],
+        "intent": "integration_help",
+        "must_not_auto_respond": false,
+        "route": "auto_respond",
+        "urgency": "high"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": true,
+        "expected_doc_count": 2,
+        "expected_doc_recall": 1.0,
+        "retrieved_expected_doc_count": 2
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0062"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.3851022505530047,
+        "intent": "account_access",
+        "intent_confidence": 0.867611793659079,
+        "latency_seconds": 0.0977630999404937,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-ACCT-001",
+          "DOC-SEC-002"
+        ],
+        "route": "escalate",
+        "urgency": "high",
+        "urgency_confidence": 0.3851022505530047
+      },
+      "channel": "email",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": false,
+        "urgency": false
+      },
+      "expected": {
+        "answerable_from_docs": true,
+        "expected_doc_ids": [
+          "DOC-ACCT-001"
+        ],
+        "intent": "account_access",
+        "must_not_auto_respond": false,
+        "route": "auto_respond",
+        "urgency": "medium"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": true,
+        "expected_doc_count": 1,
+        "expected_doc_recall": 1.0,
+        "retrieved_expected_doc_count": 1
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0063"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.5694948640985646,
+        "intent": "api_usage_question",
+        "intent_confidence": 0.8679910897383096,
+        "latency_seconds": 0.09525960008613765,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-API-001",
+          "DOC-API-002",
+          "DOC-DATA-001"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.5694948640985646
+      },
+      "channel": "chat",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": false,
+        "urgency": true
+      },
+      "expected": {
+        "answerable_from_docs": true,
+        "expected_doc_ids": [
+          "DOC-API-002",
+          "DOC-API-003"
+        ],
+        "intent": "api_usage_question",
+        "must_not_auto_respond": false,
+        "route": "auto_respond",
+        "urgency": "medium"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": true,
+        "expected_doc_count": 2,
+        "expected_doc_recall": 0.5,
+        "retrieved_expected_doc_count": 1
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0064"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.4655348484918426,
+        "intent": "billing_query",
+        "intent_confidence": 0.8684968678840667,
+        "latency_seconds": 0.09162490000016987,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-BILL-001",
+          "DOC-BILL-002"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.4655348484918426
+      },
+      "channel": "email",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": false,
+        "urgency": false
+      },
+      "expected": {
+        "answerable_from_docs": true,
+        "expected_doc_ids": [
+          "DOC-BILL-001"
+        ],
+        "intent": "billing_query",
+        "must_not_auto_respond": false,
+        "route": "auto_respond",
+        "urgency": "high"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": true,
+        "expected_doc_count": 1,
+        "expected_doc_recall": 1.0,
+        "retrieved_expected_doc_count": 1
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0065"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.5040558669067357,
+        "intent": "data_residency",
+        "intent_confidence": 0.8647157973164749,
+        "latency_seconds": 0.0986121001187712,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-DATA-003"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.5040558669067357
+      },
+      "channel": "forum",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": true,
+        "urgency": true
+      },
+      "expected": {
+        "answerable_from_docs": false,
+        "expected_doc_ids": [],
+        "intent": "data_residency",
+        "must_not_auto_respond": false,
+        "route": "escalate",
+        "urgency": "medium"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": false,
+        "expected_doc_count": 0,
+        "expected_doc_recall": null,
+        "retrieved_expected_doc_count": 0
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0066"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.5512648006607931,
+        "intent": "security_incident",
+        "intent_confidence": 0.8663626701287184,
+        "latency_seconds": 0.1016763998195529,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-SEC-001",
+          "DOC-SEC-003"
+        ],
+        "route": "escalate",
+        "urgency": "high",
+        "urgency_confidence": 0.5512648006607931
+      },
+      "channel": "docs_comment",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": true,
+        "urgency": true
+      },
+      "expected": {
+        "answerable_from_docs": true,
+        "expected_doc_ids": [
+          "DOC-SEC-001"
+        ],
+        "intent": "security_incident",
+        "must_not_auto_respond": true,
+        "route": "escalate",
+        "urgency": "high"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": true,
+        "expected_doc_count": 1,
+        "expected_doc_recall": 1.0,
+        "retrieved_expected_doc_count": 1
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0067"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.5401554807478876,
+        "intent": "security_incident",
+        "intent_confidence": 0.8563785387292739,
+        "latency_seconds": 0.10303880018182099,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-SEC-001",
+          "DOC-SEC-003"
+        ],
+        "route": "escalate",
+        "urgency": "high",
+        "urgency_confidence": 0.5401554807478876
+      },
+      "channel": "email",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": true,
+        "urgency": false
+      },
+      "expected": {
+        "answerable_from_docs": true,
+        "expected_doc_ids": [
+          "DOC-SEC-001",
+          "DOC-SEC-002"
+        ],
+        "intent": "security_incident",
+        "must_not_auto_respond": true,
+        "route": "escalate",
+        "urgency": "medium"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": true,
+        "expected_doc_count": 2,
+        "expected_doc_recall": 0.5,
+        "retrieved_expected_doc_count": 1
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0068"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.5916738484892939,
+        "intent": "configuration_help",
+        "intent_confidence": 0.8587677170141711,
+        "latency_seconds": 0.08125209994614124,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-DEPLOY-002",
+          "DOC-DEPLOY-004",
+          "DOC-SEC-002"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.5916738484892939
+      },
+      "channel": "chat",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": false,
+        "urgency": false
+      },
+      "expected": {
+        "answerable_from_docs": true,
+        "expected_doc_ids": [
+          "DOC-ACCT-002",
+          "DOC-DEPLOY-004"
+        ],
+        "intent": "configuration_help",
+        "must_not_auto_respond": false,
+        "route": "auto_respond",
+        "urgency": "low"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": true,
+        "expected_doc_count": 2,
+        "expected_doc_recall": 0.5,
+        "retrieved_expected_doc_count": 1
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0069"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.4244464506064141,
+        "intent": "sso_configuration",
+        "intent_confidence": 0.8752632168838056,
+        "latency_seconds": 0.09075249987654388,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-AUTH-001",
+          "DOC-AUTH-002",
+          "DOC-AUTH-003"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.4244464506064141
+      },
+      "channel": "docs_comment",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": true,
+        "urgency": true
+      },
+      "expected": {
+        "answerable_from_docs": false,
+        "expected_doc_ids": [],
+        "intent": "sso_configuration",
+        "must_not_auto_respond": false,
+        "route": "escalate",
+        "urgency": "medium"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": false,
+        "expected_doc_count": 0,
+        "expected_doc_recall": null,
+        "retrieved_expected_doc_count": 0
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0070"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.48100895667788174,
+        "intent": "quota_or_overage",
+        "intent_confidence": 0.8619653078812921,
+        "latency_seconds": 0.08845519996248186,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-API-001",
+          "DOC-BILL-003"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.48100895667788174
+      },
+      "channel": "docs_comment",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": true,
+        "urgency": true
+      },
+      "expected": {
+        "answerable_from_docs": false,
+        "expected_doc_ids": [],
+        "intent": "quota_or_overage",
+        "must_not_auto_respond": false,
+        "route": "escalate",
+        "urgency": "medium"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": false,
+        "expected_doc_count": 0,
+        "expected_doc_recall": null,
+        "retrieved_expected_doc_count": 0
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0071"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.48539907804844024,
+        "intent": "billing_query",
+        "intent_confidence": 0.8757993479398981,
+        "latency_seconds": 0.10816709999926388,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-BILL-001",
+          "DOC-BILL-002"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.48539907804844024
+      },
+      "channel": "docs_comment",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": true,
+        "urgency": true
+      },
+      "expected": {
+        "answerable_from_docs": false,
+        "expected_doc_ids": [],
+        "intent": "billing_query",
+        "must_not_auto_respond": false,
+        "route": "escalate",
+        "urgency": "medium"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": false,
+        "expected_doc_count": 0,
+        "expected_doc_recall": null,
+        "retrieved_expected_doc_count": 0
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0072"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.47956633322111775,
+        "intent": "billing_query",
+        "intent_confidence": 0.8091043949127146,
+        "latency_seconds": 0.09729290008544922,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-BILL-001",
+          "DOC-BILL-002"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.47956633322111775
+      },
+      "channel": "forum",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": false,
+        "urgency": false
+      },
+      "expected": {
+        "answerable_from_docs": true,
+        "expected_doc_ids": [
+          "DOC-BILL-001"
+        ],
+        "intent": "billing_query",
+        "must_not_auto_respond": false,
+        "route": "auto_respond",
+        "urgency": "high"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": true,
+        "expected_doc_count": 1,
+        "expected_doc_recall": 1.0,
+        "retrieved_expected_doc_count": 1
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0073"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.5750040658665924,
+        "intent": "account_access",
+        "intent_confidence": 0.8304266499624191,
+        "latency_seconds": 0.09683310007676482,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-ACCT-001",
+          "DOC-SEC-001"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.5750040658665924
+      },
+      "channel": "docs_comment",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": false,
+        "urgency": true
+      },
+      "expected": {
+        "answerable_from_docs": true,
+        "expected_doc_ids": [
+          "DOC-ACCT-001"
+        ],
+        "intent": "account_access",
+        "must_not_auto_respond": false,
+        "route": "auto_respond",
+        "urgency": "medium"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": true,
+        "expected_doc_count": 1,
+        "expected_doc_recall": 1.0,
+        "retrieved_expected_doc_count": 1
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0074"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.5366682402548872,
+        "intent": "api_key_issue",
+        "intent_confidence": 0.8597496164277484,
+        "latency_seconds": 0.10151409986428916,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-AUTH-004",
+          "DOC-SEC-001"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.5366682402548872
+      },
+      "channel": "docs_comment",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": false,
+        "urgency": false
+      },
+      "expected": {
+        "answerable_from_docs": true,
+        "expected_doc_ids": [
+          "DOC-AUTH-004"
+        ],
+        "intent": "api_key_issue",
+        "must_not_auto_respond": false,
+        "route": "auto_respond",
+        "urgency": "high"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": true,
+        "expected_doc_count": 1,
+        "expected_doc_recall": 1.0,
+        "retrieved_expected_doc_count": 1
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0075"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.507405413665435,
+        "intent": "data_residency",
+        "intent_confidence": 0.8717003316258669,
+        "latency_seconds": 0.11574100004509091,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-DATA-003"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.507405413665435
+      },
+      "channel": "email",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": false,
+        "urgency": true
+      },
+      "expected": {
+        "answerable_from_docs": true,
+        "expected_doc_ids": [
+          "DOC-DATA-003"
+        ],
+        "intent": "data_residency",
+        "must_not_auto_respond": false,
+        "route": "auto_respond",
+        "urgency": "medium"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": true,
+        "expected_doc_count": 1,
+        "expected_doc_recall": 1.0,
+        "retrieved_expected_doc_count": 1
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0076"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.5078437017265522,
+        "intent": "billing_query",
+        "intent_confidence": 0.8320936656097014,
+        "latency_seconds": 0.10635939985513687,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-ACCT-002",
+          "DOC-BILL-001"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.5078437017265522
+      },
+      "channel": "chat",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": false,
+        "urgency": false
+      },
+      "expected": {
+        "answerable_from_docs": true,
+        "expected_doc_ids": [
+          "DOC-BILL-001"
+        ],
+        "intent": "billing_query",
+        "must_not_auto_respond": false,
+        "route": "auto_respond",
+        "urgency": "low"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": true,
+        "expected_doc_count": 1,
+        "expected_doc_recall": 1.0,
+        "retrieved_expected_doc_count": 1
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0077"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.5686767048509956,
+        "intent": "database_issue",
+        "intent_confidence": 0.8482246780713237,
+        "latency_seconds": 0.105400700122118,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-DATA-002",
+          "DOC-PERF-003"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.5686767048509956
+      },
+      "channel": "docs_comment",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": false,
+        "urgency": true
+      },
+      "expected": {
+        "answerable_from_docs": true,
+        "expected_doc_ids": [
+          "DOC-PERF-003"
+        ],
+        "intent": "database_issue",
+        "must_not_auto_respond": false,
+        "route": "auto_respond",
+        "urgency": "medium"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": true,
+        "expected_doc_count": 1,
+        "expected_doc_recall": 1.0,
+        "retrieved_expected_doc_count": 1
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0078"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.45257161035351245,
+        "intent": "data_residency",
+        "intent_confidence": 0.8711856726355635,
+        "latency_seconds": 0.11832759995013475,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-DATA-001",
+          "DOC-DATA-003"
+        ],
+        "route": "escalate",
+        "urgency": "medium",
+        "urgency_confidence": 0.45257161035351245
+      },
+      "channel": "email",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": false,
+        "urgency": false
+      },
+      "expected": {
+        "answerable_from_docs": true,
+        "expected_doc_ids": [
+          "DOC-DATA-003"
+        ],
+        "intent": "data_residency",
+        "must_not_auto_respond": false,
+        "route": "auto_respond",
+        "urgency": "low"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": true,
+        "expected_doc_count": 1,
+        "expected_doc_recall": 1.0,
+        "retrieved_expected_doc_count": 1
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0079"
+    },
+    {
+      "actual": {
+        "cited_doc_ids": [],
+        "combined_confidence": 0.44114909256704166,
+        "intent": "deployment_failure",
+        "intent_confidence": 0.8139335938838393,
+        "latency_seconds": 0.11547400010749698,
+        "outcome": "escalate",
+        "retrieved_doc_ids": [
+          "DOC-DEPLOY-003",
+          "DOC-ONB-001"
+        ],
+        "route": "escalate",
+        "urgency": "high",
+        "urgency_confidence": 0.44114909256704166
+      },
+      "channel": "chat",
+      "citations": {
+        "any_expected_doc_cited": false,
+        "citation_count": 0,
+        "cited_expected_doc_count": 0
+      },
+      "correct": {
+        "intent": true,
+        "route": false,
+        "urgency": false
+      },
+      "expected": {
+        "answerable_from_docs": true,
+        "expected_doc_ids": [
+          "DOC-DEPLOY-001"
+        ],
+        "intent": "deployment_failure",
+        "must_not_auto_respond": false,
+        "route": "auto_respond",
+        "urgency": "medium"
+      },
+      "result_present": true,
+      "retrieval": {
+        "any_expected_doc_retrieved": false,
+        "expected_doc_count": 1,
+        "expected_doc_recall": 0.0,
+        "retrieved_expected_doc_count": 0
+      },
+      "safety": {
+        "unexpected_auto_response": false,
+        "unsafe_auto_response": false
+      },
+      "ticket_id": "VAL-0080"
+    }
+  ],
+  "generated_at": "2026-10-31T14:59:54.707789+00:00",
+  "metrics": {
+    "classification": {
+      "intent": {
+        "accuracy": 1.0,
+        "confusion_matrix": {
+          "account_access": {
+            "account_access": 4
+          },
+          "api_key_issue": {
+            "api_key_issue": 6
+          },
+          "api_usage_question": {
+            "api_usage_question": 4
+          },
+          "authentication_failure": {
+            "authentication_failure": 3
+          },
+          "billing_query": {
+            "billing_query": 10
+          },
+          "compliance_request": {
+            "compliance_request": 1
+          },
+          "configuration_help": {
+            "configuration_help": 3
+          },
+          "data_export": {
+            "data_export": 1
+          },
+          "data_residency": {
+            "data_residency": 6
+          },
+          "database_issue": {
+            "database_issue": 1
+          },
+          "deployment_failure": {
+            "deployment_failure": 5
+          },
+          "feature_request": {
+            "feature_request": 3
+          },
+          "integration_help": {
+            "integration_help": 3
+          },
+          "onboarding": {
+            "onboarding": 4
+          },
+          "performance_degradation": {
+            "performance_degradation": 3
+          },
+          "quota_or_overage": {
+            "quota_or_overage": 2
+          },
+          "rate_limit": {
+            "rate_limit": 1
+          },
+          "rollback_request": {
+            "rollback_request": 6
+          },
+          "security_incident": {
+            "security_incident": 4
+          },
+          "sso_configuration": {
+            "sso_configuration": 1
+          },
+          "unclear_request": {
+            "unclear_request": 6
+          },
+          "webhook_issue": {
+            "webhook_issue": 3
+          }
+        },
+        "correct": 80,
+        "evaluated": 80
+      },
+      "urgency": {
+        "accuracy": 0.4375,
+        "confusion_matrix": {
+          "high": {
+            "high": 7,
+            "medium": 18
+          },
+          "low": {
+            "high": 2,
+            "low": 1,
+            "medium": 17
+          },
+          "medium": {
+            "high": 7,
+            "low": 1,
+            "medium": 27
+          }
+        },
+        "correct": 35,
+        "evaluated": 80
+      }
+    },
+    "coverage": {
+      "labelled_tickets": 80,
+      "matched_results": 80,
+      "result_coverage": 1.0
+    },
+    "generation": {
+      "auto_responses": 0,
+      "auto_responses_with_citations": 0,
+      "citation_coverage": null
+    },
+    "latency_seconds": {
+      "evaluated": 80,
+      "maximum": 11.379072000039741,
+      "mean": 0.23704129125108012,
+      "p50": 0.09495634993072599,
+      "p95": 0.11548735010437668
+    },
+    "outcomes": {
+      "auto_respond": 0,
+      "block": 0,
+      "escalate": 80
+    },
+    "per_channel": {
+      "chat": {
+        "intent_accuracy": 1.0,
+        "route_accuracy": 0.4090909090909091,
+        "tickets": 22,
+        "unsafe_auto_responses": 0
+      },
+      "docs_comment": {
+        "intent_accuracy": 1.0,
+        "route_accuracy": 0.5,
+        "tickets": 16,
+        "unsafe_auto_responses": 0
+      },
+      "email": {
+        "intent_accuracy": 1.0,
+        "route_accuracy": 0.3225806451612903,
+        "tickets": 31,
+        "unsafe_auto_responses": 0
+      },
+      "forum": {
+        "intent_accuracy": 1.0,
+        "route_accuracy": 0.45454545454545453,
+        "tickets": 11,
+        "unsafe_auto_responses": 0
+      }
+    },
+    "retrieval": {
+      "expected_doc_hit_rate": 0.9811320754716981,
+      "macro_expected_doc_recall": 0.8867924528301887,
+      "tickets_with_expected_doc_hit": 52,
+      "tickets_with_expected_docs": 53
+    },
+    "routing": {
+      "accuracy": 0.4,
+      "confusion_matrix": {
+        "auto_respond": {
+          "escalate": 48
+        },
+        "escalate": {
+          "escalate": 32
+        }
+      },
+      "correct": 32,
+      "evaluated": 80,
+      "expected_auto_responses": 48,
+      "missed_auto_responses": 48,
+      "must_not_auto_respond_tickets": 14,
+      "unexpected_auto_responses": 0,
+      "unsafe_auto_response_rate": 0.0,
+      "unsafe_auto_responses": 0
+    }
+  },
+  "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+  "run_report_path": "C:\\Users\\BHARATH KUMAR\\Downloads\\FDE Capstone\\Capstone\\Customer_Success_Agent\\evaluation\\results\\validation_run.json",
+  "schema_version": 1,
+  "tickets_path": "C:\\Users\\BHARATH KUMAR\\Downloads\\FDE Capstone\\Capstone\\Customer_Success_Agent\\data\\validation_tickets.json"
+}

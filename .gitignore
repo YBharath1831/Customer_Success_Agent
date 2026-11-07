@@ -1,0 +1,157 @@
+# ------------------------------------------------------------
+# Secrets and local environment configuration
+# ------------------------------------------------------------
+
+.env
+.env.*
+!.env.example
+
+*.pem
+*.key
+*.p12
+*.pfx
+
+
+# ------------------------------------------------------------
+# Python virtual environments
+# ------------------------------------------------------------
+
+.venv/
+venv/
+env/
+ENV/
+
+
+# ------------------------------------------------------------
+# Python-generated files
+# ------------------------------------------------------------
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.pytype/
+
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+build/
+dist/
+*.egg-info/
+.eggs/
+.ipynb_checkpoints/
+
+
+# ------------------------------------------------------------
+# Generated model artifacts
+#
+# Recreate these with `python -m src.build`. Keeping them out of
+# Git prevents large, Python/version-specific binary files from
+# becoming part of the source repository.
+# ------------------------------------------------------------
+
+artifacts/
+*.joblib
+*.pkl
+*.pickle
+
+
+# ------------------------------------------------------------
+# Runtime application storage
+# ------------------------------------------------------------
+
+storage/
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# Chroma may create these outside storage if misconfigured.
+chroma/
+.chroma/
+
+
+# ------------------------------------------------------------
+# Evaluation output generated at runtime
+#
+# Ignore temporary run output, smoke runs, checkpoints and coverage,
+# but retain the three final validation reports required as evidence
+# in the submitted repository.
+# ------------------------------------------------------------
+
+evaluation/results/*
+!evaluation/results/validation_run.json
+!evaluation/results/validation_metrics.json
+!evaluation/results/validation_summary.json
+evaluation/checkpoints/
+evaluation/*.jsonl
+evaluation/errors/
+
+
+# ------------------------------------------------------------
+# Supplied labelled datasets
+#
+# Keep the documentation corpus and small test fixtures.
+# Do not commit full development/evaluation datasets unless
+# submission instructions explicitly require them.
+# ------------------------------------------------------------
+
+data/development_tickets.json
+data/validation_tickets.json
+data/ground_truth_responses.json
+data/hidden_*.json
+
+!data/documentation.json
+!data/samples/
+!data/samples/**
+!tests/fixtures/
+!tests/fixtures/**
+
+
+# ------------------------------------------------------------
+# Model and library caches
+# ------------------------------------------------------------
+
+.cache/
+.cache-*/
+huggingface/
+sentence_transformers/
+
+
+# ------------------------------------------------------------
+# Logs and temporary files
+# ------------------------------------------------------------
+
+*.log
+logs/
+tmp/
+temp/
+*.tmp
+*.bak
+*.swp
+*.swo
+
+
+# ------------------------------------------------------------
+# IDE settings
+# ------------------------------------------------------------
+
+.vscode/
+.idea/
+*.code-workspace
+
+
+# ------------------------------------------------------------
+# Operating-system files
+# ------------------------------------------------------------
+
+.DS_Store
+Thumbs.db
+desktop.ini
