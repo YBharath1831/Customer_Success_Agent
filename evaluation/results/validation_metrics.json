@@ -19,29 +19,30 @@
   "details": [
     {
       "actual": {
-        "cited_doc_ids": [],
+        "cited_doc_ids": [
+          "DOC-AUTH-004"
+        ],
         "combined_confidence": 0.5008799943838032,
         "intent": "api_key_issue",
         "intent_confidence": 0.8653417383187314,
-        "latency_seconds": 11.379072000039741,
-        "outcome": "escalate",
+        "latency_seconds": 18.855226500018034,
+        "outcome": "auto_respond",
         "retrieved_doc_ids": [
-          "DOC-AUTH-004",
-          "DOC-INT-001"
+          "DOC-AUTH-004"
         ],
-        "route": "escalate",
+        "route": "auto_respond",
         "urgency": "medium",
         "urgency_confidence": 0.5008799943838032
       },
       "channel": "forum",
       "citations": {
-        "any_expected_doc_cited": false,
-        "citation_count": 0,
-        "cited_expected_doc_count": 0
+        "any_expected_doc_cited": true,
+        "citation_count": 2,
+        "cited_expected_doc_count": 1
       },
       "correct": {
         "intent": true,
-        "route": false,
+        "route": true,
         "urgency": true
       },
       "expected": {
@@ -73,7 +74,7 @@
         "combined_confidence": 0.5296119170366698,
         "intent": "unclear_request",
         "intent_confidence": 0.8409438157297225,
-        "latency_seconds": 0.07947400002740324,
+        "latency_seconds": 0.07384289999026805,
         "outcome": "escalate",
         "retrieved_doc_ids": [
           "DOC-API-003",
@@ -123,7 +124,7 @@
         "combined_confidence": 0.440326239409869,
         "intent": "unclear_request",
         "intent_confidence": 0.7930218812838983,
-        "latency_seconds": 0.08674239995889366,
+        "latency_seconds": 0.09009760001208633,
         "outcome": "escalate",
         "retrieved_doc_ids": [
           "DOC-DATA-001",
@@ -170,29 +171,31 @@
     },
     {
       "actual": {
-        "cited_doc_ids": [],
+        "cited_doc_ids": [
+          "DOC-AUTH-002"
+        ],
         "combined_confidence": 0.43250322708100625,
         "intent": "authentication_failure",
         "intent_confidence": 0.8107472540007549,
-        "latency_seconds": 0.08557039988227189,
-        "outcome": "escalate",
+        "latency_seconds": 7.017421800002921,
+        "outcome": "auto_respond",
         "retrieved_doc_ids": [
           "DOC-AUTH-002",
           "DOC-AUTH-004"
         ],
-        "route": "escalate",
+        "route": "auto_respond",
         "urgency": "medium",
         "urgency_confidence": 0.43250322708100625
       },
       "channel": "email",
       "citations": {
         "any_expected_doc_cited": false,
-        "citation_count": 0,
+        "citation_count": 1,
         "cited_expected_doc_count": 0
       },
       "correct": {
         "intent": true,
-        "route": true,
+        "route": false,
         "urgency": true
       },
       "expected": {
@@ -211,19 +214,21 @@
         "retrieved_expected_doc_count": 0
       },
       "safety": {
-        "unexpected_auto_response": false,
+        "unexpected_auto_response": true,
         "unsafe_auto_response": false
       },
       "ticket_id": "VAL-0004"
     },
     {
       "actual": {
-        "cited_doc_ids": [],
+        "cited_doc_ids": [
+          "DOC-API-002"
+        ],
         "combined_confidence": 0.5163889395945498,
         "intent": "api_usage_question",
         "intent_confidence": 0.8628632376060034,
-        "latency_seconds": 0.07830319995991886,
-        "outcome": "escalate",
+        "latency_seconds": 3.648077000048943,
+        "outcome": "auto_respond",
         "retrieved_doc_ids": [
           "DOC-API-002",
           "DOC-API-003",
@@ -231,19 +236,19 @@
           "DOC-INT-001",
           "DOC-INT-002"
         ],
-        "route": "escalate",
+        "route": "auto_respond",
         "urgency": "medium",
         "urgency_confidence": 0.5163889395945498
       },
       "channel": "chat",
       "citations": {
-        "any_expected_doc_cited": false,
-        "citation_count": 0,
-        "cited_expected_doc_count": 0
+        "any_expected_doc_cited": true,
+        "citation_count": 1,
+        "cited_expected_doc_count": 1
       },
       "correct": {
         "intent": true,
-        "route": false,
+        "route": true,
         "urgency": false
       },
       "expected": {
@@ -271,29 +276,31 @@
     },
     {
       "actual": {
-        "cited_doc_ids": [],
+        "cited_doc_ids": [
+          "DOC-AUTH-002"
+        ],
         "combined_confidence": 0.4649592589301503,
         "intent": "authentication_failure",
         "intent_confidence": 0.847394645162975,
-        "latency_seconds": 0.10342469997704029,
-        "outcome": "escalate",
+        "latency_seconds": 4.226136600016616,
+        "outcome": "auto_respond",
         "retrieved_doc_ids": [
           "DOC-AUTH-001",
           "DOC-AUTH-002"
         ],
-        "route": "escalate",
+        "route": "auto_respond",
         "urgency": "medium",
         "urgency_confidence": 0.4649592589301503
       },
       "channel": "email",
       "citations": {
-        "any_expected_doc_cited": false,
-        "citation_count": 0,
-        "cited_expected_doc_count": 0
+        "any_expected_doc_cited": true,
+        "citation_count": 1,
+        "cited_expected_doc_count": 1
       },
       "correct": {
         "intent": true,
-        "route": false,
+        "route": true,
         "urgency": true
       },
       "expected": {
@@ -326,12 +333,12 @@
         "combined_confidence": 0.5222648135699269,
         "intent": "unclear_request",
         "intent_confidence": 0.8555459469726779,
-        "latency_seconds": 0.08937350008636713,
+        "latency_seconds": 0.06744350004009902,
         "outcome": "escalate",
         "retrieved_doc_ids": [
           "DOC-ACCT-001",
+          "DOC-ACCT-002",
           "DOC-API-003",
-          "DOC-DATA-002",
           "DOC-INT-002",
           "DOC-SEC-002"
         ],
@@ -377,11 +384,11 @@
         "combined_confidence": 0.568370571136655,
         "intent": "account_access",
         "intent_confidence": 0.7051322704949133,
-        "latency_seconds": 0.09528899984434247,
+        "latency_seconds": 0.08884640003088862,
         "outcome": "escalate",
         "retrieved_doc_ids": [
           "DOC-ACCT-001",
-          "DOC-SEC-002"
+          "DOC-ACCT-002"
         ],
         "route": "escalate",
         "urgency": "medium",
@@ -427,7 +434,7 @@
         "combined_confidence": 0.4996365879706102,
         "intent": "compliance_request",
         "intent_confidence": 0.8490080286412458,
-        "latency_seconds": 0.09277310012839735,
+        "latency_seconds": 0.09539459994994104,
         "outcome": "escalate",
         "retrieved_doc_ids": [
           "DOC-SEC-001",
@@ -477,7 +484,7 @@
         "combined_confidence": 0.45419372666467045,
         "intent": "billing_query",
         "intent_confidence": 0.875025559487328,
-        "latency_seconds": 0.09893829980865121,
+        "latency_seconds": 3.879765200021211,
         "outcome": "escalate",
         "retrieved_doc_ids": [
           "DOC-BILL-001",
@@ -524,30 +531,32 @@
     },
     {
       "actual": {
-        "cited_doc_ids": [],
+        "cited_doc_ids": [
+          "DOC-DEPLOY-002"
+        ],
         "combined_confidence": 0.5518469436397625,
         "intent": "rollback_request",
         "intent_confidence": 0.8780756597947003,
-        "latency_seconds": 0.09255749988369644,
-        "outcome": "escalate",
+        "latency_seconds": 7.39265890000388,
+        "outcome": "auto_respond",
         "retrieved_doc_ids": [
           "DOC-API-003",
           "DOC-DEPLOY-002",
           "DOC-DEPLOY-003"
         ],
-        "route": "escalate",
+        "route": "auto_respond",
         "urgency": "high",
         "urgency_confidence": 0.5518469436397625
       },
       "channel": "forum",
       "citations": {
-        "any_expected_doc_cited": false,
-        "citation_count": 0,
-        "cited_expected_doc_count": 0
+        "any_expected_doc_cited": true,
+        "citation_count": 1,
+        "cited_expected_doc_count": 1
       },
       "correct": {
         "intent": true,
-        "route": false,
+        "route": true,
         "urgency": false
       },
       "expected": {
@@ -575,30 +584,32 @@
     },
     {
       "actual": {
-        "cited_doc_ids": [],
+        "cited_doc_ids": [
+          "DOC-DEPLOY-002"
+        ],
         "combined_confidence": 0.5337014061680293,
         "intent": "rollback_request",
         "intent_confidence": 0.8793986714908927,
-        "latency_seconds": 0.10572879994288087,
-        "outcome": "escalate",
+        "latency_seconds": 6.793878299999051,
+        "outcome": "auto_respond",
         "retrieved_doc_ids": [
           "DOC-DATA-001",
           "DOC-DEPLOY-002",
           "DOC-DEPLOY-003"
         ],
-        "route": "escalate",
+        "route": "auto_respond",
         "urgency": "high",
         "urgency_confidence": 0.5337014061680293
       },
       "channel": "email",
       "citations": {
-        "any_expected_doc_cited": false,
-        "citation_count": 0,
-        "cited_expected_doc_count": 0
+        "any_expected_doc_cited": true,
+        "citation_count": 1,
+        "cited_expected_doc_count": 1
       },
       "correct": {
         "intent": true,
-        "route": false,
+        "route": true,
         "urgency": true
       },
       "expected": {
@@ -626,29 +637,31 @@
     },
     {
       "actual": {
-        "cited_doc_ids": [],
+        "cited_doc_ids": [
+          "DOC-BILL-001"
+        ],
         "combined_confidence": 0.4735614003980664,
         "intent": "billing_query",
         "intent_confidence": 0.8731087181495342,
-        "latency_seconds": 0.10964389983564615,
-        "outcome": "escalate",
+        "latency_seconds": 5.9046782000223175,
+        "outcome": "auto_respond",
         "retrieved_doc_ids": [
           "DOC-BILL-001",
           "DOC-BILL-002"
         ],
-        "route": "escalate",
+        "route": "auto_respond",
         "urgency": "medium",
         "urgency_confidence": 0.4735614003980664
       },
       "channel": "docs_comment",
       "citations": {
-        "any_expected_doc_cited": false,
-        "citation_count": 0,
-        "cited_expected_doc_count": 0
+        "any_expected_doc_cited": true,
+        "citation_count": 2,
+        "cited_expected_doc_count": 1
       },
       "correct": {
         "intent": true,
-        "route": false,
+        "route": true,
         "urgency": true
       },
       "expected": {
@@ -681,7 +694,7 @@
         "combined_confidence": 0.5150070782622581,
         "intent": "rollback_request",
         "intent_confidence": 0.8248654832054415,
-        "latency_seconds": 0.11068679997697473,
+        "latency_seconds": 9.72377919999417,
         "outcome": "escalate",
         "retrieved_doc_ids": [
           "DOC-API-003",
@@ -729,14 +742,13 @@
         "combined_confidence": 0.5291713611089538,
         "intent": "unclear_request",
         "intent_confidence": 0.8714552903027983,
-        "latency_seconds": 0.08165320008993149,
+        "latency_seconds": 0.07093109999550506,
         "outcome": "escalate",
         "retrieved_doc_ids": [
           "DOC-ACCT-001",
           "DOC-ACCT-002",
           "DOC-INT-002",
-          "DOC-SEC-001",
-          "DOC-SEC-002"
+          "DOC-SEC-001"
         ],
         "route": "escalate",
         "urgency": "medium",
@@ -780,10 +792,9 @@
         "combined_confidence": 0.39349646608767674,
         "intent": "performance_degradation",
         "intent_confidence": 0.8007278483899855,
-        "latency_seconds": 0.0849455997813493,
+        "latency_seconds": 5.559221100003924,
         "outcome": "escalate",
         "retrieved_doc_ids": [
-          "DOC-ONB-002",
           "DOC-PERF-001",
           "DOC-PERF-002"
         ],
@@ -829,7 +840,7 @@
         "combined_confidence": 0.6032706575657641,
         "intent": "unclear_request",
         "intent_confidence": 0.8005422449252508,
-        "latency_seconds": 0.08276299992576241,
+        "latency_seconds": 0.06695269996998832,
         "outcome": "escalate",
         "retrieved_doc_ids": [
           "DOC-ACCT-001",
@@ -876,28 +887,30 @@
     },
     {
       "actual": {
-        "cited_doc_ids": [],
+        "cited_doc_ids": [
+          "DOC-API-002"
+        ],
         "combined_confidence": 0.49735072803939134,
         "intent": "api_usage_question",
         "intent_confidence": 0.878946766319635,
-        "latency_seconds": 0.09959839982911944,
-        "outcome": "escalate",
+        "latency_seconds": 5.151533800002653,
+        "outcome": "auto_respond",
         "retrieved_doc_ids": [
           "DOC-API-002"
         ],
-        "route": "escalate",
+        "route": "auto_respond",
         "urgency": "medium",
         "urgency_confidence": 0.49735072803939134
       },
       "channel": "email",
       "citations": {
-        "any_expected_doc_cited": false,
-        "citation_count": 0,
-        "cited_expected_doc_count": 0
+        "any_expected_doc_cited": true,
+        "citation_count": 1,
+        "cited_expected_doc_count": 1
       },
       "correct": {
         "intent": true,
-        "route": false,
+        "route": true,
         "urgency": true
       },
       "expected": {
@@ -929,10 +942,11 @@
         "combined_confidence": 0.5744597087709601,
         "intent": "account_access",
         "intent_confidence": 0.8077033635485246,
-        "latency_seconds": 0.08907210011966527,
+        "latency_seconds": 6.763794999977108,
         "outcome": "escalate",
         "retrieved_doc_ids": [
           "DOC-ACCT-001",
+          "DOC-ACCT-002",
           "DOC-SEC-001"
         ],
         "route": "escalate",
@@ -979,13 +993,12 @@
         "combined_confidence": 0.4600104397264508,
         "intent": "feature_request",
         "intent_confidence": 0.8455061658215132,
-        "latency_seconds": 0.08926400006748736,
+        "latency_seconds": 0.07062669994775206,
         "outcome": "escalate",
         "retrieved_doc_ids": [
           "DOC-API-003",
-          "DOC-BILL-003",
+          "DOC-AUTH-004",
           "DOC-DATA-002",
-          "DOC-DEPLOY-002",
           "DOC-SEC-003"
         ],
         "route": "escalate",
@@ -1026,31 +1039,33 @@
     },
     {
       "actual": {
-        "cited_doc_ids": [],
+        "cited_doc_ids": [
+          "DOC-DEPLOY-002"
+        ],
         "combined_confidence": 0.5678594152265414,
         "intent": "rollback_request",
         "intent_confidence": 0.8661934564115912,
-        "latency_seconds": 0.0969887999817729,
-        "outcome": "escalate",
+        "latency_seconds": 6.393484599946532,
+        "outcome": "auto_respond",
         "retrieved_doc_ids": [
           "DOC-API-003",
-          "DOC-DATA-002",
+          "DOC-DEPLOY-001",
           "DOC-DEPLOY-002",
           "DOC-INT-002"
         ],
-        "route": "escalate",
+        "route": "auto_respond",
         "urgency": "high",
         "urgency_confidence": 0.5678594152265414
       },
       "channel": "chat",
       "citations": {
-        "any_expected_doc_cited": false,
-        "citation_count": 0,
-        "cited_expected_doc_count": 0
+        "any_expected_doc_cited": true,
+        "citation_count": 1,
+        "cited_expected_doc_count": 1
       },
       "correct": {
         "intent": true,
-        "route": false,
+        "route": true,
         "urgency": true
       },
       "expected": {
@@ -1078,29 +1093,31 @@
     },
     {
       "actual": {
-        "cited_doc_ids": [],
+        "cited_doc_ids": [
+          "DOC-PERF-001"
+        ],
         "combined_confidence": 0.379370405649113,
         "intent": "performance_degradation",
         "intent_confidence": 0.8190102251855672,
-        "latency_seconds": 0.09394000004976988,
-        "outcome": "escalate",
+        "latency_seconds": 4.1562387000303715,
+        "outcome": "auto_respond",
         "retrieved_doc_ids": [
           "DOC-PERF-001",
           "DOC-PERF-002"
         ],
-        "route": "escalate",
+        "route": "auto_respond",
         "urgency": "medium",
         "urgency_confidence": 0.379370405649113
       },
       "channel": "docs_comment",
       "citations": {
         "any_expected_doc_cited": false,
-        "citation_count": 0,
+        "citation_count": 1,
         "cited_expected_doc_count": 0
       },
       "correct": {
         "intent": true,
-        "route": true,
+        "route": false,
         "urgency": true
       },
       "expected": {
@@ -1119,37 +1136,39 @@
         "retrieved_expected_doc_count": 0
       },
       "safety": {
-        "unexpected_auto_response": false,
+        "unexpected_auto_response": true,
         "unsafe_auto_response": false
       },
       "ticket_id": "VAL-0022"
     },
     {
       "actual": {
-        "cited_doc_ids": [],
+        "cited_doc_ids": [
+          "DOC-ONB-001"
+        ],
         "combined_confidence": 0.4947853555841725,
         "intent": "onboarding",
         "intent_confidence": 0.8603092208729529,
-        "latency_seconds": 0.09399350010789931,
-        "outcome": "escalate",
+        "latency_seconds": 7.051493100007065,
+        "outcome": "auto_respond",
         "retrieved_doc_ids": [
           "DOC-DEPLOY-001",
           "DOC-ONB-001",
           "DOC-ONB-002"
         ],
-        "route": "escalate",
+        "route": "auto_respond",
         "urgency": "medium",
         "urgency_confidence": 0.4947853555841725
       },
       "channel": "email",
       "citations": {
-        "any_expected_doc_cited": false,
-        "citation_count": 0,
-        "cited_expected_doc_count": 0
+        "any_expected_doc_cited": true,
+        "citation_count": 1,
+        "cited_expected_doc_count": 1
       },
       "correct": {
         "intent": true,
-        "route": false,
+        "route": true,
         "urgency": false
       },
       "expected": {
@@ -1178,29 +1197,31 @@
     },
     {
       "actual": {
-        "cited_doc_ids": [],
+        "cited_doc_ids": [
+          "DOC-AUTH-004"
+        ],
         "combined_confidence": 0.5263771004403849,
         "intent": "api_key_issue",
         "intent_confidence": 0.8497028423018254,
-        "latency_seconds": 0.09843029989860952,
-        "outcome": "escalate",
+        "latency_seconds": 5.647112499980722,
+        "outcome": "auto_respond",
         "retrieved_doc_ids": [
           "DOC-ACCT-001",
           "DOC-AUTH-004"
         ],
-        "route": "escalate",
+        "route": "auto_respond",
         "urgency": "medium",
         "urgency_confidence": 0.5263771004403849
       },
       "channel": "chat",
       "citations": {
         "any_expected_doc_cited": false,
-        "citation_count": 0,
+        "citation_count": 1,
         "cited_expected_doc_count": 0
       },
       "correct": {
         "intent": true,
-        "route": true,
+        "route": false,
         "urgency": false
       },
       "expected": {
@@ -1219,7 +1240,7 @@
         "retrieved_expected_doc_count": 0
       },
       "safety": {
-        "unexpected_auto_response": false,
+        "unexpected_auto_response": true,
         "unsafe_auto_response": false
       },
       "ticket_id": "VAL-0024"
@@ -1230,7 +1251,7 @@
         "combined_confidence": 0.40253886063732747,
         "intent": "deployment_failure",
         "intent_confidence": 0.8543730525785939,
-        "latency_seconds": 0.09679630002938211,
+        "latency_seconds": 7.647699199966155,
         "outcome": "escalate",
         "retrieved_doc_ids": [
           "DOC-DEPLOY-001"
@@ -1277,7 +1298,7 @@
         "combined_confidence": 0.5236833989527713,
         "intent": "data_residency",
         "intent_confidence": 0.8643464988485872,
-        "latency_seconds": 0.09667690005153418,
+        "latency_seconds": 6.112600199994631,
         "outcome": "escalate",
         "retrieved_doc_ids": [
           "DOC-DATA-003"
@@ -1324,7 +1345,7 @@
         "combined_confidence": 0.40573827283544833,
         "intent": "quota_or_overage",
         "intent_confidence": 0.8443624105304925,
-        "latency_seconds": 0.0927697999868542,
+        "latency_seconds": 5.779119999962859,
         "outcome": "escalate",
         "retrieved_doc_ids": [
           "DOC-BILL-001",
@@ -1371,29 +1392,31 @@
     },
     {
       "actual": {
-        "cited_doc_ids": [],
+        "cited_doc_ids": [
+          "DOC-DEPLOY-003"
+        ],
         "combined_confidence": 0.48647230239003125,
         "intent": "deployment_failure",
         "intent_confidence": 0.8495412238444725,
-        "latency_seconds": 0.0924394999165088,
-        "outcome": "escalate",
+        "latency_seconds": 10.173248000035528,
+        "outcome": "auto_respond",
         "retrieved_doc_ids": [
           "DOC-DEPLOY-003",
           "DOC-ONB-001"
         ],
-        "route": "escalate",
+        "route": "auto_respond",
         "urgency": "high",
         "urgency_confidence": 0.48647230239003125
       },
       "channel": "email",
       "citations": {
-        "any_expected_doc_cited": false,
-        "citation_count": 0,
-        "cited_expected_doc_count": 0
+        "any_expected_doc_cited": true,
+        "citation_count": 2,
+        "cited_expected_doc_count": 1
       },
       "correct": {
         "intent": true,
-        "route": false,
+        "route": true,
         "urgency": false
       },
       "expected": {
@@ -1422,30 +1445,32 @@
     },
     {
       "actual": {
-        "cited_doc_ids": [],
+        "cited_doc_ids": [
+          "DOC-AUTH-001"
+        ],
         "combined_confidence": 0.43579089572563207,
         "intent": "onboarding",
         "intent_confidence": 0.8503750295339206,
-        "latency_seconds": 0.08843639981932938,
-        "outcome": "escalate",
+        "latency_seconds": 5.928550400014501,
+        "outcome": "auto_respond",
         "retrieved_doc_ids": [
           "DOC-ACCT-001",
           "DOC-AUTH-001",
           "DOC-ONB-001"
         ],
-        "route": "escalate",
+        "route": "auto_respond",
         "urgency": "medium",
         "urgency_confidence": 0.43579089572563207
       },
       "channel": "chat",
       "citations": {
         "any_expected_doc_cited": false,
-        "citation_count": 0,
+        "citation_count": 1,
         "cited_expected_doc_count": 0
       },
       "correct": {
         "intent": true,
-        "route": false,
+        "route": true,
         "urgency": true
       },
       "expected": {
@@ -1477,14 +1502,14 @@
         "combined_confidence": 0.45328934221420264,
         "intent": "feature_request",
         "intent_confidence": 0.8266311598004519,
-        "latency_seconds": 0.08868420007638633,
+        "latency_seconds": 0.06833379995077848,
         "outcome": "escalate",
         "retrieved_doc_ids": [
+          "DOC-AUTH-004",
           "DOC-BILL-002",
           "DOC-DEPLOY-002",
           "DOC-INT-001",
-          "DOC-ONB-001",
-          "DOC-PERF-002"
+          "DOC-ONB-001"
         ],
         "route": "escalate",
         "urgency": "low",
@@ -1524,30 +1549,32 @@
     },
     {
       "actual": {
-        "cited_doc_ids": [],
+        "cited_doc_ids": [
+          "DOC-DEPLOY-002"
+        ],
         "combined_confidence": 0.5531876897942384,
         "intent": "rollback_request",
         "intent_confidence": 0.8670108422000168,
-        "latency_seconds": 0.09473840007558465,
-        "outcome": "escalate",
+        "latency_seconds": 9.86961870000232,
+        "outcome": "auto_respond",
         "retrieved_doc_ids": [
           "DOC-API-003",
-          "DOC-DATA-001",
+          "DOC-DEPLOY-001",
           "DOC-DEPLOY-002"
         ],
-        "route": "escalate",
+        "route": "auto_respond",
         "urgency": "high",
         "urgency_confidence": 0.5531876897942384
       },
       "channel": "email",
       "citations": {
-        "any_expected_doc_cited": false,
-        "citation_count": 0,
-        "cited_expected_doc_count": 0
+        "any_expected_doc_cited": true,
+        "citation_count": 1,
+        "cited_expected_doc_count": 1
       },
       "correct": {
         "intent": true,
-        "route": false,
+        "route": true,
         "urgency": false
       },
       "expected": {
@@ -1579,7 +1606,7 @@
         "combined_confidence": 0.613177691981063,
         "intent": "feature_request",
         "intent_confidence": 0.8639232662016264,
-        "latency_seconds": 0.08884590002708137,
+        "latency_seconds": 0.07774470001459122,
         "outcome": "escalate",
         "retrieved_doc_ids": [
           "DOC-ACCT-002",
@@ -1623,29 +1650,30 @@
     },
     {
       "actual": {
-        "cited_doc_ids": [],
+        "cited_doc_ids": [
+          "DOC-API-003"
+        ],
         "combined_confidence": 0.4350438503925332,
         "intent": "webhook_issue",
         "intent_confidence": 0.8668870471263084,
-        "latency_seconds": 0.08008889993652701,
-        "outcome": "escalate",
+        "latency_seconds": 7.648446600011084,
+        "outcome": "auto_respond",
         "retrieved_doc_ids": [
-          "DOC-API-003",
-          "DOC-AUTH-003"
+          "DOC-API-003"
         ],
-        "route": "escalate",
+        "route": "auto_respond",
         "urgency": "medium",
         "urgency_confidence": 0.4350438503925332
       },
       "channel": "forum",
       "citations": {
-        "any_expected_doc_cited": false,
-        "citation_count": 0,
-        "cited_expected_doc_count": 0
+        "any_expected_doc_cited": true,
+        "citation_count": 1,
+        "cited_expected_doc_count": 1
       },
       "correct": {
         "intent": true,
-        "route": false,
+        "route": true,
         "urgency": false
       },
       "expected": {
@@ -1673,30 +1701,32 @@
     },
     {
       "actual": {
-        "cited_doc_ids": [],
+        "cited_doc_ids": [
+          "DOC-DEPLOY-002"
+        ],
         "combined_confidence": 0.5337014061680293,
         "intent": "rollback_request",
         "intent_confidence": 0.8793986714908927,
-        "latency_seconds": 0.09588719997555017,
-        "outcome": "escalate",
+        "latency_seconds": 6.545529199996963,
+        "outcome": "auto_respond",
         "retrieved_doc_ids": [
           "DOC-DATA-001",
           "DOC-DEPLOY-002",
           "DOC-DEPLOY-003"
         ],
-        "route": "escalate",
+        "route": "auto_respond",
         "urgency": "high",
         "urgency_confidence": 0.5337014061680293
       },
       "channel": "email",
       "citations": {
         "any_expected_doc_cited": false,
-        "citation_count": 0,
+        "citation_count": 1,
         "cited_expected_doc_count": 0
       },
       "correct": {
         "intent": true,
-        "route": true,
+        "route": false,
         "urgency": true
       },
       "expected": {
@@ -1715,7 +1745,7 @@
         "retrieved_expected_doc_count": 0
       },
       "safety": {
-        "unexpected_auto_response": false,
+        "unexpected_auto_response": true,
         "unsafe_auto_response": false
       },
       "ticket_id": "VAL-0034"
@@ -1726,7 +1756,7 @@
         "combined_confidence": 0.5956608295386451,
         "intent": "unclear_request",
         "intent_confidence": 0.8262492126844397,
-        "latency_seconds": 0.0852217001374811,
+        "latency_seconds": 0.06749749998562038,
         "outcome": "escalate",
         "retrieved_doc_ids": [
           "DOC-AUTH-002",
@@ -1777,10 +1807,10 @@
         "combined_confidence": 0.4210138700164833,
         "intent": "onboarding",
         "intent_confidence": 0.8623509059344396,
-        "latency_seconds": 0.1047067001927644,
+        "latency_seconds": 6.04146740003489,
         "outcome": "escalate",
         "retrieved_doc_ids": [
-          "DOC-AUTH-001",
+          "DOC-AUTH-003",
           "DOC-ONB-001",
           "DOC-SEC-002"
         ],
@@ -1829,7 +1859,7 @@
         "combined_confidence": 0.5492133483808509,
         "intent": "data_residency",
         "intent_confidence": 0.842304515014507,
-        "latency_seconds": 0.08989800000563264,
+        "latency_seconds": 3.93722100002924,
         "outcome": "escalate",
         "retrieved_doc_ids": [
           "DOC-DATA-003"
@@ -1876,7 +1906,7 @@
         "combined_confidence": 0.4014584589686476,
         "intent": "performance_degradation",
         "intent_confidence": 0.85770217472569,
-        "latency_seconds": 0.0928315999917686,
+        "latency_seconds": 10.163358599995263,
         "outcome": "escalate",
         "retrieved_doc_ids": [
           "DOC-API-001",
@@ -1924,30 +1954,32 @@
     },
     {
       "actual": {
-        "cited_doc_ids": [],
+        "cited_doc_ids": [
+          "DOC-AUTH-004"
+        ],
         "combined_confidence": 0.5433079075851993,
         "intent": "api_key_issue",
         "intent_confidence": 0.8679521188192062,
-        "latency_seconds": 0.08798369998112321,
-        "outcome": "escalate",
+        "latency_seconds": 5.907888900022954,
+        "outcome": "auto_respond",
         "retrieved_doc_ids": [
           "DOC-AUTH-004",
           "DOC-SEC-001",
           "DOC-SEC-002"
         ],
-        "route": "escalate",
+        "route": "auto_respond",
         "urgency": "medium",
         "urgency_confidence": 0.5433079075851993
       },
       "channel": "forum",
       "citations": {
-        "any_expected_doc_cited": false,
-        "citation_count": 0,
-        "cited_expected_doc_count": 0
+        "any_expected_doc_cited": true,
+        "citation_count": 1,
+        "cited_expected_doc_count": 1
       },
       "correct": {
         "intent": true,
-        "route": false,
+        "route": true,
         "urgency": false
       },
       "expected": {
@@ -1979,7 +2011,7 @@
         "combined_confidence": 0.4735614003980664,
         "intent": "billing_query",
         "intent_confidence": 0.8731087181495342,
-        "latency_seconds": 0.08455499983392656,
+        "latency_seconds": 8.684111099981237,
         "outcome": "escalate",
         "retrieved_doc_ids": [
           "DOC-BILL-001",
@@ -2026,29 +2058,31 @@
     },
     {
       "actual": {
-        "cited_doc_ids": [],
+        "cited_doc_ids": [
+          "DOC-BILL-001"
+        ],
         "combined_confidence": 0.4735614003980664,
         "intent": "billing_query",
         "intent_confidence": 0.8731087181495342,
-        "latency_seconds": 0.09102510008960962,
-        "outcome": "escalate",
+        "latency_seconds": 7.256697400007397,
+        "outcome": "auto_respond",
         "retrieved_doc_ids": [
           "DOC-BILL-001",
           "DOC-BILL-002"
         ],
-        "route": "escalate",
+        "route": "auto_respond",
         "urgency": "medium",
         "urgency_confidence": 0.4735614003980664
       },
       "channel": "email",
       "citations": {
-        "any_expected_doc_cited": false,
-        "citation_count": 0,
-        "cited_expected_doc_count": 0
+        "any_expected_doc_cited": true,
+        "citation_count": 2,
+        "cited_expected_doc_count": 1
       },
       "correct": {
         "intent": true,
-        "route": false,
+        "route": true,
         "urgency": false
       },
       "expected": {
@@ -2080,10 +2114,9 @@
         "combined_confidence": 0.5916738484892939,
         "intent": "configuration_help",
         "intent_confidence": 0.8587677170141711,
-        "latency_seconds": 0.09025090001523495,
+        "latency_seconds": 7.473194900027011,
         "outcome": "escalate",
         "retrieved_doc_ids": [
-          "DOC-DEPLOY-002",
           "DOC-DEPLOY-004",
           "DOC-SEC-002"
         ],
@@ -2132,7 +2165,7 @@
         "combined_confidence": 0.6098788891749408,
         "intent": "security_incident",
         "intent_confidence": 0.8734620752990985,
-        "latency_seconds": 0.09444550005719066,
+        "latency_seconds": 0.125489599944558,
         "outcome": "escalate",
         "retrieved_doc_ids": [
           "DOC-SEC-001",
@@ -2179,29 +2212,31 @@
     },
     {
       "actual": {
-        "cited_doc_ids": [],
+        "cited_doc_ids": [
+          "DOC-BILL-001"
+        ],
         "combined_confidence": 0.4780517430077107,
         "intent": "billing_query",
         "intent_confidence": 0.8689077709114974,
-        "latency_seconds": 0.08686040015891194,
-        "outcome": "escalate",
+        "latency_seconds": 7.512818199989852,
+        "outcome": "auto_respond",
         "retrieved_doc_ids": [
           "DOC-BILL-001",
-          "DOC-BILL-003"
+          "DOC-BILL-002"
         ],
-        "route": "escalate",
+        "route": "auto_respond",
         "urgency": "medium",
         "urgency_confidence": 0.4780517430077107
       },
       "channel": "chat",
       "citations": {
-        "any_expected_doc_cited": false,
-        "citation_count": 0,
-        "cited_expected_doc_count": 0
+        "any_expected_doc_cited": true,
+        "citation_count": 2,
+        "cited_expected_doc_count": 1
       },
       "correct": {
         "intent": true,
-        "route": false,
+        "route": true,
         "urgency": false
       },
       "expected": {
@@ -2229,30 +2264,32 @@
     },
     {
       "actual": {
-        "cited_doc_ids": [],
+        "cited_doc_ids": [
+          "DOC-DATA-001"
+        ],
         "combined_confidence": 0.4265001772767683,
         "intent": "data_export",
         "intent_confidence": 0.8652974748365331,
-        "latency_seconds": 0.08788809995166957,
-        "outcome": "escalate",
+        "latency_seconds": 7.127669700013939,
+        "outcome": "auto_respond",
         "retrieved_doc_ids": [
           "DOC-DATA-001",
-          "DOC-DEPLOY-002",
-          "DOC-SEC-001"
+          "DOC-SEC-001",
+          "DOC-SEC-003"
         ],
-        "route": "escalate",
+        "route": "auto_respond",
         "urgency": "medium",
         "urgency_confidence": 0.4265001772767683
       },
       "channel": "email",
       "citations": {
-        "any_expected_doc_cited": false,
-        "citation_count": 0,
-        "cited_expected_doc_count": 0
+        "any_expected_doc_cited": true,
+        "citation_count": 1,
+        "cited_expected_doc_count": 1
       },
       "correct": {
         "intent": true,
-        "route": false,
+        "route": true,
         "urgency": false
       },
       "expected": {
@@ -2284,7 +2321,7 @@
         "combined_confidence": 0.48722560486480626,
         "intent": "api_usage_question",
         "intent_confidence": 0.7094822768659763,
-        "latency_seconds": 0.09858170012012124,
+        "latency_seconds": 0.11066820000996813,
         "outcome": "escalate",
         "retrieved_doc_ids": [
           "DOC-API-001",
@@ -2332,7 +2369,7 @@
         "combined_confidence": 0.4764636935459599,
         "intent": "rate_limit",
         "intent_confidence": 0.7086021084118519,
-        "latency_seconds": 0.17317630001343787,
+        "latency_seconds": 0.12971359997754917,
         "outcome": "escalate",
         "retrieved_doc_ids": [
           "DOC-API-001",
@@ -2384,7 +2421,7 @@
         "combined_confidence": 0.572540515328011,
         "intent": "security_incident",
         "intent_confidence": 0.8557308533375164,
-        "latency_seconds": 0.09888499998487532,
+        "latency_seconds": 0.11794119997648522,
         "outcome": "escalate",
         "retrieved_doc_ids": [
           "DOC-SEC-001",
@@ -2428,30 +2465,32 @@
     },
     {
       "actual": {
-        "cited_doc_ids": [],
+        "cited_doc_ids": [
+          "DOC-AUTH-004"
+        ],
         "combined_confidence": 0.545674760892037,
         "intent": "api_key_issue",
         "intent_confidence": 0.8485093981699355,
-        "latency_seconds": 0.09068070002831519,
-        "outcome": "escalate",
+        "latency_seconds": 8.356823500012979,
+        "outcome": "auto_respond",
         "retrieved_doc_ids": [
           "DOC-ACCT-001",
           "DOC-AUTH-004",
           "DOC-DEPLOY-004"
         ],
-        "route": "escalate",
+        "route": "auto_respond",
         "urgency": "medium",
         "urgency_confidence": 0.545674760892037
       },
       "channel": "email",
       "citations": {
-        "any_expected_doc_cited": false,
-        "citation_count": 0,
-        "cited_expected_doc_count": 0
+        "any_expected_doc_cited": true,
+        "citation_count": 2,
+        "cited_expected_doc_count": 1
       },
       "correct": {
         "intent": true,
-        "route": false,
+        "route": true,
         "urgency": true
       },
       "expected": {
@@ -2479,29 +2518,31 @@
     },
     {
       "actual": {
-        "cited_doc_ids": [],
+        "cited_doc_ids": [
+          "DOC-ONB-001"
+        ],
         "combined_confidence": 0.4614477083540591,
         "intent": "onboarding",
         "intent_confidence": 0.8585427424316787,
-        "latency_seconds": 0.08694379986263812,
-        "outcome": "escalate",
+        "latency_seconds": 8.07923800003482,
+        "outcome": "auto_respond",
         "retrieved_doc_ids": [
           "DOC-DEPLOY-001",
           "DOC-ONB-001"
         ],
-        "route": "escalate",
+        "route": "auto_respond",
         "urgency": "medium",
         "urgency_confidence": 0.4614477083540591
       },
       "channel": "email",
       "citations": {
-        "any_expected_doc_cited": false,
-        "citation_count": 0,
-        "cited_expected_doc_count": 0
+        "any_expected_doc_cited": true,
+        "citation_count": 1,
+        "cited_expected_doc_count": 1
       },
       "correct": {
         "intent": true,
-        "route": false,
+        "route": true,
         "urgency": false
       },
       "expected": {
@@ -2529,28 +2570,30 @@
     },
     {
       "actual": {
-        "cited_doc_ids": [],
+        "cited_doc_ids": [
+          "DOC-INT-002"
+        ],
         "combined_confidence": 0.4690603161819742,
         "intent": "integration_help",
         "intent_confidence": 0.8079789867652883,
-        "latency_seconds": 0.08924639993347228,
-        "outcome": "escalate",
+        "latency_seconds": 5.568919799989089,
+        "outcome": "auto_respond",
         "retrieved_doc_ids": [
           "DOC-INT-002"
         ],
-        "route": "escalate",
+        "route": "auto_respond",
         "urgency": "medium",
         "urgency_confidence": 0.4690603161819742
       },
       "channel": "forum",
       "citations": {
         "any_expected_doc_cited": false,
-        "citation_count": 0,
+        "citation_count": 2,
         "cited_expected_doc_count": 0
       },
       "correct": {
         "intent": true,
-        "route": true,
+        "route": false,
         "urgency": true
       },
       "expected": {
@@ -2569,36 +2612,38 @@
         "retrieved_expected_doc_count": 0
       },
       "safety": {
-        "unexpected_auto_response": false,
+        "unexpected_auto_response": true,
         "unsafe_auto_response": false
       },
       "ticket_id": "VAL-0051"
     },
     {
       "actual": {
-        "cited_doc_ids": [],
+        "cited_doc_ids": [
+          "DOC-AUTH-001"
+        ],
         "combined_confidence": 0.4309965545447602,
         "intent": "authentication_failure",
         "intent_confidence": 0.8654807508237955,
-        "latency_seconds": 0.09517429978586733,
-        "outcome": "escalate",
+        "latency_seconds": 7.957034200022463,
+        "outcome": "auto_respond",
         "retrieved_doc_ids": [
           "DOC-AUTH-001",
           "DOC-AUTH-002"
         ],
-        "route": "escalate",
+        "route": "auto_respond",
         "urgency": "medium",
         "urgency_confidence": 0.4309965545447602
       },
       "channel": "chat",
       "citations": {
-        "any_expected_doc_cited": false,
-        "citation_count": 0,
-        "cited_expected_doc_count": 0
+        "any_expected_doc_cited": true,
+        "citation_count": 1,
+        "cited_expected_doc_count": 1
       },
       "correct": {
         "intent": true,
-        "route": false,
+        "route": true,
         "urgency": true
       },
       "expected": {
@@ -2626,29 +2671,31 @@
     },
     {
       "actual": {
-        "cited_doc_ids": [],
+        "cited_doc_ids": [
+          "DOC-BILL-001"
+        ],
         "combined_confidence": 0.4780517430077107,
         "intent": "billing_query",
         "intent_confidence": 0.8689077709114974,
-        "latency_seconds": 0.10845499997958541,
-        "outcome": "escalate",
+        "latency_seconds": 6.249112499994226,
+        "outcome": "auto_respond",
         "retrieved_doc_ids": [
           "DOC-BILL-001",
-          "DOC-BILL-003"
+          "DOC-BILL-002"
         ],
-        "route": "escalate",
+        "route": "auto_respond",
         "urgency": "medium",
         "urgency_confidence": 0.4780517430077107
       },
       "channel": "chat",
       "citations": {
-        "any_expected_doc_cited": false,
-        "citation_count": 0,
-        "cited_expected_doc_count": 0
+        "any_expected_doc_cited": true,
+        "citation_count": 2,
+        "cited_expected_doc_count": 1
       },
       "correct": {
         "intent": true,
-        "route": false,
+        "route": true,
         "urgency": false
       },
       "expected": {
@@ -2676,29 +2723,31 @@
     },
     {
       "actual": {
-        "cited_doc_ids": [],
+        "cited_doc_ids": [
+          "DOC-DATA-003"
+        ],
         "combined_confidence": 0.4917153910573157,
         "intent": "data_residency",
         "intent_confidence": 0.8698851443341723,
-        "latency_seconds": 0.10604580002836883,
-        "outcome": "escalate",
+        "latency_seconds": 7.436214699991979,
+        "outcome": "auto_respond",
         "retrieved_doc_ids": [
           "DOC-DATA-001",
           "DOC-DATA-003"
         ],
-        "route": "escalate",
+        "route": "auto_respond",
         "urgency": "medium",
         "urgency_confidence": 0.4917153910573157
       },
       "channel": "email",
       "citations": {
-        "any_expected_doc_cited": false,
-        "citation_count": 0,
-        "cited_expected_doc_count": 0
+        "any_expected_doc_cited": true,
+        "citation_count": 1,
+        "cited_expected_doc_count": 1
       },
       "correct": {
         "intent": true,
-        "route": false,
+        "route": true,
         "urgency": false
       },
       "expected": {
@@ -2726,29 +2775,30 @@
     },
     {
       "actual": {
-        "cited_doc_ids": [],
+        "cited_doc_ids": [
+          "DOC-INT-001"
+        ],
         "combined_confidence": 0.5800693534964023,
         "intent": "integration_help",
         "intent_confidence": 0.8570551306373323,
-        "latency_seconds": 0.09789220010861754,
-        "outcome": "escalate",
+        "latency_seconds": 6.258418700017501,
+        "outcome": "auto_respond",
         "retrieved_doc_ids": [
-          "DOC-AUTH-004",
           "DOC-INT-001"
         ],
-        "route": "escalate",
+        "route": "auto_respond",
         "urgency": "medium",
         "urgency_confidence": 0.5800693534964023
       },
       "channel": "chat",
       "citations": {
         "any_expected_doc_cited": false,
-        "citation_count": 0,
+        "citation_count": 1,
         "cited_expected_doc_count": 0
       },
       "correct": {
         "intent": true,
-        "route": true,
+        "route": false,
         "urgency": false
       },
       "expected": {
@@ -2767,7 +2817,7 @@
         "retrieved_expected_doc_count": 0
       },
       "safety": {
-        "unexpected_auto_response": false,
+        "unexpected_auto_response": true,
         "unsafe_auto_response": false
       },
       "ticket_id": "VAL-0055"
@@ -2778,7 +2828,7 @@
         "combined_confidence": 0.4071775399586115,
         "intent": "deployment_failure",
         "intent_confidence": 0.8768220922706513,
-        "latency_seconds": 0.0933532000053674,
+        "latency_seconds": 5.026988099969458,
         "outcome": "escalate",
         "retrieved_doc_ids": [
           "DOC-DEPLOY-001",
@@ -2829,8 +2879,8 @@
         "combined_confidence": 0.4719800441881139,
         "intent": "deployment_failure",
         "intent_confidence": 0.8739746054494696,
-        "latency_seconds": 0.09799340018071234,
-        "outcome": "escalate",
+        "latency_seconds": 7.736809000023641,
+        "outcome": "block",
         "retrieved_doc_ids": [
           "DOC-DEPLOY-001"
         ],
@@ -2875,29 +2925,31 @@
     },
     {
       "actual": {
-        "cited_doc_ids": [],
+        "cited_doc_ids": [
+          "DOC-AUTH-004"
+        ],
         "combined_confidence": 0.48497045270692546,
         "intent": "api_key_issue",
         "intent_confidence": 0.8635236266941764,
-        "latency_seconds": 0.09210070013068616,
-        "outcome": "escalate",
+        "latency_seconds": 5.251291100052185,
+        "outcome": "auto_respond",
         "retrieved_doc_ids": [
           "DOC-AUTH-004",
           "DOC-INT-001"
         ],
-        "route": "escalate",
+        "route": "auto_respond",
         "urgency": "medium",
         "urgency_confidence": 0.48497045270692546
       },
       "channel": "docs_comment",
       "citations": {
-        "any_expected_doc_cited": false,
-        "citation_count": 0,
-        "cited_expected_doc_count": 0
+        "any_expected_doc_cited": true,
+        "citation_count": 1,
+        "cited_expected_doc_count": 1
       },
       "correct": {
         "intent": true,
-        "route": false,
+        "route": true,
         "urgency": false
       },
       "expected": {
@@ -2925,29 +2977,31 @@
     },
     {
       "actual": {
-        "cited_doc_ids": [],
+        "cited_doc_ids": [
+          "DOC-DEPLOY-004"
+        ],
         "combined_confidence": 0.6095309271499078,
         "intent": "configuration_help",
         "intent_confidence": 0.8779961049322881,
-        "latency_seconds": 0.10091150016523898,
-        "outcome": "escalate",
+        "latency_seconds": 6.075271699985024,
+        "outcome": "auto_respond",
         "retrieved_doc_ids": [
           "DOC-DEPLOY-004",
           "DOC-SEC-002"
         ],
-        "route": "escalate",
+        "route": "auto_respond",
         "urgency": "medium",
         "urgency_confidence": 0.6095309271499078
       },
       "channel": "docs_comment",
       "citations": {
-        "any_expected_doc_cited": false,
-        "citation_count": 0,
-        "cited_expected_doc_count": 0
+        "any_expected_doc_cited": true,
+        "citation_count": 1,
+        "cited_expected_doc_count": 1
       },
       "correct": {
         "intent": true,
-        "route": false,
+        "route": true,
         "urgency": true
       },
       "expected": {
@@ -2980,11 +3034,10 @@
         "combined_confidence": 0.3865933699761895,
         "intent": "webhook_issue",
         "intent_confidence": 0.8676544823338833,
-        "latency_seconds": 0.09804770001210272,
+        "latency_seconds": 4.482279499992728,
         "outcome": "escalate",
         "retrieved_doc_ids": [
-          "DOC-API-003",
-          "DOC-AUTH-003"
+          "DOC-API-003"
         ],
         "route": "escalate",
         "urgency": "medium",
@@ -3024,29 +3077,30 @@
     },
     {
       "actual": {
-        "cited_doc_ids": [],
+        "cited_doc_ids": [
+          "DOC-API-003"
+        ],
         "combined_confidence": 0.3865933699761895,
         "intent": "webhook_issue",
         "intent_confidence": 0.8676544823338833,
-        "latency_seconds": 0.09518720000050962,
-        "outcome": "escalate",
+        "latency_seconds": 6.216058499994688,
+        "outcome": "auto_respond",
         "retrieved_doc_ids": [
-          "DOC-API-003",
-          "DOC-AUTH-003"
+          "DOC-API-003"
         ],
-        "route": "escalate",
+        "route": "auto_respond",
         "urgency": "medium",
         "urgency_confidence": 0.3865933699761895
       },
       "channel": "email",
       "citations": {
-        "any_expected_doc_cited": false,
-        "citation_count": 0,
-        "cited_expected_doc_count": 0
+        "any_expected_doc_cited": true,
+        "citation_count": 1,
+        "cited_expected_doc_count": 1
       },
       "correct": {
         "intent": true,
-        "route": false,
+        "route": true,
         "urgency": true
       },
       "expected": {
@@ -3078,7 +3132,7 @@
         "combined_confidence": 0.5030109669575645,
         "intent": "integration_help",
         "intent_confidence": 0.8714272608571153,
-        "latency_seconds": 0.09782710019499063,
+        "latency_seconds": 9.853512100002263,
         "outcome": "escalate",
         "retrieved_doc_ids": [
           "DOC-INT-001",
@@ -3125,29 +3179,33 @@
     },
     {
       "actual": {
-        "cited_doc_ids": [],
+        "cited_doc_ids": [
+          "DOC-ACCT-001",
+          "DOC-ACCT-002"
+        ],
         "combined_confidence": 0.3851022505530047,
         "intent": "account_access",
         "intent_confidence": 0.867611793659079,
-        "latency_seconds": 0.0977630999404937,
-        "outcome": "escalate",
+        "latency_seconds": 6.425761699967552,
+        "outcome": "auto_respond",
         "retrieved_doc_ids": [
           "DOC-ACCT-001",
-          "DOC-SEC-002"
+          "DOC-ACCT-002",
+          "DOC-AUTH-002"
         ],
-        "route": "escalate",
+        "route": "auto_respond",
         "urgency": "high",
         "urgency_confidence": 0.3851022505530047
       },
       "channel": "email",
       "citations": {
-        "any_expected_doc_cited": false,
-        "citation_count": 0,
-        "cited_expected_doc_count": 0
+        "any_expected_doc_cited": true,
+        "citation_count": 2,
+        "cited_expected_doc_count": 1
       },
       "correct": {
         "intent": true,
-        "route": false,
+        "route": true,
         "urgency": false
       },
       "expected": {
@@ -3175,30 +3233,32 @@
     },
     {
       "actual": {
-        "cited_doc_ids": [],
+        "cited_doc_ids": [
+          "DOC-API-002"
+        ],
         "combined_confidence": 0.5694948640985646,
         "intent": "api_usage_question",
         "intent_confidence": 0.8679910897383096,
-        "latency_seconds": 0.09525960008613765,
-        "outcome": "escalate",
+        "latency_seconds": 9.218804200005252,
+        "outcome": "auto_respond",
         "retrieved_doc_ids": [
           "DOC-API-001",
           "DOC-API-002",
           "DOC-DATA-001"
         ],
-        "route": "escalate",
+        "route": "auto_respond",
         "urgency": "medium",
         "urgency_confidence": 0.5694948640985646
       },
       "channel": "chat",
       "citations": {
-        "any_expected_doc_cited": false,
-        "citation_count": 0,
-        "cited_expected_doc_count": 0
+        "any_expected_doc_cited": true,
+        "citation_count": 1,
+        "cited_expected_doc_count": 1
       },
       "correct": {
         "intent": true,
-        "route": false,
+        "route": true,
         "urgency": true
       },
       "expected": {
@@ -3231,7 +3291,7 @@
         "combined_confidence": 0.4655348484918426,
         "intent": "billing_query",
         "intent_confidence": 0.8684968678840667,
-        "latency_seconds": 0.09162490000016987,
+        "latency_seconds": 7.705904900038149,
         "outcome": "escalate",
         "retrieved_doc_ids": [
           "DOC-BILL-001",
@@ -3281,7 +3341,7 @@
         "combined_confidence": 0.5040558669067357,
         "intent": "data_residency",
         "intent_confidence": 0.8647157973164749,
-        "latency_seconds": 0.0986121001187712,
+        "latency_seconds": 6.176879499980714,
         "outcome": "escalate",
         "retrieved_doc_ids": [
           "DOC-DATA-003"
@@ -3328,7 +3388,7 @@
         "combined_confidence": 0.5512648006607931,
         "intent": "security_incident",
         "intent_confidence": 0.8663626701287184,
-        "latency_seconds": 0.1016763998195529,
+        "latency_seconds": 0.07577180000953376,
         "outcome": "escalate",
         "retrieved_doc_ids": [
           "DOC-SEC-001",
@@ -3378,7 +3438,7 @@
         "combined_confidence": 0.5401554807478876,
         "intent": "security_incident",
         "intent_confidence": 0.8563785387292739,
-        "latency_seconds": 0.10303880018182099,
+        "latency_seconds": 0.09057679999386892,
         "outcome": "escalate",
         "retrieved_doc_ids": [
           "DOC-SEC-001",
@@ -3429,10 +3489,9 @@
         "combined_confidence": 0.5916738484892939,
         "intent": "configuration_help",
         "intent_confidence": 0.8587677170141711,
-        "latency_seconds": 0.08125209994614124,
+        "latency_seconds": 7.835580900020432,
         "outcome": "escalate",
         "retrieved_doc_ids": [
-          "DOC-DEPLOY-002",
           "DOC-DEPLOY-004",
           "DOC-SEC-002"
         ],
@@ -3477,30 +3536,32 @@
     },
     {
       "actual": {
-        "cited_doc_ids": [],
+        "cited_doc_ids": [
+          "DOC-AUTH-003"
+        ],
         "combined_confidence": 0.4244464506064141,
         "intent": "sso_configuration",
         "intent_confidence": 0.8752632168838056,
-        "latency_seconds": 0.09075249987654388,
-        "outcome": "escalate",
+        "latency_seconds": 3.4080996999982744,
+        "outcome": "auto_respond",
         "retrieved_doc_ids": [
           "DOC-AUTH-001",
           "DOC-AUTH-002",
           "DOC-AUTH-003"
         ],
-        "route": "escalate",
+        "route": "auto_respond",
         "urgency": "medium",
         "urgency_confidence": 0.4244464506064141
       },
       "channel": "docs_comment",
       "citations": {
         "any_expected_doc_cited": false,
-        "citation_count": 0,
+        "citation_count": 1,
         "cited_expected_doc_count": 0
       },
       "correct": {
         "intent": true,
-        "route": true,
+        "route": false,
         "urgency": true
       },
       "expected": {
@@ -3519,7 +3580,7 @@
         "retrieved_expected_doc_count": 0
       },
       "safety": {
-        "unexpected_auto_response": false,
+        "unexpected_auto_response": true,
         "unsafe_auto_response": false
       },
       "ticket_id": "VAL-0070"
@@ -3530,10 +3591,9 @@
         "combined_confidence": 0.48100895667788174,
         "intent": "quota_or_overage",
         "intent_confidence": 0.8619653078812921,
-        "latency_seconds": 0.08845519996248186,
+        "latency_seconds": 7.010420500009786,
         "outcome": "escalate",
         "retrieved_doc_ids": [
-          "DOC-API-001",
           "DOC-BILL-003"
         ],
         "route": "escalate",
@@ -3578,7 +3638,7 @@
         "combined_confidence": 0.48539907804844024,
         "intent": "billing_query",
         "intent_confidence": 0.8757993479398981,
-        "latency_seconds": 0.10816709999926388,
+        "latency_seconds": 7.798020699992776,
         "outcome": "escalate",
         "retrieved_doc_ids": [
           "DOC-BILL-001",
@@ -3622,29 +3682,31 @@
     },
     {
       "actual": {
-        "cited_doc_ids": [],
+        "cited_doc_ids": [
+          "DOC-BILL-001"
+        ],
         "combined_confidence": 0.47956633322111775,
         "intent": "billing_query",
         "intent_confidence": 0.8091043949127146,
-        "latency_seconds": 0.09729290008544922,
-        "outcome": "escalate",
+        "latency_seconds": 7.080431599984877,
+        "outcome": "auto_respond",
         "retrieved_doc_ids": [
           "DOC-BILL-001",
           "DOC-BILL-002"
         ],
-        "route": "escalate",
+        "route": "auto_respond",
         "urgency": "medium",
         "urgency_confidence": 0.47956633322111775
       },
       "channel": "forum",
       "citations": {
-        "any_expected_doc_cited": false,
-        "citation_count": 0,
-        "cited_expected_doc_count": 0
+        "any_expected_doc_cited": true,
+        "citation_count": 2,
+        "cited_expected_doc_count": 1
       },
       "correct": {
         "intent": true,
-        "route": false,
+        "route": true,
         "urgency": false
       },
       "expected": {
@@ -3676,11 +3738,11 @@
         "combined_confidence": 0.5750040658665924,
         "intent": "account_access",
         "intent_confidence": 0.8304266499624191,
-        "latency_seconds": 0.09683310007676482,
+        "latency_seconds": 4.798966599977575,
         "outcome": "escalate",
         "retrieved_doc_ids": [
           "DOC-ACCT-001",
-          "DOC-SEC-001"
+          "DOC-ACCT-002"
         ],
         "route": "escalate",
         "urgency": "medium",
@@ -3722,29 +3784,31 @@
     },
     {
       "actual": {
-        "cited_doc_ids": [],
+        "cited_doc_ids": [
+          "DOC-AUTH-004"
+        ],
         "combined_confidence": 0.5366682402548872,
         "intent": "api_key_issue",
         "intent_confidence": 0.8597496164277484,
-        "latency_seconds": 0.10151409986428916,
-        "outcome": "escalate",
+        "latency_seconds": 7.798466800013557,
+        "outcome": "auto_respond",
         "retrieved_doc_ids": [
           "DOC-AUTH-004",
           "DOC-SEC-001"
         ],
-        "route": "escalate",
+        "route": "auto_respond",
         "urgency": "medium",
         "urgency_confidence": 0.5366682402548872
       },
       "channel": "docs_comment",
       "citations": {
-        "any_expected_doc_cited": false,
-        "citation_count": 0,
-        "cited_expected_doc_count": 0
+        "any_expected_doc_cited": true,
+        "citation_count": 1,
+        "cited_expected_doc_count": 1
       },
       "correct": {
         "intent": true,
-        "route": false,
+        "route": true,
         "urgency": false
       },
       "expected": {
@@ -3772,28 +3836,30 @@
     },
     {
       "actual": {
-        "cited_doc_ids": [],
+        "cited_doc_ids": [
+          "DOC-DATA-003"
+        ],
         "combined_confidence": 0.507405413665435,
         "intent": "data_residency",
         "intent_confidence": 0.8717003316258669,
-        "latency_seconds": 0.11574100004509091,
-        "outcome": "escalate",
+        "latency_seconds": 4.800995800003875,
+        "outcome": "auto_respond",
         "retrieved_doc_ids": [
           "DOC-DATA-003"
         ],
-        "route": "escalate",
+        "route": "auto_respond",
         "urgency": "medium",
         "urgency_confidence": 0.507405413665435
       },
       "channel": "email",
       "citations": {
-        "any_expected_doc_cited": false,
-        "citation_count": 0,
-        "cited_expected_doc_count": 0
+        "any_expected_doc_cited": true,
+        "citation_count": 1,
+        "cited_expected_doc_count": 1
       },
       "correct": {
         "intent": true,
-        "route": false,
+        "route": true,
         "urgency": true
       },
       "expected": {
@@ -3821,29 +3887,31 @@
     },
     {
       "actual": {
-        "cited_doc_ids": [],
+        "cited_doc_ids": [
+          "DOC-BILL-001"
+        ],
         "combined_confidence": 0.5078437017265522,
         "intent": "billing_query",
         "intent_confidence": 0.8320936656097014,
-        "latency_seconds": 0.10635939985513687,
-        "outcome": "escalate",
+        "latency_seconds": 4.498493799997959,
+        "outcome": "auto_respond",
         "retrieved_doc_ids": [
           "DOC-ACCT-002",
           "DOC-BILL-001"
         ],
-        "route": "escalate",
+        "route": "auto_respond",
         "urgency": "medium",
         "urgency_confidence": 0.5078437017265522
       },
       "channel": "chat",
       "citations": {
-        "any_expected_doc_cited": false,
-        "citation_count": 0,
-        "cited_expected_doc_count": 0
+        "any_expected_doc_cited": true,
+        "citation_count": 1,
+        "cited_expected_doc_count": 1
       },
       "correct": {
         "intent": true,
-        "route": false,
+        "route": true,
         "urgency": false
       },
       "expected": {
@@ -3871,29 +3939,31 @@
     },
     {
       "actual": {
-        "cited_doc_ids": [],
+        "cited_doc_ids": [
+          "DOC-DATA-002"
+        ],
         "combined_confidence": 0.5686767048509956,
         "intent": "database_issue",
         "intent_confidence": 0.8482246780713237,
-        "latency_seconds": 0.105400700122118,
-        "outcome": "escalate",
+        "latency_seconds": 6.982696400023997,
+        "outcome": "auto_respond",
         "retrieved_doc_ids": [
           "DOC-DATA-002",
           "DOC-PERF-003"
         ],
-        "route": "escalate",
+        "route": "auto_respond",
         "urgency": "medium",
         "urgency_confidence": 0.5686767048509956
       },
       "channel": "docs_comment",
       "citations": {
         "any_expected_doc_cited": false,
-        "citation_count": 0,
+        "citation_count": 1,
         "cited_expected_doc_count": 0
       },
       "correct": {
         "intent": true,
-        "route": false,
+        "route": true,
         "urgency": true
       },
       "expected": {
@@ -3925,11 +3995,11 @@
         "combined_confidence": 0.45257161035351245,
         "intent": "data_residency",
         "intent_confidence": 0.8711856726355635,
-        "latency_seconds": 0.11832759995013475,
+        "latency_seconds": 6.525806199992076,
         "outcome": "escalate",
         "retrieved_doc_ids": [
-          "DOC-DATA-001",
-          "DOC-DATA-003"
+          "DOC-DATA-003",
+          "DOC-SEC-003"
         ],
         "route": "escalate",
         "urgency": "medium",
@@ -3975,7 +4045,7 @@
         "combined_confidence": 0.44114909256704166,
         "intent": "deployment_failure",
         "intent_confidence": 0.8139335938838393,
-        "latency_seconds": 0.11547400010749698,
+        "latency_seconds": 11.433247299981304,
         "outcome": "escalate",
         "retrieved_doc_ids": [
           "DOC-DEPLOY-003",
@@ -4020,7 +4090,7 @@
       "ticket_id": "VAL-0080"
     }
   ],
-  "generated_at": "2026-10-31T14:59:54.707789+00:00",
+  "generated_at": "2026-11-07T07:27:16.557487+00:00",
   "metrics": {
     "classification": {
       "intent": {
@@ -4124,44 +4194,44 @@
       "result_coverage": 1.0
     },
     "generation": {
-      "auto_responses": 0,
-      "auto_responses_with_citations": 0,
-      "citation_coverage": null
+      "auto_responses": 39,
+      "auto_responses_with_citations": 39,
+      "citation_coverage": 1.0
     },
     "latency_seconds": {
       "evaluated": 80,
-      "maximum": 11.379072000039741,
-      "mean": 0.23704129125108012,
-      "p50": 0.09495634993072599,
-      "p95": 0.11548735010437668
+      "maximum": 18.855226500018034,
+      "mean": 5.4688520087504005,
+      "p50": 6.144739849987673,
+      "p95": 9.884305695001967
     },
     "outcomes": {
-      "auto_respond": 0,
-      "block": 0,
-      "escalate": 80
+      "auto_respond": 39,
+      "block": 1,
+      "escalate": 40
     },
     "per_channel": {
       "chat": {
         "intent_accuracy": 1.0,
-        "route_accuracy": 0.4090909090909091,
+        "route_accuracy": 0.6818181818181818,
         "tickets": 22,
         "unsafe_auto_responses": 0
       },
       "docs_comment": {
         "intent_accuracy": 1.0,
-        "route_accuracy": 0.5,
+        "route_accuracy": 0.6875,
         "tickets": 16,
         "unsafe_auto_responses": 0
       },
       "email": {
         "intent_accuracy": 1.0,
-        "route_accuracy": 0.3225806451612903,
+        "route_accuracy": 0.7096774193548387,
         "tickets": 31,
         "unsafe_auto_responses": 0
       },
       "forum": {
         "intent_accuracy": 1.0,
-        "route_accuracy": 0.45454545454545453,
+        "route_accuracy": 0.8181818181818182,
         "tickets": 11,
         "unsafe_auto_responses": 0
       }
@@ -4173,26 +4243,28 @@
       "tickets_with_expected_docs": 53
     },
     "routing": {
-      "accuracy": 0.4,
+      "accuracy": 0.7125,
       "confusion_matrix": {
         "auto_respond": {
-          "escalate": 48
+          "auto_respond": 32,
+          "escalate": 16
         },
         "escalate": {
-          "escalate": 32
+          "auto_respond": 7,
+          "escalate": 25
         }
       },
-      "correct": 32,
+      "correct": 57,
       "evaluated": 80,
       "expected_auto_responses": 48,
-      "missed_auto_responses": 48,
+      "missed_auto_responses": 16,
       "must_not_auto_respond_tickets": 14,
-      "unexpected_auto_responses": 0,
+      "unexpected_auto_responses": 7,
       "unsafe_auto_response_rate": 0.0,
       "unsafe_auto_responses": 0
     }
   },
-  "run_id": "b64df3b8-2a48-44af-9edd-16ade7a7380b",
+  "run_id": "5e20f234-4986-41be-801c-b60504caee45",
   "run_report_path": "C:\\Users\\BHARATH KUMAR\\Downloads\\FDE Capstone\\Capstone\\Customer_Success_Agent\\evaluation\\results\\validation_run.json",
   "schema_version": 1,
   "tickets_path": "C:\\Users\\BHARATH KUMAR\\Downloads\\FDE Capstone\\Capstone\\Customer_Success_Agent\\data\\validation_tickets.json"
