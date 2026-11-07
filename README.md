@@ -297,7 +297,7 @@ Faster validation without coverage:
 Run offline checks followed by real evaluation:
 
 ```powershell
-.\scripts\validate.ps1 -RunEvaluation -SkipIndex
+.\scripts\validate.ps1 -RunEvaluation
 ```
 
 On macOS, use the individual test, artifact, corpus, and evaluation commands in this README. A matching `scripts/validate.sh` can be used when present.
@@ -362,11 +362,8 @@ The command is the same on Windows and macOS:
 python -m evaluation.harness
 ```
 
-Reuse the existing index:
-
-```bash
-python -m evaluation.harness --skip-index
-```
+The harness always reuses the persistent index prepared by
+`python -m src.build`; it does not rebuild the index during evaluation.
 
 Outputs:
 
@@ -533,7 +530,12 @@ Retrain the artifact using the currently installed scikit-learn version.
 
 ### Empty Chroma directory
 
-This is valid after clearing the generated index. The next indexed application run rebuilds it from `documentation.json`.
+This is valid immediately after clearing the generated index. Rebuild it
+before running the application or evaluation harness:
+
+```bash
+python -m src.build --rebuild-index
+```
 
 ### Disable all automatic responses
 
