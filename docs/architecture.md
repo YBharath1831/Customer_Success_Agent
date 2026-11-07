@@ -207,3 +207,23 @@ ticket in progress. No evaluation report was overwritten or accepted. The
 known-good `0.80 / 0.40` runtime configuration was restored. Retry this
 experiment after provider availability or quota recovers, using a longer
 bounded command timeout, before adopting the candidate configuration.
+
+### Experiment 3: escalate predicted-high urgency tickets (rejected)
+
+A local counterfactual tested whether the existing urgency output could act as
+the missing safety gate. It reduced false-auto routes from 17 to 14, but
+increased false escalations from 2 to 11 and reduced router accuracy from
+76.25% to 68.75%. The change is rejected while urgency accuracy remains
+43.75%.
+
+Manual review of the seven terminal false auto-responses showed that they were
+cited and grammatically plausible, but supplied generic procedures for cases
+labelled as requiring investigation. Examples included partial SSO failure,
+stopped log forwarding, peak-hour degradation, and repeatedly rejected MFA
+codes. This confirms that citation validity and semantic retrieval relevance
+do not establish that documentation fully answers a specific ticket.
+
+The next architectural improvement should therefore be a measured
+answerability gate, not an urgency rule. It should be implemented in existing
+pipeline modules, controlled by configuration, fail closed to escalation, and
+evaluated independently before it is allowed to affect final routing.
