@@ -545,6 +545,72 @@ Set the following and restart the process:
 KILL_SWITCH=true
 ```
 
+Test the kill switch with the included smoke ticket on Windows. The
+PowerShell environment variable temporarily overrides `.env` for each new
+Python process:
+
+```powershell
+$env:KILL_SWITCH = "true"
+
+python -c "from src.config import get_settings; print('Kill switch:', get_settings().kill_switch)"
+
+python -m src.run `
+  --input .\data\smoke_ticket.json `
+  --output .\evaluation\results\kill_switch_test.json `
+  --pretty
+
+$report = Get-Content `
+  .\evaluation\results\kill_switch_test.json `
+  -Raw | ConvertFrom-Json
+
+$report.results | Select-Object `
+  ticket_id, `
+  outcome, `
+  may_send_response, `
+  @{Name="reason_code"; Expression={$_.route.reason_code}}, `
+  answer_text
+```
+
+On macOS, run the equivalent test:
+
+```bash
+export KILL_SWITCH=true
+
+python -c "from src.config import get_settings; print('Kill switch:', get_settings().kill_switch)"
+
+python -m src.run \
+  --input ./data/smoke_ticket.json \
+  --output ./evaluation/results/kill_switch_test.json \
+  --pretty
+
+python -c "import json; r=json.load(open('evaluation/results/kill_switch_test.json', encoding='utf-8')); print([{k: x.get(k) for k in ('ticket_id', 'outcome', 'may_send_response', 'answer_text')} | {'reason_code': x.get('route', {}).get('reason_code')} for x in r['results']])"
+```
+
+Expected decision fields:
+
+```text
+outcome           : escalate
+may_send_response : False
+reason_code       : kill_switch_enabled
+answer_text       :
+```
+
+The empty `answer_text` confirms that response generation was skipped. Remove
+the temporary override after the test:
+
+```powershell
+Remove-Item Env:KILL_SWITCH
+```
+
+On macOS:
+
+```bash
+unset KILL_SWITCH
+```
+
+If `KILL_SWITCH` was changed directly in `.env`, restore it to `false` and
+restart any running API process. CLI commands already start a new process.
+
 ## Development principles
 
 - Deterministic safety decisions around probabilistic models
