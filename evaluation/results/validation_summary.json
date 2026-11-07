@@ -12,9 +12,9 @@
     "citation_coverage": 1.0,
     "expected_doc_hit_rate": 0.9811320754716981,
     "intent_accuracy": 1.0,
-    "mean_latency_seconds": 5.4688520087504005,
-    "p95_latency_seconds": 9.884305695001967,
-    "routing_accuracy": 0.7125,
+    "mean_latency_seconds": 17.85658543750178,
+    "p95_latency_seconds": 9.257609124996815,
+    "routing_accuracy": 0.6375,
     "unsafe_auto_responses": 0,
     "urgency_accuracy": 0.4375
   },
@@ -25,11 +25,11 @@
     "summary": "C:\\Users\\BHARATH KUMAR\\Downloads\\FDE Capstone\\Capstone\\Customer_Success_Agent\\evaluation\\results\\validation_summary.json",
     "tickets": "C:\\Users\\BHARATH KUMAR\\Downloads\\FDE Capstone\\Capstone\\Customer_Success_Agent\\data\\validation_tickets.json"
   },
-  "run_id": "5e20f234-4986-41be-801c-b60504caee45",
+  "run_id": "5d78dc58-d655-4f07-b135-7dc2ed020841",
   "run_summary": {
-    "auto_responded": 39,
+    "auto_responded": 27,
     "blocked": 1,
-    "escalated": 40,
+    "escalated": 52,
     "ingestion_failures": 0,
     "normalized_records": 80,
     "processed_results": 80,

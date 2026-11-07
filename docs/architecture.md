@@ -181,7 +181,7 @@ This run demonstrates why provider failures must be separated from model
 quality failures. The workflow failed safely by escalating every affected
 ticket, but no conclusion about GPT-4o-mini response quality can be drawn.
 
-### Experiment 2: conservative routing thresholds (incomplete live run)
+### Experiment 2: conservative routing thresholds (completed, rejected)
 
 - Run ID: `5d78dc58-d655-4f07-b135-7dc2ed020841`
 - Change: `CONFIDENCE_THRESHOLD=0.83` and
@@ -201,12 +201,22 @@ thresholds increased: every ticket that remains eligible already has an
 observed generation outcome. It is still exploratory because the candidate
 was selected from the validation set and can overfit that set.
 
-The live comparison did not complete. OpenRouter latency increased sharply and
-the command reached its 20-minute limit after 43 completed tickets with one
-ticket in progress. No evaluation report was overwritten or accepted. The
-known-good `0.80 / 0.40` runtime configuration was restored. Retry this
-experiment after provider availability or quota recovers, using a longer
-bounded command timeout, before adopting the candidate configuration.
+The shell command reached its 20-minute limit, but the worker continued and
+completed all 80 tickets. The live result rejected the candidate:
+
+| Metric | Baseline | Candidate |
+|---|---:|---:|
+| Router decision accuracy | 76.25% | 78.75% |
+| Final routing accuracy | 71.25% | 63.75% |
+| Successful auto-responses | 39 | 27 |
+| Generation errors | 23 | 25 |
+| Mean latency | 5.47 s | 17.86 s |
+| Maximum latency | 18.86 s | 1,060.85 s |
+
+Although the deterministic router improved, stochastic generation reliability
+regressed enough to reduce the final decision accuracy. The known-good
+`0.80 / 0.40` runtime configuration remains active. This also demonstrates
+that routing counterfactuals cannot substitute for an end-to-end run.
 
 ### Experiment 3: escalate predicted-high urgency tickets (rejected)
 
@@ -227,3 +237,17 @@ The next architectural improvement should therefore be a measured
 answerability gate, not an urgency rule. It should be implemented in existing
 pipeline modules, controlled by configuration, fail closed to escalation, and
 evaluated independently before it is allowed to affect final routing.
+
+### Experiment 4: local answerability classifier (prototype rejected)
+
+A third calibrated TF-IDF/logistic-regression target was prototyped in the
+existing classifier using the development labels. Provider-free validation
+produced 76.25% answerability accuracy, but recall for non-answerable tickets
+was only 33.33%. At the proposed `0.52` risk threshold, all nine flagged
+tickets were already mandatory escalations, so the gate changed zero baseline
+routes and produced no accuracy improvement.
+
+The uncommitted implementation and rebuilt artifact were discarded. No new
+runtime module or inactive configuration was retained. A future answerability
+gate needs a stronger signal than the current ticket-only linear classifier,
+such as a model that jointly evaluates the ticket against retrieved passages.
