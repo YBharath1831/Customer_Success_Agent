@@ -163,3 +163,47 @@ The evidence supports this sequence:
 
 Each experiment must retain its configuration, run ID, reports, and before / after
 metrics so the Git history shows an evidence-based improvement sequence.
+
+## Experiment log
+
+### Experiment 1: stronger structured-output model (invalid run)
+
+- Run ID: `6bac1c5f-794a-4e49-88e7-41c18f924550`
+- Change: `MODEL_NAME=openai/gpt-4o-mini`
+- Controlled variables: classifier, index, chunking, retrieval, routing, and
+  thresholds were unchanged.
+- Result: OpenRouter returned HTTP `402` for all 63 attempted generations.
+- Decision: reject the run as a model-quality comparison, restore the baseline
+  model and reports, and do not use its 40% all-escalation result as an
+  accuracy measurement.
+
+This run demonstrates why provider failures must be separated from model
+quality failures. The workflow failed safely by escalating every affected
+ticket, but no conclusion about GPT-4o-mini response quality can be drawn.
+
+### Experiment 2: conservative routing thresholds (incomplete live run)
+
+- Run ID: `5d78dc58-d655-4f07-b135-7dc2ed020841`
+- Change: `CONFIDENCE_THRESHOLD=0.83` and
+  `RETRIEVAL_THRESHOLD=0.45`.
+- Rebuild required: no; routing thresholds are read at application startup and
+  do not change classifier or embedding artifacts.
+
+An exhaustive counterfactual grid over the completed baseline showed:
+
+| Configuration | Router accuracy | Final accuracy | False-auto routes | False escalations | Generation attempts | Generation errors |
+|---|---:|---:|---:|---:|---:|---:|
+| baseline `0.80 / 0.40` | 76.25% | 71.25% | 17 | 2 | 63 | 23 |
+| candidate `0.83 / 0.45` | 78.75% | 73.75% | 11 | 6 | 53 | 19 |
+
+The counterfactual is exact for the completed baseline responses because both
+thresholds increased: every ticket that remains eligible already has an
+observed generation outcome. It is still exploratory because the candidate
+was selected from the validation set and can overfit that set.
+
+The live comparison did not complete. OpenRouter latency increased sharply and
+the command reached its 20-minute limit after 43 completed tickets with one
+ticket in progress. No evaluation report was overwritten or accepted. The
+known-good `0.80 / 0.40` runtime configuration was restored. Retry this
+experiment after provider availability or quota recovers, using a longer
+bounded command timeout, before adopting the candidate configuration.
