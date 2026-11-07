@@ -100,17 +100,17 @@ evaluation/errors/
 # ------------------------------------------------------------
 # Supplied labelled datasets
 #
-# Keep the documentation corpus and small test fixtures.
-# Do not commit full development/evaluation datasets unless
-# submission instructions explicitly require them.
+# Keep the documentation corpus, the small reproducible validation
+# dataset referenced by the README, and small test fixtures.
+# Do not commit the larger development or hidden evaluation datasets.
 # ------------------------------------------------------------
 
 data/development_tickets.json
-data/validation_tickets.json
 data/ground_truth_responses.json
 data/hidden_*.json
 
 !data/documentation.json
+!data/validation_tickets.json
 !data/samples/
 !data/samples/**
 !tests/fixtures/
