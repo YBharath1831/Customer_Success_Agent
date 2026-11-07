@@ -196,13 +196,15 @@ def make_ticket(
 def make_match(
     *,
     relevance_score: float = 0.91,
+    doc_id: str = "DOC001",
+    chunk_index: int = 1,
 ) -> RetrievedMatch:
     return RetrievedMatch(
-        passage_id="DOC001#p001",
-        doc_id="DOC001",
+        passage_id=f"{doc_id}#p{chunk_index:03d}",
+        doc_id=doc_id,
         title="Resetting a password",
         category="account_access",
-        chunk_index=1,
+        chunk_index=chunk_index,
         text=(
             "Users can reset their password from the account "
             "settings page. Select Security and then choose "
@@ -230,6 +232,7 @@ def make_workflow(
     guardrail_engine=None,
     routing_policy=None,
     retrieval_top_k: int = 5,
+    retrieval_candidate_multiplier: int = 1,
 ):
     store = make_store(tmp_path)
 
@@ -249,6 +252,9 @@ def make_workflow(
         ),
         decision_store=store,
         retrieval_top_k=retrieval_top_k,
+        retrieval_candidate_multiplier=(
+            retrieval_candidate_multiplier
+        ),
     )
 
     return workflow, store
@@ -701,6 +707,37 @@ def test_retrieval_receives_normalized_ticket_text(
     assert retriever.last_query == ticket.text
     assert retriever.last_top_k == 3
     assert retriever.last_minimum_relevance == 0.0
+
+
+def test_retrieval_oversamples_and_keeps_distinct_documents(
+    tmp_path: Path,
+) -> None:
+    retriever = FakeRetriever(
+        matches=[
+            make_match(doc_id="DOC001", chunk_index=1),
+            make_match(doc_id="DOC001", chunk_index=2),
+            make_match(doc_id="DOC002", chunk_index=1),
+            make_match(doc_id="DOC003", chunk_index=1),
+        ]
+    )
+
+    workflow, _ = make_workflow(
+        tmp_path,
+        retriever=retriever,
+        retrieval_top_k=2,
+        retrieval_candidate_multiplier=2,
+    )
+
+    result = workflow.process(
+        make_ticket(),
+        run_id="RUN-DIVERSE-RETRIEVAL",
+    )
+
+    assert retriever.last_top_k == 4
+    assert [
+        match.doc_id
+        for match in result.retrieval_matches
+    ] == ["DOC001", "DOC002"]
 
 
 def test_result_serializes_to_dictionary(

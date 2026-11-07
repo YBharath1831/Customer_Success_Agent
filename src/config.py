@@ -49,6 +49,7 @@ class Settings:
     chunk_max_characters: int = 1200
     chunk_overlap_characters: int = 160
     retrieval_top_k: int = 5
+    retrieval_candidate_multiplier: int = 1
     minimum_grounding_overlap: float = 0.15
 
     confidence_threshold: float = 0.80
@@ -97,6 +98,12 @@ class Settings:
         if self.retrieval_top_k <= 0:
             raise ConfigurationError(
                 "RETRIEVAL_TOP_K must be greater than zero."
+            )
+
+        if self.retrieval_candidate_multiplier <= 0:
+            raise ConfigurationError(
+                "RETRIEVAL_CANDIDATE_MULTIPLIER must be greater "
+                "than zero."
             )
 
         if self.request_timeout_seconds <= 0:
@@ -180,6 +187,9 @@ class Settings:
                 self.chunk_overlap_characters
             ),
             "retrieval_top_k": self.retrieval_top_k,
+            "retrieval_candidate_multiplier": (
+                self.retrieval_candidate_multiplier
+            ),
             "minimum_grounding_overlap": (
                 self.minimum_grounding_overlap
             ),
@@ -278,6 +288,10 @@ def get_settings() -> Settings:
         retrieval_top_k=_read_integer(
             "RETRIEVAL_TOP_K",
             5,
+        ),
+        retrieval_candidate_multiplier=_read_integer(
+            "RETRIEVAL_CANDIDATE_MULTIPLIER",
+            1,
         ),
         minimum_grounding_overlap=_read_float(
             "MINIMUM_GROUNDING_OVERLAP",

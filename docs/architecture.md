@@ -51,8 +51,9 @@ configured OpenRouter model.
 | `CHUNK_MAX_CHARACTERS` | `500` |
 | `CHUNK_OVERLAP_CHARACTERS` | `120` |
 | `RETRIEVAL_TOP_K` | `5` |
-| `CONFIDENCE_THRESHOLD` | `0.80` |
-| `RETRIEVAL_THRESHOLD` | `0.40` (configuration default) |
+| `RETRIEVAL_CANDIDATE_MULTIPLIER` | `3` |
+| `CONFIDENCE_THRESHOLD` | `0.83` |
+| `RETRIEVAL_THRESHOLD` | `0.45` |
 | `MINIMUM_GROUNDING_OVERLAP` | `0.15` |
 
 ### Harness summary
@@ -214,9 +215,12 @@ completed all 80 tickets. The live result rejected the candidate:
 | Maximum latency | 18.86 s | 1,060.85 s |
 
 Although the deterministic router improved, stochastic generation reliability
-regressed enough to reduce the final decision accuracy. The known-good
-`0.80 / 0.40` runtime configuration remains active. This also demonstrates
-that routing counterfactuals cannot substitute for an end-to-end run.
+regressed enough to reduce the final decision accuracy, so the candidate was
+initially rejected. After free-model generation failures were explicitly
+accepted as an external limitation, the candidate was reassessed on the local
+component it actually controls. The `0.83 / 0.45` runtime configuration is now
+active because it raises router accuracy from 76.25% to 78.75% and reduces
+false-auto routes from 17 to 11. No classifier or index rebuild is required.
 
 ### Experiment 3: escalate predicted-high urgency tickets (rejected)
 
@@ -251,3 +255,37 @@ The uncommitted implementation and rebuilt artifact were discarded. No new
 runtime module or inactive configuration was retained. A future answerability
 gate needs a stronger signal than the current ticket-only linear classifier,
 such as a model that jointly evaluates the ticket against retrieved passages.
+
+### Experiment 5: non-generation improvements
+
+Generation failures from free OpenRouter models are now treated as an accepted
+provider limitation. The remaining components were measured locally without
+provider calls.
+
+Urgency candidates were selected with five-fold out-of-fold predictions on the
+500 development tickets. The current calibrated classifier reached 52.0%
+development accuracy. The best candidate reached 52.6%, but improved validation
+accuracy only from 45.0% to 46.25% while reducing balanced and macro-F1 quality.
+The urgency model therefore remains unchanged; the evidence does not support a
+production replacement.
+
+Threshold tuning was also rejected. Development-selected thresholds of
+`0.50 / 0.39` moved validation router accuracy from 76.25% to 77.5%, but
+increased false-auto routes from 17 to 18. A one-ticket raw-accuracy gain is not
+worth a safety regression.
+
+Retrieval showed a material, explainable improvement. The baseline top five
+passages often contained multiple chunks from the same document. The workflow
+now searches `RETRIEVAL_TOP_K * RETRIEVAL_CANDIDATE_MULTIPLIER` candidates and
+keeps the highest-ranked passage from each distinct document. With top-k `5`
+and multiplier `3`, validation retrieval changed as follows:
+
+| Metric | Baseline | Diversified retrieval |
+|---|---:|---:|
+| Expected-document hit rate | 98.11% | 100.00% |
+| Macro expected-document recall | 88.68% | 96.23% |
+| Passages supplied downstream | 5 | 5 |
+
+This change does not rebuild embeddings and does not increase the number of
+passages supplied to generation. Set the multiplier to `1` to reproduce the
+original nearest-passage behavior.

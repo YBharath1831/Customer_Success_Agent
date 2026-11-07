@@ -152,6 +152,29 @@ class WorkflowResult:
         }
 
 
+def _select_document_diverse_matches(
+    matches: Sequence[RetrievedMatch],
+    *,
+    limit: int,
+) -> list[RetrievedMatch]:
+    """Keep the highest-ranked passage from each distinct document."""
+
+    selected: list[RetrievedMatch] = []
+    seen_doc_ids: set[str] = set()
+
+    for match in matches:
+        if match.doc_id in seen_doc_ids:
+            continue
+
+        selected.append(match)
+        seen_doc_ids.add(match.doc_id)
+
+        if len(selected) == limit:
+            break
+
+    return selected
+
+
 class CustomerSuccessWorkflow:
     """
     Execute the complete ticket decision pipeline.
@@ -179,10 +202,17 @@ class CustomerSuccessWorkflow:
         routing_policy: RoutingPolicy,
         decision_store: DecisionStore,
         retrieval_top_k: int = 5,
+        retrieval_candidate_multiplier: int = 1,
     ) -> None:
         if retrieval_top_k <= 0:
             raise ValueError(
                 "retrieval_top_k must be greater than zero."
+            )
+
+        if retrieval_candidate_multiplier <= 0:
+            raise ValueError(
+                "retrieval_candidate_multiplier must be greater "
+                "than zero."
             )
 
         self.classifier = classifier
@@ -192,6 +222,9 @@ class CustomerSuccessWorkflow:
         self.routing_policy = routing_policy
         self.decision_store = decision_store
         self.retrieval_top_k = retrieval_top_k
+        self.retrieval_candidate_multiplier = (
+            retrieval_candidate_multiplier
+        )
 
         # Initialization is idempotent and ensures that we cannot process
         # tickets without an available audit schema.
@@ -276,8 +309,15 @@ class CustomerSuccessWorkflow:
         try:
             matches = self.retriever.search(
                 ticket.text,
-                top_k=self.retrieval_top_k,
+                top_k=(
+                    self.retrieval_top_k
+                    * self.retrieval_candidate_multiplier
+                ),
                 minimum_relevance=0.0,
+            )
+            matches = _select_document_diverse_matches(
+                matches,
+                limit=self.retrieval_top_k,
             )
         except Exception as exc:
             retrieval_error = exc

@@ -355,6 +355,9 @@ def build_application(
         routing_policy=routing_policy,
         decision_store=decision_store,
         retrieval_top_k=resolved_retrieval_top_k,
+        retrieval_candidate_multiplier=(
+            current_settings.retrieval_candidate_multiplier
+        ),
     )
 
     return ApplicationComponents(

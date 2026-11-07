@@ -134,6 +134,10 @@ def test_environment_values_are_loaded(
         "3",
     )
     monkeypatch.setenv(
+        "RETRIEVAL_CANDIDATE_MULTIPLIER",
+        "4",
+    )
+    monkeypatch.setenv(
         "MINIMUM_GROUNDING_OVERLAP",
         "0.25",
     )
@@ -150,6 +154,7 @@ def test_environment_values_are_loaded(
     assert settings.chunk_max_characters == 700
     assert settings.chunk_overlap_characters == 75
     assert settings.retrieval_top_k == 3
+    assert settings.retrieval_candidate_multiplier == 4
     assert settings.minimum_grounding_overlap == 0.25
 
 
@@ -159,6 +164,7 @@ def test_environment_values_are_loaded(
         ("CHUNK_MAX_CHARACTERS", "199"),
         ("CHUNK_OVERLAP_CHARACTERS", "-1"),
         ("RETRIEVAL_TOP_K", "0"),
+        ("RETRIEVAL_CANDIDATE_MULTIPLIER", "0"),
         ("MINIMUM_GROUNDING_OVERLAP", "1.01"),
     ],
 )
