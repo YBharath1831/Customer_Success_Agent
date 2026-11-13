@@ -1,0 +1,31 @@
+[
+  {
+    "ticket_id": "VAL-0005",
+    "channel": "chat",
+    "subject": "",
+    "body": "Our cursor seems to stop working partway through a long iteration. Is there an expiry we should be handling?",
+    "received_at": "2026-04-24T12:07:00Z",
+    "customer_id": "CUST-1192",
+    "customer_name": "Chen Ferreira",
+    "customer_tier": "standard",
+    "customer_region": "asia_pacific",
+    "language_fluency": "fluent",
+    "labels": {
+      "intent": "api_usage_question",
+      "urgency": "low",
+      "expected_route": "auto_respond",
+      "answerable_from_docs": true,
+      "expected_doc_ids": [
+        "DOC-API-002"
+      ],
+      "must_not_auto_respond": false
+    },
+    "history": {
+      "first_contact_resolution": true,
+      "resolution_time_minutes": 24,
+      "csat_rating": 4,
+      "escalated": false,
+      "repeat_contact": false
+    }
+  }
+]

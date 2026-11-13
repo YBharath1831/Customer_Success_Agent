@@ -1,0 +1,31 @@
+[
+  {
+    "ticket_id": "VAL-0054",
+    "channel": "email",
+    "subject": "Where is our data stored",
+    "body": "One of our customers has asked for written confirmation of where their data is physically stored. Could you point me to something I can share with them?",
+    "received_at": "2026-04-06T09:44:00Z",
+    "customer_id": "CUST-1079",
+    "customer_name": "Quentin Mendez",
+    "customer_tier": "standard",
+    "customer_region": "europe",
+    "language_fluency": "fluent",
+    "labels": {
+      "intent": "data_residency",
+      "urgency": "high",
+      "expected_route": "auto_respond",
+      "answerable_from_docs": true,
+      "expected_doc_ids": [
+        "DOC-DATA-003"
+      ],
+      "must_not_auto_respond": false
+    },
+    "history": {
+      "first_contact_resolution": true,
+      "resolution_time_minutes": 16,
+      "csat_rating": 3,
+      "escalated": false,
+      "repeat_contact": false
+    }
+  }
+]

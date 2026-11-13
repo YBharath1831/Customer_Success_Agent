@@ -1,0 +1,29 @@
+[
+  {
+    "ticket_id": "VAL-0002",
+    "channel": "chat",
+    "subject": "",
+    "body": "Following up on my previous message. Any update?",
+    "received_at": "2026-03-12T18:15:00Z",
+    "customer_id": "CUST-1252",
+    "customer_name": "Priya Brooks",
+    "customer_tier": "standard",
+    "customer_region": "north_america",
+    "language_fluency": "fluent",
+    "labels": {
+      "intent": "unclear_request",
+      "urgency": "high",
+      "expected_route": "escalate",
+      "answerable_from_docs": false,
+      "expected_doc_ids": [],
+      "must_not_auto_respond": true
+    },
+    "history": {
+      "first_contact_resolution": false,
+      "resolution_time_minutes": 543,
+      "csat_rating": 1,
+      "escalated": true,
+      "repeat_contact": false
+    }
+  }
+]
