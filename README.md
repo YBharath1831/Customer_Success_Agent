@@ -50,8 +50,7 @@ Customer_Success_Agent/
 |   |-- validation_tickets.json
 |   `-- samples/
 |       |-- demo_success_ticket.json
-|       |-- demo_escalation_ticket.json
-|       `-- demo_guardrail_ticket.json
+|       `-- demo_escalation_ticket.json
 |-- docs/
 |   |-- architecture.md
 |   `-- implementation_plan.md
@@ -480,7 +479,6 @@ SQLite audit data is stored at `storage/decisions.db`. It records stage decision
 - `documentation.json`: trusted retrieval corpus.
 - `samples/demo_success_ticket.json`: single-ticket cited-response demonstration.
 - `samples/demo_escalation_ticket.json`: deterministic human-review demonstration.
-- `samples/demo_guardrail_ticket.json`: claim-grounding guardrail demonstration.
 - Hidden evaluator data: accepted through the generic `--input` interface.
 
 Ground-truth labels are used only for training and evaluation. Routing does not inspect them.
